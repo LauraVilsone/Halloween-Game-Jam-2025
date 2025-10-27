@@ -6,7 +6,7 @@ public class TextBox : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI m_text;
 
-    public void Awake()
+    public void Start()
     {
         gameObject.SetActive(false);
     }
