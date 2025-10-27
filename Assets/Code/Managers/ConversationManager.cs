@@ -1,108 +1,78 @@
 using System;
-using System.Collections;
-using System.Text;
 using UnityEngine;
 
 public class ConversationManager : MonoBehaviour
 {
-    [SerializeField] private Dialogue m_currentDialogue;
+    [SerializeField] private Conversation m_currentConversation;
 
-    private HUDManager HUD;
+    private int m_eventIndex;
 
-    public bool ConversationFinished => LinesFinished && !IsTyping;
-    public bool LinesFinished { get; set; }
-    public bool IsTyping { get; set; }
+    public bool ConversationFinished { get; set; }
 
-    private Coroutine m_typingCoroutine;
+    private ConversationEvent CurrentEvent => m_currentConversation.Events[m_eventIndex];
 
-    [SerializeField] private float m_typingDelaySeconds = .125f;
+    private DialogueManager m_dialogueManager;
+
+    public Action OnEventFinished;
 
     private void Awake()
     {
-        HUD = FindFirstObjectByType<HUDManager>();
-    }
-
-    public void Begin()
-    {
-        HUD.Box.Show();
-        LinesFinished = false;
-
-        m_currentDialogue.BeginRead();
-        StartTyping();
-
-    }
-
-    public void End()
-    {
-        HUD.Box.Empty();
+        m_dialogueManager = GetComponent<DialogueManager>();
     }
 
     public void Proceed()
     {
-        //if (LineFinished)
-        //{
-            if (!IsTyping)
-                StartTyping();
-            else
-                CompleteTyping();
-        //}
+        if (!CurrentEvent.EventFinished)
+        {
+            if (CurrentEvent is Dialogue dialogue)
+            {
+                if (m_dialogueManager.ConversationFinished)
+                {
+                    m_dialogueManager.End();
+                    EventFinished();
+                }
+                else
+                    m_dialogueManager.Proceed();
+            }
+        }
     }
 
-    private void OnFinishedTyping()
+    public void EventFinished()
     {
-        IsTyping = false;
-        if (m_currentDialogue.FinishedReading)
-            LinesFinished = true;
+        CurrentEvent.EventFinished = true;
+        if (m_eventIndex >= m_currentConversation.Events.Length - 1)
+        {
+            ConversationFinished = true;
+            return;
+        }
         else
-            m_currentDialogue.Next();
-    }
-
-    private void CompleteTyping()
-    {
-        HUD.Box.Fill(m_currentDialogue.CurrentLine.Dialogue);
-        IsTyping = false;
-    }
-
-    private void StartTyping()
-    {
-        if (m_typingCoroutine != null)
         {
-            StopCoroutine(m_typingCoroutine);
-            m_typingCoroutine = null;
+            m_eventIndex++;
+            Execute();
         }
-        m_typingCoroutine = StartCoroutine(Typing());
     }
 
-    public IEnumerator Typing()
+    public void Execute()
     {
-        IsTyping = true;
 
-        string line = "";
-        int stringLength = m_currentDialogue.CurrentLine.Dialogue.Length;
-        int stringIndex = -1;
-
-        float typingDelay = m_typingDelaySeconds;
-
-        StringBuilder stringBuilder = new StringBuilder(line, 200);
-
-        while (IsTyping)
+        if (CurrentEvent is Dialogue dialogue)
         {
-            HUD.Box.Fill(stringBuilder.ToString());
-
-            if (stringIndex < stringLength - 1)
-            {
-                stringIndex++;
-                stringBuilder.Append(m_currentDialogue.CurrentLine.Dialogue[stringIndex]);
-                yield return new WaitForSeconds(typingDelay);
-            }
-            else
-            {
-                IsTyping = false;
-            }
-
-            yield return null;
+            m_dialogueManager.Begin(dialogue);
+            //CurrentEvent.Execute(this, CurrentEvent);
         }
 
-        OnFinishedTyping();
+        CurrentEvent.EventFinished = false;
+    }
+
+    public void Begin()
+    {
+        ConversationFinished = false;
+        m_eventIndex = 0;
+        Execute();
+    }
+
+    public void End()
+    {
+
     }
 }

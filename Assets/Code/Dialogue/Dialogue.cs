@@ -25,7 +25,7 @@ public class Dialogue : ConversationEvent
     public Line BeginRead()
     {
         m_lineIndex = 0;
-        FinishedReading = false;
+        FinishedReading = Line.Length == 1 ? true : false;
         return Line[m_lineIndex];
     }
 
@@ -38,5 +38,10 @@ public class Dialogue : ConversationEvent
             FinishedReading = true;
         }
         return Line[m_lineIndex];
+    }
+
+    public override void Execute(params object[] objects)
+    {
+
     }
 }

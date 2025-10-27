@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca9be4d83d65a04d8358bb8f43653a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HUDManager
-  Box: {fileID: 0}
+  Box: {fileID: 6911689724557254673}
 --- !u!223 &6024232728528313450
 Canvas:
   m_ObjectHideFlags: 0

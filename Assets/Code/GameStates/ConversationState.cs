@@ -3,17 +3,20 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Conversation", menuName = "Scriptables/States/Conversation", order = 0)]
 public class ConversationState : ExplorationState
 {
+    DialogueManager m_dialogue;
     ConversationManager m_conversation;
 
     public override void Initialize(GameManager game, PlayerManager player, RoomManager rooms)
     {
         base.Initialize(game, player, rooms);
 
+        m_dialogue = game.GetComponent<DialogueManager>();
         m_conversation = game.GetComponent<ConversationManager>();
     }
 
     public override void Enter()
     {
+        //m_dialogue.Begin();
         m_conversation.Begin();
     }
 
@@ -21,6 +24,13 @@ public class ConversationState : ExplorationState
     {
         if (m_player.MouseLeftDown)
         {
+            /*if (m_dialogue.ConversationFinished)
+            {
+                m_game.ChangeState(1);
+            }
+            else
+                m_dialogue.Proceed();*/
+
             if (m_conversation.ConversationFinished)
             {
                 m_game.ChangeState(1);
@@ -28,10 +38,16 @@ public class ConversationState : ExplorationState
             else
                 m_conversation.Proceed();
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            m_game.ChangeState(1);
+        }
     }
 
     public override void Exit()
     {
+        //m_dialogue.End();
         m_conversation.End();
     }
 }
