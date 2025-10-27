@@ -21,4 +21,28 @@ MonoBehaviour:
       type: {class: DialogueRepository, ns: GameCreator.Runtime.Dialogue, asm: GameCreator.Runtime.Dialogue}
       data:
         m_Values:
-          m_Values: []
+          m_Values:
+          - rid: 7717091189020950528
+    - rid: 7717091189020950528
+      type: {class: Value, ns: GameCreator.Runtime.Dialogue, asm: GameCreator.Runtime.Dialogue}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Key:
+          m_String: 
+        m_Value:
+          m_Property:
+            rid: 7717091189020950529
+        m_InBold: 0
+        m_InItalic: 0
+        m_UseColor: 0
+        m_Color:
+          m_Property:
+            rid: 7717091189020950530
+    - rid: 7717091189020950529
+      type: {class: GetStringActorName, ns: GameCreator.Runtime.Dialogue, asm: GameCreator.Runtime.Dialogue}
+      data:
+        m_Actor: {fileID: 0}
+    - rid: 7717091189020950530
+      type: {class: GetColorColorsYellow, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
