@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1578659272605379698}
+  - component: {fileID: 9066737415728784693}
   - component: {fileID: 6024232728528313450}
   - component: {fileID: 7331549737041798109}
   - component: {fileID: 4655292558422387359}
@@ -39,6 +40,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &9066737415728784693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349964990597063396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca9be4d83d65a04d8358bb8f43653a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HUDManager
+  m_text: {fileID: 133080066370462841}
 --- !u!223 &6024232728528313450
 Canvas:
   m_ObjectHideFlags: 0
@@ -169,7 +183,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Without hope, without witness, without reward, without break, without gratitude,
     without end, without remedy, without food, without company, without comfort,
-    without knowledge, without certainty, without remedy
+    without knowledge, without certainty, without bargaining
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -178,8 +192,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4291546059
+  m_fontColor: {r: 0.79622644, g: 0.79622644, b: 0.79622644, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

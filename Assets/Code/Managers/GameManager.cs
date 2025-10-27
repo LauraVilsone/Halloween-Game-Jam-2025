@@ -4,19 +4,33 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     private PlayerManager m_player;
+    private RoomManager m_roomManager;
 
-    [SerializeField] private Room m_currentRoom;
+    private HUDManager m_HUDManager;
+
+    private GameState m_gameState;
+    [Space]
+    [SerializeField] private GameState[] m_states;
+
 
     private void Awake()
     {
         m_player = new PlayerManager();
+        m_roomManager = GetComponent<RoomManager>();
+
+        m_gameState = m_states[0];
+
+        foreach (var state in m_states)
+        {
+            state.Initialize(m_player, m_roomManager);
+        }
 
         //ListenToRoom();
     }
 
     private void ListenToRoom()
     {
-        foreach (var interactable in m_currentRoom.GetComponentsInChildren<Interactable>())
+        foreach (var interactable in m_roomManager.CurrentRoom.GetComponentsInChildren<Interactable>())
         {
             interactable.OnHoverStart += OnHoverStart;
             interactable.OnHoverEnd += OnHoverEnd;
@@ -28,12 +42,10 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        m_player.Tick();
+        m_gameState.Tick();
 
-        if (m_player.MouseLeftDown)
-        {
-            m_currentRoom.MouseMove(m_player.MouseDelta);
-        }
+        m_player.Tick();
+        m_roomManager.Tick();
         //Debug.Log(m_player.MouseDelta);
     }
 }
