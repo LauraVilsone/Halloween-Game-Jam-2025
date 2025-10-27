@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 621079299}
   - component: {fileID: 621079300}
   - component: {fileID: 621079301}
+  - component: {fileID: 621079302}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -313,6 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   m_states:
+  - {fileID: 11400000, guid: 451d569f4c801ff4ea3d6fb77d0b43d2, type: 2}
   - {fileID: 11400000, guid: f49990e0c3cfa45489e668d37586fbe1, type: 2}
 --- !u!114 &621079301
 MonoBehaviour:
@@ -327,6 +329,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomManager
   m_currentRoom: {fileID: 147192203}
+--- !u!114 &621079302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621079298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c12964a9010154380483b3c68c0b73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConversationManager
+  m_currentDialogue: {fileID: 11400000, guid: 8f32149c33f187c43b557c45cac6d089, type: 2}
+  m_typingDelaySeconds: 0.03
 --- !u!1001 &5171448439002956103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -392,6 +408,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 133080066370462841, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_text
+      value: Only without hope, without witness, without reward, without break, without
+        gratitude, without end, without remedy, without food, without company, without
+        comfort, without knowledge, without certainty, without bargaining.
+      objectReference: {fileID: 0}
     - target: {fileID: 133080066370462841, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4291546059

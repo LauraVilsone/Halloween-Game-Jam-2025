@@ -16,4 +16,27 @@ public class Dialogue : ConversationEvent
     public Actor[] Actors;
 
     public Line[] Line;
+
+
+    private int m_lineIndex = 0;
+    public Line CurrentLine => Line[m_lineIndex];
+    public bool FinishedReading { get; set; }
+
+    public Line BeginRead()
+    {
+        m_lineIndex = 0;
+        FinishedReading = false;
+        return Line[m_lineIndex];
+    }
+
+    public Line Next()
+    {
+        m_lineIndex++;
+        if (m_lineIndex >= Line.Length - 1)
+        {
+            m_lineIndex = Line.Length - 1;
+            FinishedReading = true;
+        }
+        return Line[m_lineIndex];
+    }
 }

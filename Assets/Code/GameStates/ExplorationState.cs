@@ -4,9 +4,9 @@ using UnityEngine;
 public class ExplorationState : GameState
 {
 
-    public override void Initialize(PlayerManager player, RoomManager rooms)
+    public override void Initialize(GameManager game, PlayerManager player, RoomManager rooms)
     {
-        base.Initialize(player, rooms);
+        base.Initialize(game, player, rooms);
 
         
     }
@@ -18,7 +18,7 @@ public class ExplorationState : GameState
 
     public override void Tick()
     {
-        if (m_player.MouseLeftDown)
+        if (m_player.MouseLeftHeld)
         {
             m_rooms.CurrentRoom.MouseMove(m_player.MouseDelta);
         }

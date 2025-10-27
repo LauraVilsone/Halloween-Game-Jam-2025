@@ -13,18 +13,21 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameState[] m_states;
 
 
+    public PlayerManager Player => m_player;
+    public RoomManager Rooms => m_roomManager;
+    public HUDManager HUD => m_HUDManager;
+
     private void Awake()
     {
         m_player = new PlayerManager();
         m_roomManager = GetComponent<RoomManager>();
-
-        m_gameState = m_states[0];
-
         foreach (var state in m_states)
         {
-            state.Initialize(m_player, m_roomManager);
+            state.Initialize(this, m_player, m_roomManager);
         }
 
+        m_gameState = m_states[0];
+        m_gameState.Enter();
         //ListenToRoom();
     }
 
@@ -47,5 +50,15 @@ public class GameManager : MonoBehaviour
         m_player.Tick();
         m_roomManager.Tick();
         //Debug.Log(m_player.MouseDelta);
+    }
+
+    public void ChangeState(int i)
+    {
+        if (m_gameState != null)
+            m_gameState.Exit();
+
+        m_gameState = m_states[i];
+
+        m_gameState.Enter();
     }
 }

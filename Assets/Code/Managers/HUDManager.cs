@@ -3,5 +3,14 @@ using UnityEngine;
 
 public class HUDManager : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI m_text;
+    public TextBox Box;
+
+    private void Awake()
+    {
+        if (Box == null)
+        {
+            Box = GetComponentInChildren<TextBox>();
+        }
+    }
+
 }
