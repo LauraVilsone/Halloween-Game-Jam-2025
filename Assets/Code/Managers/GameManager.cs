@@ -25,7 +25,10 @@ public class GameManager : MonoBehaviour
         {
             state.Initialize(this, m_player, m_roomManager);
         }
+    }
 
+    private void Start()
+    {
         m_gameState = m_states[0];
         m_gameState.Enter();
         //ListenToRoom();
