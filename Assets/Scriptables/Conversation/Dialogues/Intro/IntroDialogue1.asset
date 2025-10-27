@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: IntroDialogue1
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  Line:
+  - Dialogue: '- Rise, Liam!'
+    Actor: 0
+    Emotion: 0
+  - Dialogue: A woman's voice silently cuts through nothingness.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: '- Come back to me. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'Her voice is raspy from disuse. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'Fresh oxygen fills your lungs. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "No, not fresh\u2026 "
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'Stale, still, stopped, but somehow carrying life. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: The tissue in your body struggles against this motion, as if your alveoli
+      are made of stone.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Then it finally gives way, a gust of wind pushing in, clearing, what
+      feels like cobwebs.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: '- Aaah!'
+    Actor: 0
+    Emotion: 0
+  - Dialogue: You breathe in.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'And then your sense of touch awakens. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'The air around you crackles with magic. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'You open your eyes. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'Shadows dance maniacally around the room. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'The symbols on the floor and the stone slab, where you lay, pulse
+      with life. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'And a tired woman in opulent, but disheveled robes holds her hands
+      above you, her bony fingers glowing from the power she is casting. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: '- Liam!'
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'She chokes out and rushes towards you reaching for your hand eagerly
+      but with tenderness. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "- Who\u2026? Where?"
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'Your voice is a low, gravelly whisper and your throat is so dry, it
+      hurts to speak. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: It's me, Elara. I brought you back.
+    Actor: 0
+    Emotion: 0
