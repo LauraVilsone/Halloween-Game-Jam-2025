@@ -16,9 +16,6 @@ public class MindMap : UIGroup
     public bool Visible { get; set; }
     public bool HasKeyword { get; set; }
 
-    private enum MapState { Grab, Drag }
-    private MapState m_mapState;
-
 
     protected override void Awake()
     {

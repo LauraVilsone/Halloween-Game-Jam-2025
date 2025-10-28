@@ -17,7 +17,15 @@ public class ExplorationState : GameState
 
     public override void Tick()
     {
-        if (m_player.MouseLeftHeld && !m_inventory.Active)
+        if (m_inventory.Active)
+        {
+            if (m_player.MouseRightDown)
+            {
+                m_inventory.Toggle();
+            }
+            return;
+        }
+        if (m_player.MouseLeftHeld)
         {
             m_rooms.CurrentRoom.MouseMove(m_player.MouseDelta);
         }
