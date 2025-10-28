@@ -4,6 +4,8 @@ using UnityEngine;
 public class HUDManager : MonoBehaviour
 {
     public TextBox Box;
+    public MindMap MindMap;
+    public ChoiceBox ChoiceBox;
 
     private void Awake()
     {
@@ -11,6 +13,22 @@ public class HUDManager : MonoBehaviour
         {
             Box = GetComponentInChildren<TextBox>();
         }
+
+        if (MindMap == null)
+        {
+            MindMap = GetComponentInChildren<MindMap>();
+        }
+
+        if (ChoiceBox == null)
+        {
+            ChoiceBox = GetComponentInChildren<ChoiceBox>();
+        }
     }
+
+
+    private enum HUDState { TextBox, MindMap, ChoiceBox }
+    private HUDState m_state;
+
+
 
 }

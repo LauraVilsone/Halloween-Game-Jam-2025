@@ -35,7 +35,6 @@ public class Interactable : MonoBehaviour
 
     private void OnMouseUpAsButton()
     {
-        Debug.Log("HIHO!");
         OnClick?.Invoke(Data);
     }
 

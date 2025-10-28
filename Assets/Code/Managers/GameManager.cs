@@ -5,7 +5,8 @@ public class GameManager : MonoBehaviour
 {
     private PlayerManager m_player;
     private RoomManager m_roomManager;
-
+    private InventoryManager m_inventory;
+    private ConversationManager m_conversationManager;
     private HUDManager m_HUDManager;
 
     private GameState m_gameState;
@@ -15,12 +16,19 @@ public class GameManager : MonoBehaviour
 
     public PlayerManager Player => m_player;
     public RoomManager Rooms => m_roomManager;
+    public InventoryManager Inventory => m_inventory;
+    public ConversationManager Conversation => m_conversationManager;
     public HUDManager HUD => m_HUDManager;
 
     private void Awake()
     {
         m_player = new PlayerManager();
         m_roomManager = GetComponent<RoomManager>();
+        m_inventory = GetComponent<InventoryManager>();
+        m_conversationManager = GetComponent<ConversationManager>();
+
+        m_HUDManager = FindFirstObjectByType<HUDManager>();
+
         foreach (var state in m_states)
         {
             state.Initialize(this, m_player, m_roomManager);
@@ -31,16 +39,25 @@ public class GameManager : MonoBehaviour
     {
         m_gameState = m_states[0];
         m_gameState.Enter();
-        //ListenToRoom();
+        ListenToRoom();
     }
 
     private void ListenToRoom()
     {
         foreach (var interactable in m_roomManager.CurrentRoom.GetComponentsInChildren<Interactable>())
         {
-            interactable.OnHoverStart += OnHoverStart;
-            interactable.OnHoverEnd += OnHoverEnd;
+            //interactable.OnHoverStart += OnHoverStart;
+            //interactable.OnHoverEnd += OnHoverEnd;
+            interactable.OnClick += OnClick;
         }
+    }
+
+    private void OnClick(InteractableData data)
+    {
+        if (m_gameState is ConversationState) return;
+
+        m_conversationManager.ChangeConversation(data.Remark);
+        ChangeState(0);
     }
 
     private void OnHoverEnd() => m_player.MouseLock = false;

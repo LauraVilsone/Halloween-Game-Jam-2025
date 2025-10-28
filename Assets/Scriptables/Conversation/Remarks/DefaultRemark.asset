@@ -10,15 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
-  m_Name: TestDialogueEvent01
+  m_Name: DefaultRemark
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  Actors:
-  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
-  Line:
-  - Dialogue: My <link=goodness><color=green>goodness</color></link>...
-    Actor: 0
-    Emotion: 0
-  - Dialogue: I didn't expect <link=you><color=green>you</color></link> to be so
-      incredibly <link=decomposed><color=green>decomposed</color></link>.
-    Actor: 0
-    Emotion: 0
+  Actors: []
+  Line: []

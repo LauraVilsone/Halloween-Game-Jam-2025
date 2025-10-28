@@ -22,21 +22,18 @@ public class ConversationState : ExplorationState
 
     public override void Tick()
     {
-        if (m_player.MouseLeftDown)
+        if (m_player.MouseLeftDown && !m_inventory.Active)
         {
-            /*if (m_dialogue.ConversationFinished)
-            {
-                m_game.ChangeState(1);
-            }
-            else
-                m_dialogue.Proceed();*/
-
             if (m_conversation.ConversationFinished)
             {
                 m_game.ChangeState(1);
             }
             else
                 m_conversation.Proceed();
+        }
+        else if (m_player.MouseRightDown)
+        {
+            m_inventory.Toggle();
         }
 
         if (Input.GetKeyDown(KeyCode.LeftControl))

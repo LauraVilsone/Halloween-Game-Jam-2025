@@ -20,6 +20,12 @@ public class ConversationManager : MonoBehaviour
         m_dialogueManager = GetComponent<DialogueManager>();
     }
 
+    public void ChangeConversation(Conversation conversation)
+    {
+        m_currentConversation = conversation;
+        m_eventIndex = 0;
+    }
+
     public void Proceed()
     {
         if (!CurrentEvent.EventFinished)

@@ -4,11 +4,10 @@ using UnityEngine;
 public class ExplorationState : GameState
 {
 
+
     public override void Initialize(GameManager game, PlayerManager player, RoomManager rooms)
     {
         base.Initialize(game, player, rooms);
-
-        
     }
 
     public override void Enter()
@@ -18,9 +17,21 @@ public class ExplorationState : GameState
 
     public override void Tick()
     {
+        if (m_inventory.Active)
+        {
+            if (m_player.MouseRightDown)
+            {
+                m_inventory.Toggle();
+            }
+            return;
+        }
         if (m_player.MouseLeftHeld)
         {
             m_rooms.CurrentRoom.MouseMove(m_player.MouseDelta);
+        }
+        else if (m_player.MouseRightDown)
+        {
+            m_inventory.Toggle();
         }
     }
 
