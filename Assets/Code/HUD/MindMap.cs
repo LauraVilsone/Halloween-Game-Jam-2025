@@ -12,7 +12,9 @@ public class MindMap : UIGroup
     private List<Keyword> m_keywords;
     private RectTransform m_keywordsContainer;
 
-    public bool Active { get; set; }
+    public bool Active => Visible || HasKeyword;
+    public bool Visible { get; set; }
+    public bool HasKeyword { get; set; }
 
     private enum MapState { Grab, Drag }
     private MapState m_mapState;
@@ -41,7 +43,7 @@ public class MindMap : UIGroup
         var newKeyword = newGameObject.GetComponent<Keyword>();
         m_keywords.Add(newKeyword);
 
-        Vector3 spawnPosition;// = new Vector3(Random.Range(-500, 500), Random.Range(-375, 375));
+        Vector3 spawnPosition;
         spawnPosition = GetBottomLeftCorner(m_keywordsContainer) - 
             new Vector3(Random.Range(0, m_keywordsContainer.rect.x), Random.Range(0, m_keywordsContainer.rect.y));
 
@@ -55,24 +57,26 @@ public class MindMap : UIGroup
 
     private void OnKeywordGrabbed()
     {
+        HasKeyword = true;
         Empty();
     }
 
     private void OnKeywordReleased()
     {
+        HasKeyword = false;
         //Show();
     }
 
     public override void Show()
     {
         base.Show();
-        Active = true;
+        Visible = true;
     }
 
     public override void Empty()
     {
         base.Empty();
-        Active = false;
+        Visible = false;
     }
 
 

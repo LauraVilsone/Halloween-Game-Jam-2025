@@ -24,13 +24,6 @@ public class ConversationState : ExplorationState
     {
         if (m_player.MouseLeftDown && !m_inventory.Active)
         {
-            /*if (m_dialogue.ConversationFinished)
-            {
-                m_game.ChangeState(1);
-            }
-            else
-                m_dialogue.Proceed();*/
-
             if (m_conversation.ConversationFinished)
             {
                 m_game.ChangeState(1);
