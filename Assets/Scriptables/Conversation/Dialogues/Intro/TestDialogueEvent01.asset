@@ -15,7 +15,7 @@ MonoBehaviour:
   Actors:
   - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
   Line:
-  - Dialogue: My goodness...
+  - Dialogue: My <link=goodness><color=green>goodness</color></link>...
     Actor: 0
     Emotion: 0
   - Dialogue: I didn't expect you to be so incredibly decomposed.

@@ -38,6 +38,10 @@ public class ConversationState : ExplorationState
             else
                 m_conversation.Proceed();
         }
+        if (m_player.MouseRightDown)
+        {
+            
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {

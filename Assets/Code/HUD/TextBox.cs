@@ -1,19 +1,16 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class TextBox : MonoBehaviour
+public class TextBox : UIGroup
 {
     [SerializeField] private TextMeshProUGUI m_text;
 
-    public void Start()
+    public override void Show()
     {
-        gameObject.SetActive(false);
-    }
-
-    public void Show()
-    {
-        gameObject.SetActive(true);
+        base.Show();
     }
 
     public void Fill(string text)
@@ -21,9 +18,9 @@ public class TextBox : MonoBehaviour
         m_text.text = text;
     }
 
-    public void Empty()
+    public override void Empty()
     {
+        base.Empty();
         m_text.text = "";
-        gameObject.SetActive(false);
     }
 }

@@ -22,6 +22,10 @@ public class ExplorationState : GameState
         {
             m_rooms.CurrentRoom.MouseMove(m_player.MouseDelta);
         }
+        /*else if (m_player.MouseRightDown)
+        {
+            m_inventory.;
+        }*/
     }
 
     public override void Exit()

@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     private PlayerManager m_player;
     private RoomManager m_roomManager;
+    private InventoryManager m_inventory;
 
     private HUDManager m_HUDManager;
 
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
 
     public PlayerManager Player => m_player;
     public RoomManager Rooms => m_roomManager;
+    public InventoryManager Inventory => m_inventory;
     public HUDManager HUD => m_HUDManager;
 
     private void Awake()
