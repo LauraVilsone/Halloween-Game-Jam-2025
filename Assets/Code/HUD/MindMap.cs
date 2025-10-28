@@ -63,28 +63,31 @@ public class MindMap : UIGroup
         //Show();
     }
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(1))
-        {
-            Show();
-        }
-    }
-
     public override void Show()
     {
         base.Show();
+        Active = true;
     }
 
     public override void Empty()
     {
         base.Empty();
+        Active = false;
     }
+
 
     Vector3 GetBottomLeftCorner(RectTransform rt)
     {
         Vector3[] v = new Vector3[4];
         rt.GetWorldCorners(v);
         return v[0];
+    }
+
+    public void Toggle()
+    {
+        if (Active)
+            Empty();
+        else
+            Show();
     }
 }

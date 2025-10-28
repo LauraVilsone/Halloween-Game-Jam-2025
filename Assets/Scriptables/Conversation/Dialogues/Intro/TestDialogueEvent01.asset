@@ -18,6 +18,7 @@ MonoBehaviour:
   - Dialogue: My <link=goodness><color=green>goodness</color></link>...
     Actor: 0
     Emotion: 0
-  - Dialogue: I didn't expect you to be so incredibly decomposed.
+  - Dialogue: I didn't expect <link=you><color=green>you</color></link> to be so
+      incredibly <link=decomposed><color=green>decomposed</color></link>.
     Actor: 0
     Emotion: 0

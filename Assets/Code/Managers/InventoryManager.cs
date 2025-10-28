@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
@@ -14,5 +15,10 @@ public class InventoryManager : MonoBehaviour
     public void AddKeyword(KeywordData keyword)
     {
         Map.Fill(keyword);
+    }
+
+    public void Toggle()
+    {
+        Map.Toggle();
     }
 }

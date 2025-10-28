@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     {
         m_player = new PlayerManager();
         m_roomManager = GetComponent<RoomManager>();
+        m_inventory = GetComponent<InventoryManager>();
+
         foreach (var state in m_states)
         {
             state.Initialize(this, m_player, m_roomManager);

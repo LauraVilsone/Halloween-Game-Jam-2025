@@ -12,7 +12,7 @@ public class Decision
 [System.Serializable]
 public class Interaction
 {
-    public Interactable m_interactable;
+    public InteractableData m_interactable;
     public string m_comment;
 }
 

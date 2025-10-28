@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 621079304}
   - component: {fileID: 621079302}
   - component: {fileID: 621079305}
+  - component: {fileID: 621079306}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -339,8 +340,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   m_states:
-  - {fileID: 11400000, guid: f49990e0c3cfa45489e668d37586fbe1, type: 2}
   - {fileID: 11400000, guid: 451d569f4c801ff4ea3d6fb77d0b43d2, type: 2}
+  - {fileID: 11400000, guid: f49990e0c3cfa45489e668d37586fbe1, type: 2}
 --- !u!114 &621079301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,6 +395,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
   Map: {fileID: 1736422346}
+--- !u!114 &621079306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621079298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4352c920b94674446b19e89c819cce36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeywordManager
+  m_referenceTable: {fileID: 11400000, guid: 986bfe261bc8bdc4cab2e7f4211d0f18, type: 2}
 --- !u!1 &793559535
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,7 +843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3271949617859564525, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_initialKeywords.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3271949617859564525, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: 'm_initialKeywords.Array.data[0]'
@@ -873,6 +887,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5173142449111035342, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276559652738528958, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_BlocksRaycasts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5322690441754586429, guid: 624c194b723e37a4081c874f5c27f038, type: 3}

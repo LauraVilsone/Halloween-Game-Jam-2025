@@ -89,5 +89,6 @@ public class UIFade : MonoBehaviour
     private void SetInteractability()
     {
         _group.interactable = _currentOpacity == 1;
+        _group.blocksRaycasts = _currentOpacity == 1;
     }
 }

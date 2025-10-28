@@ -22,7 +22,7 @@ public class ConversationState : ExplorationState
 
     public override void Tick()
     {
-        if (m_player.MouseLeftDown)
+        if (m_player.MouseLeftDown && !m_inventory.Active)
         {
             /*if (m_dialogue.ConversationFinished)
             {
@@ -38,9 +38,9 @@ public class ConversationState : ExplorationState
             else
                 m_conversation.Proceed();
         }
-        if (m_player.MouseRightDown)
+        else if (m_player.MouseRightDown)
         {
-            
+            m_inventory.Toggle();
         }
 
         if (Input.GetKeyDown(KeyCode.LeftControl))
