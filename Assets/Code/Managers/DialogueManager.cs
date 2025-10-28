@@ -94,7 +94,26 @@ public class DialogueManager : MonoBehaviour
             if (stringIndex < stringLength - 1)
             {
                 stringIndex++;
-                stringBuilder.Append(m_currentDialogue.CurrentLine.Dialogue[stringIndex]);
+                var character = m_currentDialogue.CurrentLine.Dialogue[stringIndex];
+                if (character == '<')
+                {
+                    bool skip = true;
+                    while (skip)
+                    {
+                        stringBuilder.Append(m_currentDialogue.CurrentLine.Dialogue[stringIndex]);
+                        if (character == '>')
+                            skip = false;
+                        else
+                        {
+                            stringIndex++;
+                            character = m_currentDialogue.CurrentLine.Dialogue[stringIndex];
+                        }
+                    }
+                }
+                else
+                {
+                    stringBuilder.Append(m_currentDialogue.CurrentLine.Dialogue[stringIndex]);
+                }
                 yield return new WaitForSeconds(typingDelay);
             }
             else
