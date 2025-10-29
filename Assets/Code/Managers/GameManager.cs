@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public RoomManager Rooms => m_roomManager;
     public InventoryManager Inventory => m_inventory;
     public ConversationManager Conversation => m_conversationManager;
-    public BondManager Bond => Bond;
+    public BondManager Bond => m_bondManager;
     public HUDManager HUD => m_HUDManager;
 
     private void Awake()
@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
         m_roomManager = GetComponent<RoomManager>();
         m_inventory = GetComponent<InventoryManager>();
         m_conversationManager = GetComponent<ConversationManager>();
+        m_bondManager = GetComponent<BondManager>();
 
         m_HUDManager = FindFirstObjectByType<HUDManager>();
 
