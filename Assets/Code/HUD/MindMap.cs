@@ -12,10 +12,12 @@ public class MindMap : UIGroup
     private List<Keyword> m_keywords;
     private RectTransform m_keywordsContainer;
 
+    public Action<KeywordData> OnKeywordDropped;
+
     public bool Active => Visible || HasKeyword;
     public bool Visible { get; set; }
     public bool HasKeyword { get; set; }
-
+    public KeywordData SelectedKeyword { get; private set; }
 
     protected override void Awake()
     {
@@ -24,6 +26,7 @@ public class MindMap : UIGroup
         m_keywords = new List<Keyword>();
 
         m_keywordsContainer = transform.GetChild(0) as RectTransform;
+
     }
 
     public override void Start()
@@ -52,14 +55,17 @@ public class MindMap : UIGroup
 
     }
 
-    private void OnKeywordGrabbed()
+    private void OnKeywordGrabbed(KeywordData data)
     {
+        SelectedKeyword = data;
         HasKeyword = true;
         Empty();
     }
 
     private void OnKeywordReleased()
     {
+        OnKeywordDropped?.Invoke(SelectedKeyword);
+        SelectedKeyword = null;
         HasKeyword = false;
         //Show();
     }

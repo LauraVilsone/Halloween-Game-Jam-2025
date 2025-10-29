@@ -11,10 +11,12 @@ public class PlayerManager
 
     public bool MouseLeftDown { get; set; }
     public bool MouseLeftHeld { get; set; }
+    public bool MouseLeftUp { get; set; }
 
     public bool MouseRightDown { get; set; }
     public bool MouseRightHeld { get; set; }
-    
+    public bool MouseRightUp { get; set; }
+
     public float MouseDelta { get; set; }
 
     private bool m_lock;
@@ -37,6 +39,9 @@ public class PlayerManager
 
         MouseLeftHeld = Input.GetMouseButton(0);
         MouseRightHeld = Input.GetMouseButton(1);
+
+        MouseLeftUp = Input.GetMouseButtonUp(0);
+        MouseRightUp = Input.GetMouseButtonUp(1);
 
         MouseDelta = Input.GetAxis("Mouse X");
     }

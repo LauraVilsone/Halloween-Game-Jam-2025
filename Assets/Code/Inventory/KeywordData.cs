@@ -5,7 +5,7 @@ using UnityEngine;
 public class Decision
 {
     public string m_name;
-    public Dialogue m_dialogue;
+    public Conversation m_conversation;
     public int m_bond;
 }
 
@@ -13,7 +13,7 @@ public class Decision
 public class Interaction
 {
     public InteractableData m_interactable;
-    public string m_comment;
+    public Conversation m_conversation;
 }
 
 [CreateAssetMenu(fileName = "Keyword", menuName = "Scriptables/Keyword", order = 4)]
@@ -23,4 +23,16 @@ public class KeywordData : ScriptableObject
     [Space]
     public Decision[] m_decision;
     public Interaction[] m_interactions;
+
+    public Conversation GetConversationByInteractable(InteractableData data)
+    {
+        foreach (var interaction in m_interactions)
+        {
+            if (interaction.m_interactable == data)
+            {
+                return interaction.m_conversation;
+            }
+        }
+        return null;
+    }
 }

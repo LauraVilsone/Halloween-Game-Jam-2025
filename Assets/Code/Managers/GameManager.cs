@@ -46,21 +46,63 @@ public class GameManager : MonoBehaviour
     {
         foreach (var interactable in m_roomManager.CurrentRoom.GetComponentsInChildren<Interactable>())
         {
-            //interactable.OnHoverStart += OnHoverStart;
-            //interactable.OnHoverEnd += OnHoverEnd;
+            interactable.OnHoverStart += OnHoverStart;
+            interactable.OnHoverEnd += OnHoverEnd;
             interactable.OnClick += OnClick;
+            //interactable.OnRelease += OnRelease;
         }
+        Inventory.Map.OnKeywordDropped += OnKeywordDropped;
+    }
+
+    private void OnKeywordDropped(KeywordData data)
+    {
+        if (m_gameState is ConversationState) return;
+        if (m_inventory.SelectedKeyword != null && InteractableData != null)
+        {
+            var conversation = m_inventory.SelectedKeyword.GetConversationByInteractable(InteractableData);
+            if (conversation == null)
+            {
+                Debug.LogWarning("No specified interaction between " + InteractableData.name + " and " + m_inventory.SelectedKeyword.name + "!");
+                return;
+            }
+            m_conversationManager.ChangeConversation(conversation);
+            ChangeState(0);
+        }
+    }
+
+    public InteractableData InteractableData { get; set; }
+    private void OnHoverStart(InteractableData data)
+    {
+        InteractableData = data;
+        /*if (m_gameState is ConversationState) return;
+        if (m_inventory.SelectedKeyword != null)
+        {
+            var conversation = m_inventory.SelectedKeyword.GetConversationByInteractable(data);
+            if (conversation == null)
+            {
+                Debug.LogWarning("No specified interaction between " + data.name + " and " + m_inventory.SelectedKeyword.name + "!");
+                return;
+            }
+            m_conversationManager.ChangeConversation(conversation);
+            ChangeState(0);
+        }*/
     }
 
     private void OnClick(InteractableData data)
     {
         if (m_gameState is ConversationState) return;
 
-        m_conversationManager.ChangeConversation(data.Remark);
-        ChangeState(0);
+        if (m_inventory.SelectedKeyword == null) {
+            m_conversationManager.ChangeConversation(data.Remark);
+            ChangeState(0);
+        }
     }
 
-    private void OnHoverEnd() => m_player.MouseLock = false;
+    private void OnHoverEnd()
+    {
+        InteractableData = null;
+        //m_player.MouseLock = false;
+    }
     private void OnHoverStart() => m_player.MouseLock = true;
 
     private void Update()

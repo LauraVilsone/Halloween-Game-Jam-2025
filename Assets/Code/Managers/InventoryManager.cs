@@ -7,10 +7,8 @@ public class InventoryManager : MonoBehaviour
 
     public bool Active => Map.Active;
 
-    private void Awake()
-    {
-        
-    }
+    public KeywordData SelectedKeyword => Map.SelectedKeyword;
+
 
     public void AddKeyword(KeywordData keyword)
     {

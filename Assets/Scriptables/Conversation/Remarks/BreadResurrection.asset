@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
-  m_Name: DefaultRemark
+  m_Name: BreadResurrection
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   Actors:
   - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
   Line:
-  - Dialogue: This is not interesting to me...
+  - Dialogue: If I want to resurrect the bread, I need to <link=meditate><color=green>meditate</color></link>
+      for five days and five nights.
     Actor: 0
     Emotion: 0

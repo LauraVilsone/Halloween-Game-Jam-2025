@@ -11,7 +11,7 @@ public class Keyword : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
     private TextMeshProUGUI m_text;
     private Image m_image;
 
-    public Action OnGrab;
+    public Action<KeywordData> OnGrab;
     public Action OnRelease;
 
     private void Awake()
@@ -53,7 +53,7 @@ public class Keyword : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
         else m_draggingPlane = canvas.transform as RectTransform;
 
         SetDraggedPosition(eventData);
-        OnGrab?.Invoke();
+        OnGrab?.Invoke(Data);
     }
 
     private void SetDraggedPosition(PointerEventData data)

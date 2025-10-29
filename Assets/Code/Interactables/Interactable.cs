@@ -5,8 +5,12 @@ public class Interactable : MonoBehaviour
 {
     public InteractableData Data;
 
-    public Action OnHoverStart;
+    public bool ReactToKeywords = true;
+    public bool AnimateOnHover = true;
+
+    public Action<InteractableData> OnHoverStart;
     public Action<InteractableData> OnClick;
+    public Action<InteractableData> OnRelease;
     public Action OnHoverEnd;
 
     [Space]
@@ -29,13 +33,20 @@ public class Interactable : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        OnHoverStart?.Invoke();
+        OnHoverStart?.Invoke(Data);
         Active = true;
+    }
+
+    private void OnMouseUp()
+    {
+        if (ReactToKeywords)
+            OnRelease?.Invoke(Data);
     }
 
     private void OnMouseUpAsButton()
     {
-        OnClick?.Invoke(Data);
+        if (ReactToKeywords)
+            OnClick?.Invoke(Data);
     }
 
     //For right-click purposes
@@ -54,7 +65,8 @@ public class Interactable : MonoBehaviour
 
     private void Update()
     {
-        HandleAnimation();
+        if (AnimateOnHover)
+            HandleAnimation();
     }
 
     private void HandleAnimation()

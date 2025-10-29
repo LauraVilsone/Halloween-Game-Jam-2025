@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac1a281632cbaf246b74d9da4a6b0c2c, type: 3}
-  m_Name: Keyword_Clara
+  m_Name: Keyword_Goodness
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  m_name: Clara
+  m_name: Goodness
   m_decision:
   - m_name: Elara? What happened to you?!
     m_conversation: {fileID: 0}
@@ -25,4 +25,4 @@ MonoBehaviour:
     m_bond: -1
   m_interactions:
   - m_interactable: {fileID: 11400000, guid: a2932108460e5614ebdf287e70427ed8, type: 2}
-    m_conversation: {fileID: 11400000, guid: 6b7529092bc079c468497feb1d0a9c7b, type: 2}
+    m_conversation: {fileID: 11400000, guid: 0149f47382f7e6045984add32ccae4ee, type: 2}
