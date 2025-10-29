@@ -22,7 +22,15 @@ public class ConversationState : ExplorationState
 
     public override void Tick()
     {
-        if (m_player.MouseLeftDown && !m_inventory.Active)
+        if (m_inventory.Active)
+        {
+            if (m_player.MouseRightDown)
+            {
+                m_inventory.Toggle(true);
+            }
+            return;
+        }
+        if (m_player.MouseLeftDown)
         {
             if (m_conversation.ConversationFinished)
             {
@@ -33,13 +41,13 @@ public class ConversationState : ExplorationState
         }
         else if (m_player.MouseRightDown)
         {
-            m_inventory.Toggle();
+            m_inventory.Toggle(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        /*if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             m_game.ChangeState(1);
-        }
+        }*/
     }
 
     public override void Exit()

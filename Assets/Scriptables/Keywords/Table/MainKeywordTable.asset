@@ -20,6 +20,6 @@ MonoBehaviour:
   - String: Clara
     Data: {fileID: 11400000, guid: 5dd1ac6c39e3d024fa6c667d78ae99b6, type: 2}
   - String: goodness
-    Data: {fileID: 11400000, guid: 2c6a3c1f124a4e846a31aa9e96b2fb6f, type: 2}
+    Data: {fileID: 11400000, guid: d23847c4920841c41a9d0e20ea786815, type: 2}
   - String: meditate
     Data: {fileID: 11400000, guid: ea727ec056bb96f40a3622a9197931e6, type: 2}

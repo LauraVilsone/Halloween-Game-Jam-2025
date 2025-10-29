@@ -21,7 +21,7 @@ public class ExplorationState : GameState
         {
             if (m_player.MouseRightDown)
             {
-                m_inventory.Toggle();
+                m_inventory.Toggle(false);
             }
             return;
         }
@@ -31,7 +31,7 @@ public class ExplorationState : GameState
         }
         else if (m_player.MouseRightDown)
         {
-            m_inventory.Toggle();
+            m_inventory.Toggle(false);
         }
     }
 

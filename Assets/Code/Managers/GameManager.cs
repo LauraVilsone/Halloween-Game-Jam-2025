@@ -52,21 +52,47 @@ public class GameManager : MonoBehaviour
             //interactable.OnRelease += OnRelease;
         }
         Inventory.Map.OnKeywordDropped += OnKeywordDropped;
+        Inventory.Choice.OnDecisionMade += OnDecisionMade;
+    }
+
+    private void OnDecisionMade(Decision data)
+    {
+        if (m_gameState is ConversationState)
+        {
+            if (data.m_conversation == null)
+            {
+                Debug.LogWarning("No specified dialogue for choice " + data);
+                return;
+            }
+            m_conversationManager.ChangeConversation(data.m_conversation);
+            ChangeState(0);
+        }
     }
 
     private void OnKeywordDropped(KeywordData data)
     {
-        if (m_gameState is ConversationState) return;
-        if (m_inventory.SelectedKeyword != null && InteractableData != null)
+        if (m_gameState is ConversationState)
         {
-            var conversation = m_inventory.SelectedKeyword.GetConversationByInteractable(InteractableData);
-            if (conversation == null)
+            if (m_HUDManager.ChoiceBox.HoveredOver)
             {
-                Debug.LogWarning("No specified interaction between " + InteractableData.name + " and " + m_inventory.SelectedKeyword.name + "!");
-                return;
+                m_HUDManager.ChoiceBox.StartDecision(data);
             }
-            m_conversationManager.ChangeConversation(conversation);
-            ChangeState(0);
+            else
+                m_HUDManager.ChoiceBox.Empty();
+        }
+        else
+        {
+            if (m_inventory.SelectedKeyword != null && InteractableData != null)
+            {
+                var conversation = m_inventory.SelectedKeyword.GetConversationByInteractable(InteractableData);
+                if (conversation == null)
+                {
+                    Debug.LogWarning("No specified interaction between " + InteractableData.name + " and " + m_inventory.SelectedKeyword.name + "!");
+                    return;
+                }
+                m_conversationManager.ChangeConversation(conversation);
+                ChangeState(0);
+            }
         }
     }
 

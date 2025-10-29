@@ -4,6 +4,7 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public MindMap Map;
+    public ChoiceBox Choice;
 
     public bool Active => Map.Active;
 
@@ -15,8 +16,20 @@ public class InventoryManager : MonoBehaviour
         Map.Fill(keyword);
     }
 
-    public void Toggle()
+    public void Toggle(bool decisionAvailable)
     {
         Map.Toggle();
+        if (decisionAvailable)
+        {
+            if (Map.Visible)
+            {
+                Choice.Show();
+                Choice.SetStandby();
+            }
+            else
+            {
+                Choice.Empty();
+            }
+        }
     }
 }

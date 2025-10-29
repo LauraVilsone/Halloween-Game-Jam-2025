@@ -15,13 +15,13 @@ MonoBehaviour:
   m_name: Goodness
   m_decision:
   - m_name: Elara? What happened to you?!
-    m_conversation: {fileID: 0}
+    m_conversation: {fileID: 11400000, guid: b6ce2ce8fe44cc844bb44432c1a8448b, type: 2}
     m_bond: 0
   - m_name: Elara? You look... different.
-    m_conversation: {fileID: 0}
+    m_conversation: {fileID: 11400000, guid: b6ce2ce8fe44cc844bb44432c1a8448b, type: 2}
     m_bond: 1
   - m_name: 'No... [Starts beatboxing]'
-    m_conversation: {fileID: 0}
+    m_conversation: {fileID: 11400000, guid: b6ce2ce8fe44cc844bb44432c1a8448b, type: 2}
     m_bond: -1
   m_interactions:
   - m_interactable: {fileID: 11400000, guid: a2932108460e5614ebdf287e70427ed8, type: 2}

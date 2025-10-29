@@ -45,6 +45,7 @@ public class Keyword : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
         var image = m_draggingIcon.AddComponent<Image>();
         image.sprite = GetComponent<Image>().sprite;
         image.type = Image.Type.Sliced;
+        image.raycastTarget = false;
         
         MatchOther(image.rectTransform, GetComponent<Image>().rectTransform);
 
