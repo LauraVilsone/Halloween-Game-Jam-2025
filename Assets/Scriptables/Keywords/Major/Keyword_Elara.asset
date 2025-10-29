@@ -17,7 +17,7 @@ MonoBehaviour:
   - m_name: Elara? What happened to you?
     m_conversation: {fileID: 11400000, guid: f23ade5e19f20f54782cc39fc9ff2e49, type: 2}
     m_bond: 1
-  - m_name: 'No... [Starts beatboxing]'
+  - m_name: "No\u2026 [Rip your hand away from her.]"
     m_conversation: {fileID: 11400000, guid: d3029692350f3124eb35880d6ce4e426, type: 2}
     m_bond: -1
   m_interactions:

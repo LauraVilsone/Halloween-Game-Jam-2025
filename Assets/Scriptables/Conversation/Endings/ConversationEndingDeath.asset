@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f67fc775dda8636458625a97d9484562, type: 3}
+  m_Name: ConversationEndingDeath
+  m_EditorClassIdentifier: Assembly-CSharp::Conversation
+  Events:
+  - {fileID: 11400000, guid: f7a95fae451739e4bb151920307d9829, type: 2}
+  - {fileID: 11400000, guid: 02978951e99ab6644b33d03ef185f19e, type: 2}
+  - {fileID: 11400000, guid: 29b4feeead9e87c4d8a259d3d22de57f, type: 2}

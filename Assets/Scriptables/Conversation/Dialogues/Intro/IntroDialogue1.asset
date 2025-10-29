@@ -86,6 +86,7 @@ MonoBehaviour:
       hurts to speak. '
     Actor: 0
     Emotion: 0
-  - Dialogue: It's me, Elara. I brought you back.
+  - Dialogue: It's me, <link=Elara><color=green>Elara</color></link>. I brought you
+      back.
     Actor: 0
     Emotion: 0

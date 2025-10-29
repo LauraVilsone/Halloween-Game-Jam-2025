@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     private GameState m_gameState;
     [Space]
+    [SerializeField] private int m_startState = 0;
     [SerializeField] private GameState[] m_states;
 
 
@@ -40,7 +41,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        m_gameState = m_states[0];
+        m_gameState = m_states[m_startState];
         m_gameState.Enter();
         ListenToRoom();
     }

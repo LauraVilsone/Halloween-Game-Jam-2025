@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueDieForYouCareSuccess
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: "But Elara doesn\u2019t move. She looks down at the dagger in her hand,
+      then back at you."
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "...But I am not\u2026"
+    Actor: 1
+    Emotion: 0
+  - Dialogue: You watch her in confusion.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "I can\u2019t do it. I can\u2019t take your life \u2014 not even for
+      love. Not even for the hope of what we used to have. Who am I to decide what
+      you can or cannot remember?"
+    Actor: 1
+    Emotion: 0
+  - Dialogue: "The tears in Ellara\u2019s eyes began to well up."
+    Actor: 0
+    Emotion: 0
+  - Dialogue: What kind of monster would ask someone to die simply because they do
+      not reciprocate their love?!
+    Actor: 1
+    Emotion: 0
+  - Dialogue: You step closer to her, and take her warm arms in your cold hands.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Elara... I thought it was what you wanted.
+    Actor: 2
+    Emotion: 0
+  - Dialogue: "I did. I wanted it so badly I forgot who you are. Not who you were
+      to me \u2014 but who you are now."
+    Actor: 1
+    Emotion: 0
+  - Dialogue: She drops the dagger. It clatters against the stone floor, the sound
+      sharp, final. Elara hugs you and cries. For the first time since the resurrection
+      she lets herself melt into your arms.
+    Actor: 1
+    Emotion: 0

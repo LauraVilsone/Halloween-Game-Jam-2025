@@ -12,12 +12,14 @@ public class ConversationManager : MonoBehaviour
     private ConversationEvent CurrentEvent => m_currentConversation.Events[m_eventIndex];
 
     private DialogueManager m_dialogueManager;
+    private BondManager m_bondManager;
 
     public Action OnEventFinished;
 
     private void Awake()
     {
         m_dialogueManager = GetComponent<DialogueManager>();
+        m_bondManager = GetComponent<BondManager>();
     }
 
     public void ChangeConversation(Conversation conversation)
@@ -65,6 +67,19 @@ public class ConversationManager : MonoBehaviour
         {
             m_dialogueManager.Begin(dialogue);
             //CurrentEvent.Execute(this, CurrentEvent);
+        }
+        else if (CurrentEvent is BondCheck bondCheck)
+        {
+            var convo = bondCheck.RollConversation(m_bondManager.Level);
+            ChangeConversation(convo);
+            Begin();
+            return;
+        }
+        else if (CurrentEvent is BeginNextConversation beginNext)
+        {
+            ChangeConversation(beginNext.NextConversation);
+            Begin();
+            return;
         }
 
         CurrentEvent.EventFinished = false;

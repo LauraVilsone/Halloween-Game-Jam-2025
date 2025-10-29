@@ -19,7 +19,7 @@ MonoBehaviour:
     Data: {fileID: 11400000, guid: 2c6a3c1f124a4e846a31aa9e96b2fb6f, type: 2}
   - String: Clara
     Data: {fileID: 11400000, guid: 5dd1ac6c39e3d024fa6c667d78ae99b6, type: 2}
-  - String: IlovedClara
+  - String: ILovedClara
     Data: {fileID: 11400000, guid: dad978aef96a70d478c43bca42e96e91, type: 2}
   - String: Window
     Data: {fileID: 11400000, guid: 6e1b29670bdef5e43a6af763745fa61b, type: 2}
@@ -31,7 +31,7 @@ MonoBehaviour:
     Data: {fileID: 11400000, guid: d968d3a0d1d348d4683325a2fc16bbd8, type: 2}
   - String: Decision
     Data: {fileID: 11400000, guid: 0903463ad40abd74e8cf939051b599d1, type: 2}
-  - String: I'llDieForYou
+  - String: IllDieForYou
     Data: {fileID: 11400000, guid: bed4804b44e330c4da8c6288b4db8c4d, type: 2}
   - String: MoveForward
     Data: {fileID: 11400000, guid: 4231946cfc5a45f4c91e5ca5031e7965, type: 2}
