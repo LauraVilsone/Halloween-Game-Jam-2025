@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     private RoomManager m_roomManager;
     private InventoryManager m_inventory;
     private ConversationManager m_conversationManager;
+    private BondManager m_bondManager;
     private HUDManager m_HUDManager;
 
     private GameState m_gameState;
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     public RoomManager Rooms => m_roomManager;
     public InventoryManager Inventory => m_inventory;
     public ConversationManager Conversation => m_conversationManager;
+    public BondManager Bond => Bond;
     public HUDManager HUD => m_HUDManager;
 
     private void Awake()
@@ -64,6 +66,9 @@ public class GameManager : MonoBehaviour
                 Debug.LogWarning("No specified dialogue for choice " + data);
                 return;
             }
+
+            Bond.Level += data.m_bond;
+            
             m_conversationManager.ChangeConversation(data.m_conversation);
             ChangeState(0);
         }
