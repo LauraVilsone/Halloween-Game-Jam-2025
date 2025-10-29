@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   Actors:
   - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
-  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
   - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
   Line:
   - Dialogue: '- Rise, Liam!'
     Actor: 0

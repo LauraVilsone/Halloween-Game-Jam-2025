@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueElaraCare
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: Elara?
+    Actor: 2
+    Emotion: 0
+  - Dialogue: 'You repeat, looking at what you remember was a young, esteemed scholar
+      of the arcane arts. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "I\u2026 I don't understand. What happened to you? Where am I?"
+    Actor: 2
+    Emotion: 0
+  - Dialogue: 'She had begun gently to squeeze your hand, caressing it lightly with
+      her thumb, but that abruptly stops. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "Hush, it\u2019s all right, Liam. You are all right. You are back.
+      I <link=Resurrection><color=green>resurrected</color></link> you."
+    Actor: 1
+    Emotion: 0

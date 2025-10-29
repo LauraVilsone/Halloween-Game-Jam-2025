@@ -14,15 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
   m_name: Clara
   m_decision:
-  - m_name: Elara? What happened to you?!
-    m_conversation: {fileID: 0}
+  - m_name: "The last thing I remember\u2026 I was with\u2026 Clara."
+    m_conversation: {fileID: 11400000, guid: 724c8abd2a850484caa2b45e4669d3f7, type: 2}
     m_bond: 0
-  - m_name: Elara? You look... different.
-    m_conversation: {fileID: 0}
+  - m_name: I remember you, saving my life, helping my beloved Clara.
+    m_conversation: {fileID: 11400000, guid: 724c8abd2a850484caa2b45e4669d3f7, type: 2}
     m_bond: 1
-  - m_name: 'No... [Starts beatboxing]'
-    m_conversation: {fileID: 0}
+  - m_name: "Clara! My betrothed\u2026 Where is she?!"
+    m_conversation: {fileID: 11400000, guid: 724c8abd2a850484caa2b45e4669d3f7, type: 2}
     m_bond: -1
-  m_interactions:
-  - m_interactable: {fileID: 11400000, guid: a2932108460e5614ebdf287e70427ed8, type: 2}
-    m_conversation: {fileID: 11400000, guid: 6b7529092bc079c468497feb1d0a9c7b, type: 2}
+  m_interactions: []

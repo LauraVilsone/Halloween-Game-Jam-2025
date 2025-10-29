@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueDecisionWorry
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: You are mad!
+    Actor: 2
+    Emotion: 3
+  - Dialogue: Elara looks mortified.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "All this. I don\u2019t know what we had before. But what I see now
+      before me is a necromancer and a madwoman toying with people\u2019s lives as
+      she sees fit!"
+    Actor: 2
+    Emotion: 0
+  - Dialogue: Elara cannot get a word over her lips. She is just staring at you,
+      unmoving.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: We are not lovers, and maybe we never were. Honestly now I don't even
+      know what I am! I struggle to eat. I struggle to sleep. My skin looks like
+      that of a dead man, not a living one.
+    Actor: 2
+    Emotion: 0
+  - Dialogue: Elara collapses at your feet, tears streaming down her face.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Let me redo the ritual. Let me bring you back whole!
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Leave me be, you <link=Necromancer><color=green>necromancer</color></link>!
+    Actor: 0
+    Emotion: 0

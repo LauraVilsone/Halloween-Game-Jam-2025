@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueVillageEnd
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: "I need to know.. I need to know if Clara is\u2026 if she\u2019s waiting
+      for me."
+    Actor: 2
+    Emotion: 0
+  - Dialogue: She's not.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Elara speaks, her voice flat.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "She married someone else, a few years after you\u2026 passed. He\u2019s
+      a blacksmith. They have two children. "
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Oh, I see.
+    Actor: 2
+    Emotion: 0
+  - Dialogue: You look away, gaze fixed on the horizon.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Elara can see the pain in your eyes, the heartbreak of realizing that
+      the life you remember is gone, replaced by something else, something unfamiliar.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: What will you do now?
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Elara asks, her voice filled with a mixture of dread and anticipation.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: You turn your back to her.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "I don\u2019t know, but I know I can\u2019t live in the past. I need
+      to find <link=MyOwnFuture><color=green>my own future</color></link>, my own
+      purpose."
+    Actor: 2
+    Emotion: 0

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueMyOwnFutureEnd
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: One evening, as you sit by the fire, you turn to Elara, expression
+      serious.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: I've been thinking. About what <link=IOweYou><color=green>I owe you</color></link>.
+    Actor: 2
+    Emotion: 0
+  - Dialogue: Elara frowns.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: You don't owe me anything, Liam.
+    Actor: 1
+    Emotion: 2

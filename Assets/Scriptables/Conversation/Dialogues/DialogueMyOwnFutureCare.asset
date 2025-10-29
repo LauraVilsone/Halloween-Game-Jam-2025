@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueMyOwnFutureCare
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: Elara stares at you, her heart pounding in her chest.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "I don\u2019t want you to stay out of pity, Liam."
+    Actor: 1
+    Emotion: 0
+  - Dialogue: She says, her voice trembling.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: I want you to stay because you want to be here.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: You reach out and take her hand, touching reassuringly.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "I don\u2019t know if I love you, Elara."
+    Actor: 2
+    Emotion: 0
+  - Dialogue: You speak honestly.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "Not the way you remember, anyway. But I\u2019m drawn to you. I\u2019m
+      fascinated by you. I feel\u2026 a connection, something I can\u2019t explain.
+      And I want to explore that connection. I want to see where it leads."
+    Actor: 2
+    Emotion: 0
+  - Dialogue: "Elara\u2019s eyes fills with tears."
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Okay.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: She whispers, her voice choked with emotion.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Okay, Liam. Stay. Explore with me.
+    Actor: 1
+    Emotion: 0

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueDieForYouWorry
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: Elara, what are we doing? This is madness.
+    Actor: 2
+    Emotion: 0
+  - Dialogue: Elara stares at you unblinking.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'Look at us: a necromancer and her revenant, toying with life and death
+      as they see fit.'
+    Actor: 2
+    Emotion: 0
+  - Dialogue: You grab the knife out of her hand before she has time to react, then
+      cut yourself. Thick, black blood leaks from the fresh wound.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Liam!
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Elara rushes up to you, healing the cut. You can see that her hands
+      are even more wizened after the act.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'Think Elara, think! What you had to do to get those ingredients for
+      this ritual. And stabbing the man you claim to love. What kind of beloved would
+      do that? '
+    Actor: 2
+    Emotion: 0
+  - Dialogue: "Liam\u2026 Stop."
+    Actor: 1
+    Emotion: 0
+  - Dialogue: "No, for your sake and for mine. I won\u2019t. We are monsters, but
+      we don\u2019t have to be. We also have a choice. You have a choice."
+    Actor: 1
+    Emotion: 0

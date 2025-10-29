@@ -15,11 +15,25 @@ MonoBehaviour:
   m_references:
   - String: Elara
     Data: {fileID: 11400000, guid: a9a45de0a336c9540a1842fb4868b975, type: 2}
-  - String: resurrection
+  - String: Resurrection
     Data: {fileID: 11400000, guid: 2c6a3c1f124a4e846a31aa9e96b2fb6f, type: 2}
   - String: Clara
     Data: {fileID: 11400000, guid: 5dd1ac6c39e3d024fa6c667d78ae99b6, type: 2}
-  - String: goodness
-    Data: {fileID: 11400000, guid: d23847c4920841c41a9d0e20ea786815, type: 2}
-  - String: meditate
-    Data: {fileID: 11400000, guid: ea727ec056bb96f40a3622a9197931e6, type: 2}
+  - String: IlovedClara
+    Data: {fileID: 11400000, guid: dad978aef96a70d478c43bca42e96e91, type: 2}
+  - String: Window
+    Data: {fileID: 11400000, guid: 6e1b29670bdef5e43a6af763745fa61b, type: 2}
+  - String: Village
+    Data: {fileID: 11400000, guid: 432009b011458ef4eb4eb8a43f1c6b04, type: 2}
+  - String: MyOwnFuture
+    Data: {fileID: 11400000, guid: 4c9090d23ec8cac42873684e27f2739d, type: 2}
+  - String: IOweYou
+    Data: {fileID: 11400000, guid: d968d3a0d1d348d4683325a2fc16bbd8, type: 2}
+  - String: Decision
+    Data: {fileID: 11400000, guid: 0903463ad40abd74e8cf939051b599d1, type: 2}
+  - String: I'llDieForYou
+    Data: {fileID: 11400000, guid: bed4804b44e330c4da8c6288b4db8c4d, type: 2}
+  - String: MoveForward
+    Data: {fileID: 11400000, guid: 4231946cfc5a45f4c91e5ca5031e7965, type: 2}
+  - String: Necromancer
+    Data: {fileID: 11400000, guid: ed6d0670d87b60e4ab1bd0e4034acf8c, type: 2}

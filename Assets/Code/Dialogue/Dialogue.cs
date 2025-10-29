@@ -4,10 +4,11 @@ using UnityEngine;
 public class Line
 {
     public string Dialogue;
-    public int Actor;
+    public Actors Actor;
     public Emotions Emotion;
 }
 
+public enum Actors { Narrator, Elara, Liam }
 public enum Emotions { Neutral, Happy, Sad, Angry, Pensive, Depresso }
 
 [CreateAssetMenu(fileName = "Dialogue", menuName = "Scriptables/Dialogue", order = 1)]

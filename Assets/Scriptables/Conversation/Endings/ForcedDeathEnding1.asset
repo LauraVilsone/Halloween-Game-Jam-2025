@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: ForcedDeathEnding1
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: Elara stays quiet for a long time. Then speaks so softly you can barely
+      hear.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: I have become a monster.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: What?
+    Actor: 2
+    Emotion: 0
+  - Dialogue: She collects herself and speaks with calmness that sends shivers down
+      your spine.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: In chasing the beauty we had, I have blackened my soul. I gave up everything.
+      If you also leave, I have nothing else to lose.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: You look deep into her eyes, hoping to glean some indication of what
+      is happening in her thoughts.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: "I have been acting like a monster. To protect the last good thing
+      I have left\u2026 So\u2026 Let me be a monster."
+    Actor: 1
+    Emotion: 0
+  - Dialogue: With a sudden move she pulls a dagger out of her cloak, and before
+      you can react, she plunges it into your heart. You collapse on the floor.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: As your thick, black blood ebbs away forming a lake on the cold stone
+      floor, Elara sits next to you, cradling your head in her lap.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: As your thick, black blood ebbs away forming a lake on the cold stone
+      floor, Elara sits next to you, cradling your head in her lap.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: "Soon love, soon\u2026"
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Your vision goes dark.
+    Actor: 0
+    Emotion: 0

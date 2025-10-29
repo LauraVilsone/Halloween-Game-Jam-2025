@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f67fc775dda8636458625a97d9484562, type: 3}
+  m_Name: DiscussionDecisionCareMore
+  m_EditorClassIdentifier: Assembly-CSharp::Conversation
+  Events:
+  - {fileID: 11400000, guid: 2860f78053df3074a8baf2ff3d4fe5e2, type: 2}
+  - {fileID: 11400000, guid: c3ce898db3adb0c4d88d29726716fe6b, type: 2}

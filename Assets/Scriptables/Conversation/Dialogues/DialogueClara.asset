@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueClara
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: 'An ache of loss forms in your chest. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: You remember the herbalist from the village.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Her deep green eyes glistened as she laughed.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Her hands so soft, as she holds yours.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: She urges you to look away while trying on her wedding veil.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: You remember the pride that you felt knowing she will be yours.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Elara stares at you unblinking. Her gray visage somehow even more colorless.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Clara?
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Elara repeats, her voice barely a whisper.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: You nod, brow still creased in confusion.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: You nod, brow still creased in confusion.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "Yes, Clara. We were\u2026 we were going to get married. I remember
+      planning the ceremony, choosing the flowers\u2026"
+    Actor: 2
+    Emotion: 0
+  - Dialogue: You trail off, gaze lost in a distant memory.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: <link=ILovedClara><color=green>I loved Clara.</color></link>
+    Actor: 2
+    Emotion: 0
+  - Dialogue: No.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Elara finally speaks, her voice rising in desperation.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: "You\u2019re confused. It was me, Liam. It was always me."
+    Actor: 1
+    Emotion: 0

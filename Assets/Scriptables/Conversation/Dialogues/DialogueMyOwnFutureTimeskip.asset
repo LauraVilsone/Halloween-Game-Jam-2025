@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueMyOwnFutureTimeskip
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: 'Your lives settle into a new rhythm. You help Elara around the tower,
+      tending to the garden, assisting with her experiments, even learning some basic
+      spells. You are a quick learner, and Elara seems to be enjoying your company,
+      your curiosity. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: You are still strangers, in many ways, but, in a way, you are also
+      becoming familiar. Elara is weaving herself into the fabric of your new life,
+      creating new memories, forging a new connection.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "But the past still lingers, a constant shadow between you. You still
+      have flashes of memories of Clara, moments that would trigger you, leaving
+      you distant and withdrawn. And Elara, despite her best efforts, can\u2019t
+      entirely shake the resentment, the bitterness of knowing that she had brought
+      you back, only to share you with the ghost of another woman."
+    Actor: 0
+    Emotion: 0

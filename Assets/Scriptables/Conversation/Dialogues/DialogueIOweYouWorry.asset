@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueIOweYouWorry
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: "Yes\u2026"
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Her words confirm what you say, but her face seems to disagree.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "I did it because I loved you. I didn't expect anything in return.
+      If anything, I owe you. For taking so long to do the ritual, letting so much
+      time pass. And for botching it\u2026 Liam, I\u2019m sorry!"
+    Actor: 1
+    Emotion: 0
+  - Dialogue: She is unable to look into your eyes.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "But\u2026 "
+    Actor: 1
+    Emotion: 0
+  - Dialogue: She suddenly looks back at you, new determination surging through her.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: I can repay my debt! I can fix this! All the wrongs done to you.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: How?
+    Actor: 2
+    Emotion: 0
+  - Dialogue: "I can redo the ritual! If you offer me back your life force willingly
+      I can\u2026"
+    Actor: 2
+    Emotion: 0
+  - Dialogue: You want me to die?! Again?!
+    Actor: 2
+    Emotion: 0

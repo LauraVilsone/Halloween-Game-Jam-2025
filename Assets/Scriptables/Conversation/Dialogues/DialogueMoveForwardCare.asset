@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueMoveForwardCare
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: Just listen to me!
+    Actor: 2
+    Emotion: 0
+  - Dialogue: It comes out harshly. Elara looks at you mortified. You repeat.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "There is nothing to fix. I don\u2019t know what we had, but we can
+      have nothing new until we stop chasing the ghosts of the past."
+    Actor: 2
+    Emotion: 0
+  - Dialogue: "Liam, I\u2019m sorry."
+    Actor: 1
+    Emotion: 0
+  - Dialogue: There is nothing to be sorry for. Just forgive. Forgive yourself. And
+      let me go.
+    Actor: 2
+    Emotion: 0

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueIOweYouEnd
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: I know how it sounds!
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Elara speaks quickly.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "But, please, listen. The spell I used to bring you back\u2026 something
+      went wrong. It drained a part of my life force, leaving me weakened, vulnerable
+      and gave false memories to you. I need to replenish that life force, bring
+      you back again with your true memories, and the only way to do that is through
+      a sacrifice."
+    Actor: 1
+    Emotion: 0
+  - Dialogue: She hesites, then adds.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: I don't want to kill you, Liam. But if you were to die willingly, offering
+      your life force to me, it would complete the spell, it would heal me, and it
+      would finally sever the connection to Clara. You would be truly mine, and I
+      would be truly yours.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: "You are silent, mind reeling from her request. You had been prepared
+      to offer her anything, but this\u2026 this was beyond anything you could have
+      imagined.\r\nTo die, again, for a woman who claimed to love you, but who had
+      also resurrected you against his will, only to trap you in a life that was
+      not entirely your own."
+    Actor: 0
+    Emotion: 0

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1a281632cbaf246b74d9da4a6b0c2c, type: 3}
+  m_Name: Keyword_Village
+  m_EditorClassIdentifier: Assembly-CSharp::KeywordData
+  m_name: Village
+  m_decision:
+  - m_name: I need to go back to the village.
+    m_conversation: {fileID: 11400000, guid: d984ffc76ebfbf14c9ac09efd955cd1e, type: 2}
+    m_bond: 1
+  - m_name: I must see what happened to Clara!
+    m_conversation: {fileID: 11400000, guid: bd3e21521b8bd6b4e92be5ee2afe2ec7, type: 2}
+    m_bond: -1
+  m_interactions: []

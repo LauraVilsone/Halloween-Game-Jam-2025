@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueIOweYouNeutral
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: You brought me back from the dead. You gave me a second chance at life.
+    Actor: 2
+    Emotion: 0
+  - Dialogue: I did it because I loved you.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Elara says quietly.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: I didn't expect anything in return.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: I know. But I can't shake the feeling that I need to repay you somehow.
+    Actor: 2
+    Emotion: 0
+  - Dialogue: Elara is silent for a moment. Until she finally speaks.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "I told you: you don\u2019t owe me anything, but there is something.
+      Something that would mean more to me than anything else. And something that
+      could fix all the wrong that has been done to you."
+    Actor: 1
+    Emotion: 0
+  - Dialogue: What is it?
+    Actor: 2
+    Emotion: 0
+  - Dialogue: Elara takes a deep breath.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: We can redo the ritual.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: What do you mean?
+    Actor: 2
+    Emotion: 0
+  - Dialogue: "I\u2026 take your life and bring you back. Correctly this time."
+    Actor: 1
+    Emotion: 0
+  - Dialogue: You stare at her, face pale in the firelight.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: What?! You want to kill me?!
+    Actor: 2
+    Emotion: 0

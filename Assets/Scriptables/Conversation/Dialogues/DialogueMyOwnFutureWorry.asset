@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueMyOwnFutureWorry
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: "Elara\u2019s face is stone, her breath stops. She just stares at you
+      unmoving for a good while."
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Sensing the uncomfortable stillness, you begin to speak, but suddenly
+      Elara cuts you off.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "I understand, the magic\u2026 Gods, this must be horrible for you.
+      To be returned like this! Liam, I\u2019m sorry!"
+    Actor: 1
+    Emotion: 0
+  - Dialogue: "I\u2026"
+    Actor: 2
+    Emotion: 0
+  - Dialogue: But worry not. I promise you I will fix you!
+    Actor: 1
+    Emotion: 0
+  - Dialogue: "I don\u2019t know\u2026"
+    Actor: 2
+    Emotion: 0
+  - Dialogue: Liam..
+    Actor: 1
+    Emotion: 0
+  - Dialogue: She steps closer to you, taking your hand into hers gently.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "Stay a bit longer. Until you figure it out. I won\u2019t let you down,
+      I promise."
+    Actor: 1
+    Emotion: 0

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueIOweYouTimeskip
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: "You spend the next few days contemplating Elara\u2019s impossible
+      request, weighing the morality of it all, the implications for your own existence.
+      Is it worth sacrificing your newfound life, however fractured, for a woman
+      who was both your savior and your captor?"
+    Actor: 0
+    Emotion: 0
+  - Dialogue: You speak with Elara rarely during this time, needing the space to
+      come to a decision. You watch her from afar, observing her dedication to her
+      craft, her quiet strength, her undeniable loneliness. You see the flicker of
+      hope that had rekindled in her eyes since you had agreed to consider her request.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Finally, you make your <link=Decision><color=green>decision</color></link>.
+    Actor: 0
+    Emotion: 0

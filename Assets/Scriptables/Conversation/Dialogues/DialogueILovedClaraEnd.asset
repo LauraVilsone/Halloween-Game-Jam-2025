@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DialogueILovedClaraEnd
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: "The magic\u2026 it must have affected your memory. You loved me, Liam.
+      I know you did."
+    Actor: 1
+    Emotion: 0
+  - Dialogue: You shake your head.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "I wish I could tell you what you want to hear, Elara. But I don\u2019t.
+      I don\u2019t remember loving you."
+    Actor: 2
+    Emotion: 0
+  - Dialogue: Elara freezes again.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Finally barely audible words leave her lips.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "Like a bone orchid\u2026"
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Elara turns away, unable to bear the sight of your confused, pitying
+      gaze.  She walks towards the <link=Window><color=green>window</color></link>,
+      her back to you, staring out at the moonlit landscape.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: What will we do now?
+    Actor: 2
+    Emotion: 0
+  - Dialogue: "Elara doesn\u2019t answer right away."
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "I\u2026 I need time to think."
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Silence again.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: "You can stay here, for now. Follow me, there\u2019s a room prepared
+      for you. She turns back to you, her face composed. "
+    Actor: 1
+    Emotion: 0
+  - Dialogue: You rise to his feet, movements still unsteady, pale skin glowing eerily
+      in the moonlight.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: You look around the chamber again, your expression a mixture of fascination
+      and unease.
+    Actor: 0
+    Emotion: 0

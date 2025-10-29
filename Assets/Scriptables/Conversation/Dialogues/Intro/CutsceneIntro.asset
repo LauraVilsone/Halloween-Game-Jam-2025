@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: CutsceneIntro
   m_EditorClassIdentifier: Assembly-CSharp::Cutscene
   Events:
-  - {fileID: 11400000, guid: 2adde627de945fc47a7c8365f6a31be7, type: 2}
+  - {fileID: 11400000, guid: 80672d2c2be74074eb0e04808db14514, type: 2}
