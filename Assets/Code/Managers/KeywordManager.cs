@@ -21,17 +21,19 @@ public class KeywordManager : MonoBehaviour
         m_referenceTable.BuildTable();
     }
 
-    public void OnKeywordGain(string linkID)
+    public bool OnKeywordGain(string linkID)
     {
         if (m_referenceTable.Table.ContainsKey(linkID))
         {
             var keyword = m_referenceTable.Table[linkID];
 
             if (m_collectedKeywords.Contains(keyword))
-                return;
+                return false;
 
             m_collectedKeywords.Add(keyword);
             m_inventoryManager.AddKeyword(keyword);
+            return true;
         }
+        return false;
     }
 }

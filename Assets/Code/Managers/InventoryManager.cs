@@ -19,7 +19,7 @@ public class InventoryManager : MonoBehaviour
     public void Toggle(bool decisionAvailable)
     {
         Map.Toggle();
-        return;
+        /*return;
         if (decisionAvailable)
         {
             if (Map.Visible)
@@ -31,6 +31,6 @@ public class InventoryManager : MonoBehaviour
             {
                 Choice.Empty();
             }
-        }
+        }*/
     }
 }

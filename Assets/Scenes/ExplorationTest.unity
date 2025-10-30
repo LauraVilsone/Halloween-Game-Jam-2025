@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e1d5cd405c569e40abc8aa653cae3f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConversationManager
-  m_currentConversation: {fileID: 11400000, guid: 69a404f488198f041ad3d357b7642242, type: 2}
+  m_currentConversation: {fileID: 11400000, guid: ce00b891ea5e1874692e0b5b4f3f9f07, type: 2}
 --- !u!114 &621079305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1160,6 +1160,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4661030785777080160, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861361912518973076, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861361912518973076, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861361912518973076, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861361912518973076, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5173142449111035342, guid: 624c194b723e37a4081c874f5c27f038, type: 3}

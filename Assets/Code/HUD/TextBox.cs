@@ -9,6 +9,8 @@ public class TextBox : UIGroup
     [SerializeField] private TextMeshProUGUI m_text;
     [SerializeField] private TextMeshProUGUI m_name;
 
+    public string Text => m_text.text;
+
     public override void Show()
     {
         base.Show();

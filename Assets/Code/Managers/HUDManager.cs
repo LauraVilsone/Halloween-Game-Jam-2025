@@ -6,6 +6,7 @@ public class HUDManager : MonoBehaviour
     public TextBox Box;
     public MindMap MindMap;
     public ChoiceBox ChoiceBox;
+    public KeywordFlash Flash;
 
     private void Awake()
     {
@@ -43,4 +44,9 @@ public class HUDManager : MonoBehaviour
         ChoiceBox.Empty();
     }
 
+
+    public void OnKeywordGain(Vector3 position, string keyword)
+    {
+        Flash.Flash(position, keyword);
+    }
 }

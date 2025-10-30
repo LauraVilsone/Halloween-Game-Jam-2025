@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour
     public bool ConversationFinished => LinesFinished && !IsTyping;
     public bool LinesFinished { get; set; }
     public bool IsTyping { get; set; }
-
+    public bool SkipTyping { get; set; }
     private Coroutine m_typingCoroutine;
 
     private void Awake()
@@ -64,7 +64,8 @@ public class DialogueManager : MonoBehaviour
     private void CompleteTyping()
     {
         HUD.Box.Fill(m_currentDialogue.CurrentLine.Dialogue);
-        IsTyping = false;
+        //IsTyping = false;
+        SkipTyping = true;
     }
 
     private Emotions m_emotion;
@@ -78,6 +79,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         HUD.Box.Name(m_currentDialogue.CurrentLine.Actor);
+        m_typedText = m_currentDialogue.CurrentLine.Dialogue;
 
         m_actor = m_currentDialogue.CurrentLine.Actor;
         if (m_actor == Actors.Elara)
@@ -102,55 +104,97 @@ public class DialogueManager : MonoBehaviour
         m_typingCoroutine = StartCoroutine(Typing());
     }
 
+    private string m_typedText;
+    private int m_stringIndex = -1;
+    private StringBuilder m_stringBuilder;
     public IEnumerator Typing()
     {
         IsTyping = true;
+        SkipTyping = false;
 
         string line = "";
-        int stringLength = m_currentDialogue.CurrentLine.Dialogue.Length;
-        int stringIndex = -1;
+        int stringLength = m_typedText.Length;
+        m_stringIndex = -1;
 
         float typingDelay = m_typingDelaySeconds;
 
-        StringBuilder stringBuilder = new StringBuilder(line, 200);
+        m_stringBuilder = new StringBuilder(line, 200);
 
         while (IsTyping)
         {
-            HUD.Box.Fill(stringBuilder.ToString());
+            HUD.Box.Fill(m_stringBuilder.ToString());
 
-            if (stringIndex < stringLength - 1)
+            if (m_stringIndex < stringLength - 1)
             {
-                stringIndex++;
-                var character = m_currentDialogue.CurrentLine.Dialogue[stringIndex];
+                m_stringIndex++;
+                var character = m_typedText[m_stringIndex];
                 if (character == '<')
                 {
                     bool skip = true;
                     while (skip)
                     {
-                        stringBuilder.Append(m_currentDialogue.CurrentLine.Dialogue[stringIndex]);
+                        m_stringBuilder.Append(m_typedText[m_stringIndex]);
                         if (character == '>')
                             skip = false;
                         else
                         {
-                            stringIndex++;
-                            character = m_currentDialogue.CurrentLine.Dialogue[stringIndex];
+                            m_stringIndex++;
+                            character = m_typedText[m_stringIndex];
                         }
                     }
                 }
                 else
                 {
-                    stringBuilder.Append(m_currentDialogue.CurrentLine.Dialogue[stringIndex]);
+                    m_stringBuilder.Append(m_typedText[m_stringIndex]);
                 }
-                yield return new WaitForSeconds(typingDelay);
+                if (!SkipTyping)
+                    yield return new WaitForSeconds(typingDelay);
             }
             else
             {
                 IsTyping = false;
             }
 
-            yield return null;
+            if (!SkipTyping)
+                yield return null;
         }
 
         OnFinishedTyping();
+    }
+
+    public void RewriteWithoutTags()
+    {
+        string text = m_stringBuilder.ToString();
+        int stringLength = text.Length;
+        int stringIndex = -1;
+        StringBuilder stringBuilder = new StringBuilder("", 200);
+
+        while (stringIndex < stringLength - 1)
+        {
+            stringIndex++;
+            var character = text[stringIndex];
+            if (character == '<')
+            {
+                bool skip = true;
+                while (skip)
+                {
+                    if (character == '>' || stringIndex >= stringLength - 1)
+                        skip = false;
+                    else
+                    {
+                        stringIndex++;
+                        character = text[stringIndex];
+                    }
+                }
+            }
+            else
+            {
+                stringBuilder.Append(text[stringIndex]);
+            }
+        }
+
+        HUD.Box.Fill(stringBuilder.ToString());
+        m_stringBuilder.Clear();
+        m_stringBuilder.Append(stringBuilder.ToString());
     }
 }
