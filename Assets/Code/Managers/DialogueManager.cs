@@ -72,6 +72,9 @@ public class DialogueManager : MonoBehaviour
             StopCoroutine(m_typingCoroutine);
             m_typingCoroutine = null;
         }
+
+        HUD.Box.Name(m_currentDialogue.CurrentLine.Actor);
+
         m_typingCoroutine = StartCoroutine(Typing());
     }
 
