@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Conversation
   SkipChoices: 0
   Events:
-  - {fileID: 11400000, guid: 37eb4520b68653c48b66ffd747a56e51, type: 2}
+  - {fileID: 11400000, guid: 9a6aea402c031e54a990b9ae617d33bf, type: 2}

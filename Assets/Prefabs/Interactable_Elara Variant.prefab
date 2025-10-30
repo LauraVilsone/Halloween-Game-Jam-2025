@@ -108,7 +108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1438696697237574068, guid: 0b852af1b91e8634096b577669cb7bb5, type: 3}
       propertyPath: ReactToKeywords
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3620984822483272529, guid: 0b852af1b91e8634096b577669cb7bb5, type: 3}
       propertyPath: m_Name

@@ -84,7 +84,17 @@ public class DialogueManager : MonoBehaviour
         {
             m_emotion = m_currentDialogue.CurrentLine.Emotion;
 
-            var actor = m_currentDialogue.Actors[(int)m_actor];
+            Actor actor = null;
+            foreach (var act in m_currentDialogue.Actors)
+            {
+                if (act.Name == m_actor.ToString())
+                {
+                    actor = act;
+                    break;
+                }
+            }
+
+            //var actor = m_currentDialogue.Actors[(int)m_actor];
             var emotion = actor.GetEmotion(m_currentDialogue.CurrentLine.Emotion);
             m_portrait.ChangePortrait(emotion);
         }

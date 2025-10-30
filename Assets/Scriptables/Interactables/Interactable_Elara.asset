@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c262f21a31c5e54082acdb34c93f0d2, type: 3}
   m_Name: Interactable_Elara
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
-  Remark: {fileID: 11400000, guid: 6b7529092bc079c468497feb1d0a9c7b, type: 2}
+  Remark: {fileID: 11400000, guid: c678270817bd7804591e8208eb644071, type: 2}
