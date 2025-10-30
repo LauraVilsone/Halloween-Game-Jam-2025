@@ -8,9 +8,12 @@ public class ConversationManager : MonoBehaviour
     private int m_eventIndex;
 
     public bool ConversationFinished { get; set; }
+    public bool OnFinalEvent => m_eventIndex >= m_currentConversation.Events.Length - 1;
+    public bool SkipChoices => m_currentConversation.SkipChoices;
 
     private ConversationEvent CurrentEvent => m_currentConversation.Events[m_eventIndex];
 
+    private HUDManager m_hudManager;
     private DialogueManager m_dialogueManager;
     private BondManager m_bondManager;
     private IllustrationManager m_illustrationManager;
@@ -20,7 +23,12 @@ public class ConversationManager : MonoBehaviour
     private void Awake()
     {
         m_dialogueManager = GetComponent<DialogueManager>();
+        
         m_bondManager = GetComponent<BondManager>();
+
+        m_hudManager = FindFirstObjectByType<HUDManager>();
+        OnEventFinished += m_hudManager.ShowChoiceBox;
+
         m_illustrationManager = FindFirstObjectByType<IllustrationManager>();
         m_illustrationManager.OnAnimationFinished += OnIllustrationChangeFinished;
     }
@@ -44,8 +52,23 @@ public class ConversationManager : MonoBehaviour
             {
                 if (m_dialogueManager.ConversationFinished)
                 {
-                    m_dialogueManager.End();
-                    EventFinished();
+                    if (!OnFinalEvent)
+                    {
+                        m_dialogueManager.End();
+                        EventFinished();
+                    }
+                    else
+                    {
+                        if (m_currentConversation.SkipChoices)
+                        {
+                            m_dialogueManager.End();
+                            EventFinished();
+                        }
+                        else
+                        {
+                            OnEventFinished?.Invoke();
+                        }
+                    }
                 }
                 else
                     m_dialogueManager.Proceed();
@@ -53,10 +76,21 @@ public class ConversationManager : MonoBehaviour
         }
     }
 
+    public void ManualConversationFinish()
+    {
+        if (m_dialogueManager.ConversationFinished)
+        {
+            m_dialogueManager.End();
+            EventFinished();
+
+            m_hudManager.HideChoiceBox();
+        }
+    }
+
     public void EventFinished()
     {
         CurrentEvent.EventFinished = true;
-        if (m_eventIndex >= m_currentConversation.Events.Length - 1)
+        if (OnFinalEvent)
         {
             ConversationFinished = true;
             return;

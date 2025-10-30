@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67fc775dda8636458625a97d9484562, type: 3}
   m_Name: ConversationEndingRelease
   m_EditorClassIdentifier: Assembly-CSharp::Conversation
+  SkipChoices: 1
   Events:
   - {fileID: 11400000, guid: 0e4a98a6fa069fd40b0ef5d096377cb5, type: 2}
   - {fileID: 11400000, guid: 36d35eedff5be474da9b007af289017c, type: 2}

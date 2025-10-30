@@ -19,6 +19,7 @@ public class InventoryManager : MonoBehaviour
     public void Toggle(bool decisionAvailable)
     {
         Map.Toggle();
+        return;
         if (decisionAvailable)
         {
             if (Map.Visible)

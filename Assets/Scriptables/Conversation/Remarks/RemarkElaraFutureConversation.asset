@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67fc775dda8636458625a97d9484562, type: 3}
   m_Name: RemarkElaraFutureConversation
   m_EditorClassIdentifier: Assembly-CSharp::Conversation
+  SkipChoices: 1
   Events:
   - {fileID: 11400000, guid: af18cb7522747a7409cc6ad73290a76e, type: 2}

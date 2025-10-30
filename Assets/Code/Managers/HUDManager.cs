@@ -29,6 +29,18 @@ public class HUDManager : MonoBehaviour
     private enum HUDState { TextBox, MindMap, ChoiceBox }
     private HUDState m_state;
 
+    public void ShowChoiceBox()
+    {
+        if (!ChoiceBox.On)
+        {
+            ChoiceBox.Show();
+            ChoiceBox.SetStandby();
+        }
+    }
 
+    public void HideChoiceBox()
+    {
+        ChoiceBox.Empty();
+    }
 
 }

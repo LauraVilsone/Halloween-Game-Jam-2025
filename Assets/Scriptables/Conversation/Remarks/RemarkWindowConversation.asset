@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67fc775dda8636458625a97d9484562, type: 3}
   m_Name: RemarkWindowConversation
   m_EditorClassIdentifier: Assembly-CSharp::Conversation
+  SkipChoices: 1
   Events:
   - {fileID: 11400000, guid: 52554518226ccd94dab41d564f712ea7, type: 2}

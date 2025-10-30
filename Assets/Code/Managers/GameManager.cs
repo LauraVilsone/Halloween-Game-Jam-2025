@@ -84,8 +84,8 @@ public class GameManager : MonoBehaviour
             {
                 m_HUDManager.ChoiceBox.StartDecision(data);
             }
-            else
-                m_HUDManager.ChoiceBox.Empty();
+            //else
+            //    m_HUDManager.ChoiceBox.Empty();
         }
         else
         {

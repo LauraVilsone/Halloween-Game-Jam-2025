@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67fc775dda8636458625a97d9484562, type: 3}
   m_Name: CutsceneIntro
   m_EditorClassIdentifier: Assembly-CSharp::Cutscene
+  SkipChoices: 0
   Events:
   - {fileID: 11400000, guid: f4460acc127dde547959e979e5ed9be6, type: 2}
   - {fileID: 11400000, guid: 80672d2c2be74074eb0e04808db14514, type: 2}

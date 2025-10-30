@@ -10,14 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
-  m_Name: Remark
+  m_Name: ApproachElara
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   Actors:
-  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
   Line:
-  - Dialogue: This could almost be regarded as interesting...
-    Actor: 0
-    Emotion: 0
-  - Dialogue: But I don't have time.
-    Actor: 0
+  - Dialogue: Yes, Liam?
+    Actor: 1
     Emotion: 0

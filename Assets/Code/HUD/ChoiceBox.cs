@@ -90,4 +90,18 @@ public class ChoiceBox : UIGroup, IPointerEnterHandler, IPointerExitHandler
     {
         HoveredOver = false;
     }
+
+
+    public bool On = false;
+    public override void Show()
+    {
+        base.Show();
+        On = true;
+    }
+
+    public override void Empty()
+    {
+        base.Empty();
+        On = false;
+    }
 }

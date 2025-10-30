@@ -39,7 +39,7 @@ public class ConversationState : ExplorationState
             else
                 m_conversation.Proceed();
         }
-        else if (m_player.MouseRightDown)
+        else if (m_player.MouseRightDown && (m_conversation.OnFinalEvent && !m_conversation.SkipChoices && m_dialogue.ConversationFinished))
         {
             m_inventory.Toggle(true);
         }
