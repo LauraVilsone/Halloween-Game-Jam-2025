@@ -18,13 +18,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
   Line:
   - Dialogue: Rise, Liam!
-    Actor: 0
+    Actor: 1
     Emotion: 0
   - Dialogue: A woman's voice silently cuts through nothingness.
     Actor: 0
     Emotion: 0
   - Dialogue: 'Come back to me. '
-    Actor: 0
+    Actor: 1
     Emotion: 0
   - Dialogue: 'Her voice is raspy from disuse. '
     Actor: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
     Actor: 0
     Emotion: 0
   - Dialogue: Aaah!
-    Actor: 0
+    Actor: 2
     Emotion: 0
   - Dialogue: You breathe in.
     Actor: 0

@@ -6,6 +6,9 @@ using UnityEngine;
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private Dialogue m_currentDialogue;
+    [SerializeField] private float m_typingDelaySeconds = .125f;
+    [Space]
+    [SerializeField] private Portrait m_portrait;
 
     private HUDManager HUD;
 
@@ -15,11 +18,10 @@ public class DialogueManager : MonoBehaviour
 
     private Coroutine m_typingCoroutine;
 
-    [SerializeField] private float m_typingDelaySeconds = .125f;
-
     private void Awake()
     {
         HUD = FindFirstObjectByType<HUDManager>();
+        m_portrait = FindFirstObjectByType<Portrait>();
     }
 
     public void Begin(Dialogue dialogue)
@@ -65,6 +67,8 @@ public class DialogueManager : MonoBehaviour
         IsTyping = false;
     }
 
+    private Emotions m_emotion;
+    private Actors m_actor;
     private void StartTyping()
     {
         if (m_typingCoroutine != null)
@@ -74,6 +78,16 @@ public class DialogueManager : MonoBehaviour
         }
 
         HUD.Box.Name(m_currentDialogue.CurrentLine.Actor);
+
+        m_actor = m_currentDialogue.CurrentLine.Actor;
+        if (m_actor == Actors.Elara)
+        {
+            m_emotion = m_currentDialogue.CurrentLine.Emotion;
+
+            var actor = m_currentDialogue.Actors[(int)m_actor];
+            var emotion = actor.GetEmotion(m_currentDialogue.CurrentLine.Emotion);
+            m_portrait.ChangePortrait(emotion);
+        }
 
         m_typingCoroutine = StartCoroutine(Typing());
     }

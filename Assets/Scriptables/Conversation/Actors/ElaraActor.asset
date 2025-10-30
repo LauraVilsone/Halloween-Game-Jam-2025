@@ -13,5 +13,17 @@ MonoBehaviour:
   m_Name: ElaraActor
   m_EditorClassIdentifier: Assembly-CSharp::Actor
   Portrait: {fileID: 0}
-  Emotions: []
+  EmotionSprites:
+  - Emotion: 0
+    Sprite: {fileID: -6971674169159280786, guid: dfcc4af705cdb9b4ca5d7d3f54fb3fd5, type: 3}
+  - Emotion: 1
+    Sprite: {fileID: -7465430529395542052, guid: 138ee23bfcc567b4a92709e64a577a3d, type: 3}
+  - Emotion: 2
+    Sprite: {fileID: -7793613736358147402, guid: fc7680ecc5cddf34488776fa8eaf3e55, type: 3}
+  - Emotion: 3
+    Sprite: {fileID: 8683102067408515734, guid: e79a91257be63084284b2d493db81e09, type: 3}
+  - Emotion: 4
+    Sprite: {fileID: -6151220978985912395, guid: 3c5860d42fb379344929967e8f0521fd, type: 3}
+  - Emotion: 5
+    Sprite: {fileID: -8036062860479152579, guid: 6778511f6d59a334fb2bd9992819dbe3, type: 3}
   Name: Elara
