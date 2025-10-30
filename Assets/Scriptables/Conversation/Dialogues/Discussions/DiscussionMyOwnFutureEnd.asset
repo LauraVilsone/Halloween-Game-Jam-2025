@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f67fc775dda8636458625a97d9484562, type: 3}
-  m_Name: DiscussionMyOwnFutureWorry
+  m_Name: DiscussionMyOwnFutureEnd
   m_EditorClassIdentifier: Assembly-CSharp::Conversation
   Events:
-  - {fileID: 11400000, guid: f44ff34893c4b44489462d496c813ff9, type: 2}
-  - {fileID: 11400000, guid: 1cfa45f0174ef394d8051ea4c92886a3, type: 2}
+  - {fileID: 11400000, guid: 5eec5b83b1586d4479f769ee3cd825c3, type: 2}
+  - {fileID: 11400000, guid: b78e3f1f857b1d541bf3810592b48249, type: 2}
+  - {fileID: 11400000, guid: 5eec5b83b1586d4479f769ee3cd825c3, type: 2}
+  - {fileID: 11400000, guid: 9a216f9bb86e79146bbb2975ee381d00, type: 2}

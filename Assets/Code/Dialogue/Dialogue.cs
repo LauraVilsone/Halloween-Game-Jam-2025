@@ -9,7 +9,7 @@ public class Line
 }
 
 public enum Actors { Narrator, Elara, Liam }
-public enum Emotions { Neutral, Happy, Sad, Angry, Pensive, Depresso }
+public enum Emotions { Neutral, Happy, HappyTears, Sad, Shame, Surprised }
 
 [CreateAssetMenu(fileName = "Dialogue", menuName = "Scriptables/Dialogue", order = 1)]
 public class Dialogue : ConversationEvent

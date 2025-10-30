@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a801eacbbe220b4994707e67c519bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  m_startState: 0
+  m_startState: 1
   m_states:
   - {fileID: 11400000, guid: 451d569f4c801ff4ea3d6fb77d0b43d2, type: 2}
   - {fileID: 11400000, guid: f49990e0c3cfa45489e668d37586fbe1, type: 2}
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9cc51ed2a855fe4cb1eadfa50b77691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BondManager
-  m_startingLevel: 10
+  m_startingLevel: 0
 --- !u!1 &712597808
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,12 +1092,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3271949617859564525, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_initialKeywords.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3271949617859564525, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: 'm_initialKeywords.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: bed4804b44e330c4da8c6288b4db8c4d, type: 2}
+      objectReference: {fileID: 11400000, guid: 4c9090d23ec8cac42873684e27f2739d, type: 2}
     - target: {fileID: 4238920931543704043, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_IsActive
       value: 1

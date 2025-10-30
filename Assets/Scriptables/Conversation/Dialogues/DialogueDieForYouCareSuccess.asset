@@ -32,7 +32,7 @@ MonoBehaviour:
       you can or cannot remember?"
     Actor: 1
     Emotion: 0
-  - Dialogue: "The tears in Ellara\u2019s eyes began to well up."
+  - Dialogue: "The tears in Elara\u2019s eyes began to well up."
     Actor: 0
     Emotion: 0
   - Dialogue: What kind of monster would ask someone to die simply because they do
