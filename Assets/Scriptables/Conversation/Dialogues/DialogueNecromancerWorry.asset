@@ -32,8 +32,10 @@ MonoBehaviour:
   - Dialogue: Lies.
     Actor: 2
     Emotion: 0
-  - Dialogue: You grab a knife from a nearby table and cut yourself. Black thick
-      blood leaks from the wound.
+  - Dialogue: You grab a knife from a nearby table and cut yourself.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Black thick blood leaks from the wound.
     Actor: 0
     Emotion: 0
   - Dialogue: Liam!

@@ -41,8 +41,8 @@ MonoBehaviour:
     Actor: 0
     Emotion: 0
   - Dialogue: Let me redo the ritual. Let me bring you back whole!
-    Actor: 0
+    Actor: 1
     Emotion: 0
   - Dialogue: Leave me be, you <link=Necromancer><color=green>necromancer</color></link>!
-    Actor: 0
+    Actor: 2
     Emotion: 0

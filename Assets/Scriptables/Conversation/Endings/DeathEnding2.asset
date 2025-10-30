@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
+  m_Name: DeathEnding2
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Actors:
+  - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
+  - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
+  - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
+  Line:
+  - Dialogue: Elara begins the ritual. She chants the incantations, her voice rising
+      in power and intensity. She draws the symbols on the floor, channeling her
+      magic into the chamber.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: As she chants, a warm light envelops you.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Then, with a final, powerful surge of energy, Elara sinks a dagger
+      into your heart and completes the spell.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Your body is slumped on the ground, lifeless.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Elara stands over you, her heart aching with grief. You are dead, again.
+      And this time she has killed you.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: As your life force flows into her, Elara feels a surge of power unlike
+      anything she had ever experienced. Her body tingles with energy.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: The spell is complete.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Elara kneels beside your body, tears streaming down her face. She cradles
+      your head in her lap, stroking your hair.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Thank you, Liam.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: She whispers.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Thank you for everything.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: She stays there for hours, mourning your loss, then prepares to resurrect
+      you again.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'The ritual takes all her newfound energy and every rare ingredient
+      she collected. As the sun begins to rise, casting a golden glow over the chamber,
+      your body stirs. You open your eyes again. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: 'The ritual takes all her newfound energy and every rare ingredient
+      she collected. As the sun begins to rise, casting a golden glow over the chamber,
+      your body stirs. You open your eyes again. '
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Hello, my love.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: Elara gently cups your cheek in her hand, her face close to yours.
+    Actor: 0
+    Emotion: 0

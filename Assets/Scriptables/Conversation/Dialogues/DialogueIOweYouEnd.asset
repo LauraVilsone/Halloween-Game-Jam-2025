@@ -25,9 +25,11 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: "But, please, listen. The spell I used to bring you back\u2026 something
       went wrong. It drained a part of my life force, leaving me weakened, vulnerable
-      and gave false memories to you. I need to replenish that life force, bring
-      you back again with your true memories, and the only way to do that is through
-      a sacrifice."
+      and gave false memories to you."
+    Actor: 1
+    Emotion: 0
+  - Dialogue: I need to replenish that life force, bring you back again with your
+      true memories, and the only way to do that is through a sacrifice.
     Actor: 1
     Emotion: 0
   - Dialogue: She hesites, then adds.
@@ -41,8 +43,11 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: "You are silent, mind reeling from her request. You had been prepared
       to offer her anything, but this\u2026 this was beyond anything you could have
-      imagined.\r\nTo die, again, for a woman who claimed to love you, but who had
-      also resurrected you against his will, only to trap you in a life that was
-      not entirely your own."
+      imagined."
+    Actor: 0
+    Emotion: 0
+  - Dialogue: To die, again, for a woman who claimed to love you, but who had also
+      resurrected you against his will, only to trap you in a life that was not entirely
+      your own.
     Actor: 0
     Emotion: 0
