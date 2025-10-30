@@ -58,8 +58,8 @@ MonoBehaviour:
       for you. She turns back to you, her face composed. "
     Actor: 1
     Emotion: 0
-  - Dialogue: You rise to his feet, movements still unsteady, pale skin glowing eerily
-      in the moonlight.
+  - Dialogue: You rise to your feet, movements still unsteady, pale skin glowing
+      eerily in the moonlight.
     Actor: 0
     Emotion: 0
   - Dialogue: You look around the chamber again, your expression a mixture of fascination

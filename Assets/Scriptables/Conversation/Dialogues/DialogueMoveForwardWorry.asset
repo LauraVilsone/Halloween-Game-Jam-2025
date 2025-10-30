@@ -16,4 +16,39 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
   - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
   - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
-  Line: []
+  Line:
+  - Dialogue: Just relent, will you!
+    Actor: 2
+    Emotion: 0
+  - Dialogue: You cut Elara off.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: How far will you go? Do you not see what you are doing?! What you have
+      become?
+    Actor: 2
+    Emotion: 0
+  - Dialogue: "I\u2026"
+    Actor: 1
+    Emotion: 0
+  - Dialogue: What have you made me?
+    Actor: 1
+    Emotion: 0
+  - Dialogue: "I\u2026"
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Stop walking towards madness! And stop dragging me with you.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: "This is not madness\u2026 This is.."
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Love?
+    Actor: 1
+    Emotion: 0
+  - Dialogue: Yes.
+    Actor: 1
+    Emotion: 0
+  - Dialogue: You still believe that? Think what you had to do to collect the ingredients
+      for this ritual. Elara, you are a <link=Necromancer><color=green>necromancer</color></link>.
+    Actor: 1
+    Emotion: 0
