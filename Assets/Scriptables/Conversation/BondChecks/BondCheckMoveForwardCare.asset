@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1fbf2920062c9b4190b1694fbebb5b6, type: 3}
   m_Name: BondCheckMoveForwardCare
   m_EditorClassIdentifier: Assembly-CSharp::BondCheck
-  BondReq: 9
+  BondReq: 5
   m_successConversation: {fileID: 11400000, guid: 4c62d39ac2785404ab22a2107f5322f7, type: 2}
-  m_failConversation: {fileID: 11400000, guid: 1b323325b5cc4254183d71c2809390b0, type: 2}
+  m_failConversation: {fileID: 11400000, guid: b88c87c392b18224199f6a95889068b1, type: 2}

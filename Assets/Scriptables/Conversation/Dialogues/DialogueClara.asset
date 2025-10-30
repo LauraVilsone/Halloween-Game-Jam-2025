@@ -47,9 +47,6 @@ MonoBehaviour:
   - Dialogue: You nod, brow still creased in confusion.
     Actor: 0
     Emotion: 0
-  - Dialogue: You nod, brow still creased in confusion.
-    Actor: 0
-    Emotion: 0
   - Dialogue: "Yes, Clara. We were\u2026 we were going to get married. I remember
       planning the ceremony, choosing the flowers\u2026"
     Actor: 2

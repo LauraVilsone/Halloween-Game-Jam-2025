@@ -13,6 +13,7 @@ public class ConversationManager : MonoBehaviour
 
     private DialogueManager m_dialogueManager;
     private BondManager m_bondManager;
+    private IllustrationManager m_illustrationManager;
 
     public Action OnEventFinished;
 
@@ -20,6 +21,13 @@ public class ConversationManager : MonoBehaviour
     {
         m_dialogueManager = GetComponent<DialogueManager>();
         m_bondManager = GetComponent<BondManager>();
+        m_illustrationManager = FindFirstObjectByType<IllustrationManager>();
+        m_illustrationManager.OnAnimationFinished += OnIllustrationChangeFinished;
+    }
+
+    private void OnIllustrationChangeFinished()
+    {
+        EventFinished();
     }
 
     public void ChangeConversation(Conversation conversation)
@@ -80,6 +88,15 @@ public class ConversationManager : MonoBehaviour
             ChangeConversation(beginNext.NextConversation);
             Begin();
             return;
+        }
+        else if (CurrentEvent is ToggleIllustration illustration)
+        {
+            if (illustration.Fade)
+                m_illustrationManager.Fade();
+            else if (illustration.Show)
+                m_illustrationManager.ShowIllustration(illustration.Illustration, illustration.Quick);
+            else
+                m_illustrationManager.HideIllustration();
         }
 
         CurrentEvent.EventFinished = false;
