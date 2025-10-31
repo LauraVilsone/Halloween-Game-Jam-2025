@@ -44,8 +44,8 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: 'You push yourself up in a sitting position. The stiff joints in your
       arms briefly fight you. You look around the imposing chamber, taking in the
-      shelves lined with jars of <link=PickledOrgans><color=#ff9dff>PICKLED ORGANS</color>,
-      the tables overflowing with arcane tools, the overall unsettling atmosphere
-      of, what you assume, is the top chamber of a tower. '
+      shelves lined with jars of pickled organs, the tables overflowing with arcane
+      tools, the overall unsettling atmosphere of, what you assume, is the top chamber
+      of a tower. '
     Actor: 1
     Emotion: 0
