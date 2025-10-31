@@ -272,33 +272,9 @@ PrefabInstance:
       value: MainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 3856680284741548976, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3856680284741548976, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3856680284741548976, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1218643422}
-    - target: {fileID: 3856680284741548976, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3856680284741548976, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 3856680284741548976, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainMenuManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3856680284741548976, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 5407633899307083736, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -320,33 +296,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6486168145892064082, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6486168145892064082, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6486168145892064082, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1218643422}
-    - target: {fileID: 6486168145892064082, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6486168145892064082, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 6486168145892064082, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainMenuManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6486168145892064082, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6655932916350966846, guid: 22728c9fb3e21254c815b702e1bef3ff, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -768,7 +720,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: aae0493fe4e920f49b47767ffe161b21, type: 3}
+  m_Resource: {fileID: 8300000, guid: 4d5e523d4145c5c4b88b0ba3d6d34c9c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
