@@ -18,18 +18,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
   Line:
   - Dialogue: 'You open your eyes. '
-    Actor: 1
+    Actor: 0
     Emotion: 0
   - Dialogue: 'Shadows dance maniacally around the room. '
-    Actor: 1
+    Actor: 0
     Emotion: 0
   - Dialogue: 'And a tired woman in opulent, but disheveled robes holds her hands
       above you, her bony fingers glowing from the power she is casting. '
-    Actor: 1
+    Actor: 0
     Emotion: 0
   - Dialogue: '- Liam!'
     Actor: 1
-    Emotion: 1
+    Emotion: 5
   - Dialogue: 'She chokes out and rushes towards you reaching for your hand eagerly
       but with tenderness. '
     Actor: 0

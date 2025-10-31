@@ -17,7 +17,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
   - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
   Line:
-  - Dialogue: It's me, <link=Elara><color=green>Elara</color></link>. I brought you
-      back.
+  - Dialogue: It's me, <link=Elara><color=#ff9dff>Elara</color></link>. I brought
+      you back.
     Actor: 1
-    Emotion: 1
+    Emotion: 5

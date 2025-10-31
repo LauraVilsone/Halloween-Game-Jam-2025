@@ -54,7 +54,7 @@ MonoBehaviour:
   - Dialogue: You trail off, gaze lost in a distant memory.
     Actor: 0
     Emotion: 0
-  - Dialogue: <link=ILovedClara><color=green>I loved Clara.</color></link>
+  - Dialogue: <link=ILovedClara><color=#ff9dff>I loved Clara.</color></link>
     Actor: 2
     Emotion: 0
   - Dialogue: No.
