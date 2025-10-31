@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AmbianceManager
   m_startWithAmbiance: 1
-  m_maxVolume: 0.5
+  m_maxVolume: 0.2
   m_fadeSpeed: 0.3
 --- !u!1 &621079298
 GameObject:
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a801eacbbe220b4994707e67c519bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  m_startState: 0
+  m_startState: 1
   m_states:
   - {fileID: 11400000, guid: 451d569f4c801ff4ea3d6fb77d0b43d2, type: 2}
   - {fileID: 11400000, guid: f49990e0c3cfa45489e668d37586fbe1, type: 2}
@@ -1247,6 +1247,26 @@ PrefabInstance:
     - target: {fileID: 3001105494177222039, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
       propertyPath: m_Name
       value: Laboratory
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652775933863925556, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652775933863925556, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652775933863925556, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652775933863925556, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652775933863925556, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.36
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

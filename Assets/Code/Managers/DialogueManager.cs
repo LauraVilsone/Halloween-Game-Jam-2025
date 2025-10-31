@@ -150,7 +150,7 @@ public class DialogueManager : MonoBehaviour
                 }
                 if (!SkipTyping)
                 {
-                    SFXManager.PlayTypingSFX();
+                    //SFXManager.PlayTypingSFX();
                     yield return new WaitForSeconds(typingDelay);
                 }
             }
