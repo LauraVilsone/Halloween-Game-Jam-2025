@@ -24,8 +24,11 @@ MonoBehaviour:
     Actor: 0
     Emotion: 0
   - Dialogue: "But in doing so, I took something from you. And I won\u2019t take
-      any more. You stare at her for a long moment. Then, slowly, you nod. "
+      any more."
     Actor: 1
+    Emotion: 0
+  - Dialogue: You stare at her for a long moment. Then, slowly, you nod.
+    Actor: 0
     Emotion: 0
   - Dialogue: "With these memories I remember Clara. And I still have love for her.
       That hasn\u2019t changed. But I know I can\u2019t go to her."
@@ -37,7 +40,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: Elara looks away, blinking tears from her eyes.
     Actor: 0
-    Emotion: 0
+    Emotion: 4
   - Dialogue: Will you stay? Even just for a while?
     Actor: 1
     Emotion: 0
@@ -54,4 +57,4 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: I understand.
     Actor: 1
-    Emotion: 0
+    Emotion: 3

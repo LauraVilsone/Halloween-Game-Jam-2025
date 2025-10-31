@@ -32,6 +32,6 @@ MonoBehaviour:
       had rekindled in her eyes since you had agreed to consider her request.
     Actor: 0
     Emotion: 0
-  - Dialogue: Finally, you make your <link=Decision><color=green>DECISION</color></link>.
+  - Dialogue: Finally, you make your <link=Decision><color=#ff9dff>DECISION</color></link>.
     Actor: 0
     Emotion: 0

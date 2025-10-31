@@ -17,7 +17,7 @@ MonoBehaviour:
   - m_name: "The last thing I remember\u2026 I was with\u2026 Clara."
     m_conversation: {fileID: 11400000, guid: 724c8abd2a850484caa2b45e4669d3f7, type: 2}
     m_bond: 0
-  - m_name: I remember you, saving my life, helping my beloved Clara.
+  - m_name: I remember you, trying to save my life.
     m_conversation: {fileID: 11400000, guid: 724c8abd2a850484caa2b45e4669d3f7, type: 2}
     m_bond: 1
   - m_name: "Clara! My betrothed\u2026 Where is she?!"

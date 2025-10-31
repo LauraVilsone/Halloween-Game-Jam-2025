@@ -40,7 +40,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: Clara?
     Actor: 1
-    Emotion: 3
+    Emotion: 5
   - Dialogue: Elara repeats, her voice barely a whisper.
     Actor: 0
     Emotion: 0
@@ -59,10 +59,10 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: No.
     Actor: 1
-    Emotion: 5
+    Emotion: 0
   - Dialogue: Elara finally speaks, her voice rising in desperation.
     Actor: 0
     Emotion: 0
   - Dialogue: "You\u2019re confused. It was me, Liam. It was always me."
     Actor: 1
-    Emotion: 5
+    Emotion: 1

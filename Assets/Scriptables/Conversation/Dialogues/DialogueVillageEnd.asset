@@ -51,7 +51,7 @@ MonoBehaviour:
     Actor: 0
     Emotion: 0
   - Dialogue: "I don\u2019t know, but I know I can\u2019t live in the past. I need
-      to find <link=MyOwnFuture><color=green>my own future</color></link>, my own
+      to find <link=MyOwnFuture><color=#ff9dff>MY OWN FUTURE</color></link>, my own
       purpose."
     Actor: 2
     Emotion: 0
