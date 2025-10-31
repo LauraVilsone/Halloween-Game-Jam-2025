@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     [Space]
     [SerializeField] private int m_startState = 0;
     [SerializeField] private GameState[] m_states;
+    [Space]
+    [SerializeField] private HintMessage m_messageCare;
+    [SerializeField] private HintMessage m_messageWorry;
 
 
     public PlayerManager Player => m_player;
@@ -69,8 +72,14 @@ public class GameManager : MonoBehaviour
                 return;
             }
 
+            var prevLevel = Bond.Level;
             Bond.Level += data.m_bond;
             
+            if (Bond.Level < prevLevel)
+                HUD.Hint.SendMessage(m_messageWorry);
+            else if (Bond.Level > prevLevel)
+                HUD.Hint.SendMessage(m_messageCare);
+
             m_conversationManager.ChangeConversation(data.m_conversation);
             ChangeState(0);
         }

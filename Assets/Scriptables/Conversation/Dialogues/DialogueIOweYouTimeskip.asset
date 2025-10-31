@@ -24,9 +24,12 @@ MonoBehaviour:
     Actor: 0
     Emotion: 0
   - Dialogue: You speak with Elara rarely during this time, needing the space to
-      come to a decision. You watch her from afar, observing her dedication to her
-      craft, her quiet strength, her undeniable loneliness. You see the flicker of
-      hope that had rekindled in her eyes since you had agreed to consider her request.
+      come to a decision.
+    Actor: 0
+    Emotion: 0
+  - Dialogue: You watch her from afar, observing her dedication to her craft, her
+      quiet strength, her undeniable loneliness. You see the flicker of hope that
+      had rekindled in her eyes since you had agreed to consider her request.
     Actor: 0
     Emotion: 0
   - Dialogue: Finally, you make your <link=Decision><color=green>decision</color></link>.

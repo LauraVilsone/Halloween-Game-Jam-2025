@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67fc775dda8636458625a97d9484562, type: 3}
   m_Name: DiscussionILovedClaraCare
   m_EditorClassIdentifier: Assembly-CSharp::Conversation
+  SkipChoices: 1
   Events:
   - {fileID: 11400000, guid: 782192e91010fee4f9cfa94d17b6a745, type: 2}
   - {fileID: 11400000, guid: 41eef3436f264ee46a9265045d7f3dbc, type: 2}
+  HintAtEnd: {fileID: 11400000, guid: b70bd119345d9bb419b614e52c9069ec, type: 2}

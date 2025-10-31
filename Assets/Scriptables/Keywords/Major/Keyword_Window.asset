@@ -16,10 +16,10 @@ MonoBehaviour:
   m_decision:
   - m_name: What a view!
     m_conversation: {fileID: 11400000, guid: 1a252e7bddd31b947af3b976d690fefe, type: 2}
-    m_bond: -1
+    m_bond: 1
   - m_name: I should Leave.
     m_conversation: {fileID: 11400000, guid: b9d9529cd6132fd4888515ae9f0c7fcc, type: 2}
-    m_bond: 1
+    m_bond: -1
   m_interactions:
   - m_interactable: {fileID: 11400000, guid: 921aa4790d295b5488f582ce8465a5f8, type: 2}
     m_conversation: {fileID: 11400000, guid: ce00b891ea5e1874692e0b5b4f3f9f07, type: 2}

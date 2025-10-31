@@ -7,6 +7,9 @@ public class HUDManager : MonoBehaviour
     public MindMap MindMap;
     public ChoiceBox ChoiceBox;
     public KeywordFlash Flash;
+    public Hint Hint;
+    [Space]
+    [SerializeField] private HintMessage HintInventoryTutorial;
 
     private void Awake()
     {
@@ -24,6 +27,18 @@ public class HUDManager : MonoBehaviour
         {
             ChoiceBox = GetComponentInChildren<ChoiceBox>();
         }
+
+        if (Flash == null)
+        {
+            Flash = GetComponentInChildren<KeywordFlash>();
+        }
+
+        if (Hint == null)
+        {
+            Hint = GetComponentInChildren<Hint>();
+        }
+
+        m_firstTimeCollecting = true;
     }
 
 
@@ -44,9 +59,14 @@ public class HUDManager : MonoBehaviour
         ChoiceBox.Empty();
     }
 
-
+    private bool m_firstTimeCollecting = true;
     public void OnKeywordGain(Vector3 position, string keyword)
     {
+        if (m_firstTimeCollecting)
+        {
+            m_firstTimeCollecting = false;
+            Hint.SendMessage(HintInventoryTutorial);
+        }
         Flash.Flash(position, keyword);
     }
 }

@@ -68,6 +68,8 @@ public class ConversationManager : MonoBehaviour
                         {
                             OnEventFinished?.Invoke();
                         }
+                        if (m_currentConversation.HintAtEnd != null)
+                            m_hudManager.Hint.SendMessage(m_currentConversation.HintAtEnd);
                     }
                 }
                 else
@@ -104,7 +106,6 @@ public class ConversationManager : MonoBehaviour
 
     public void Execute()
     {
-
         if (CurrentEvent is Dialogue dialogue)
         {
             m_dialogueManager.Begin(dialogue);
