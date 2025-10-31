@@ -7,6 +7,8 @@ public class MindMap : UIGroup
 {
     [SerializeField] private Keyword m_keywordPrefab;
     [Space]
+    [SerializeField] private UIFade m_mindBackground;
+    [Space]
     [SerializeField] private KeywordData[] m_initialKeywords;
 
     private List<Keyword> m_keywords;
@@ -33,6 +35,8 @@ public class MindMap : UIGroup
     {
         base.Start();
 
+        m_mindBackground.SetOpacity(0);
+
         foreach (var data in m_initialKeywords)
             Fill(data);
     }
@@ -55,6 +59,18 @@ public class MindMap : UIGroup
 
     }
 
+    /*private void Shuffle()
+    {
+        foreach (var keyword in m_keywords)
+        {
+            Vector3 spawnPosition;
+            spawnPosition = GetBottomLeftCorner(m_keywordsContainer) -
+                new Vector3(Random.Range(0, m_keywordsContainer.rect.x), Random.Range(0, m_keywordsContainer.rect.y));
+
+            keyword.transform.position = spawnPosition;
+        }
+    }*/
+
     private void OnKeywordGrabbed(KeywordData data)
     {
         SelectedKeyword = data;
@@ -74,12 +90,15 @@ public class MindMap : UIGroup
     {
         base.Show();
         Visible = true;
+        //Shuffle();
+        m_mindBackground.Show();
     }
 
     public override void Empty()
     {
         base.Empty();
         Visible = false;
+        m_mindBackground.Hide();
     }
 
 

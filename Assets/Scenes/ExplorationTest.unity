@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a801eacbbe220b4994707e67c519bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  m_startState: 0
+  m_startState: 1
   m_states:
   - {fileID: 11400000, guid: 451d569f4c801ff4ea3d6fb77d0b43d2, type: 2}
   - {fileID: 11400000, guid: f49990e0c3cfa45489e668d37586fbe1, type: 2}
@@ -1112,6 +1112,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2644071479018408250, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779876573497040568, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2789881665216273521, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
