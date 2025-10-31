@@ -144,6 +144,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private float m_endDelay = 3;
+    private float m_endTime;
+    public void OnGameOver()
+    {
+        m_endTime = m_endDelay;
+    }
+
     private void OnHoverEnd()
     {
         InteractableData = null;
@@ -158,9 +165,20 @@ public class GameManager : MonoBehaviour
         m_player.Tick();
         //Debug.Log(m_player.MouseDelta);
 
-        if (Input.GetKey(KeyCode.Backspace))
+        if (m_endTime > 0)
         {
-            SceneDirector.LoadSceneAsync(0);
+            m_endTime -= Time.deltaTime;
+            if (m_endTime <= 0)
+            {
+                SceneDirector.LoadSceneAsync(0);
+            }
+        }
+        else
+        {
+            if (Input.GetKey(KeyCode.Backspace))
+            {
+                SceneDirector.LoadSceneAsync(0);
+            }
         }
     }
 

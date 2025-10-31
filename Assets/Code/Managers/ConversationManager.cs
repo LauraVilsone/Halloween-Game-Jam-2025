@@ -144,7 +144,7 @@ public class ConversationManager : MonoBehaviour
         else if (CurrentEvent is GameOver gameOver)
         {
             m_illustrationManager.ShowEnding(gameOver.EndingIllustration);
-            //gameOver;
+            m_gameManager.OnGameOver();
         }
 
         CurrentEvent.EventFinished = false;
