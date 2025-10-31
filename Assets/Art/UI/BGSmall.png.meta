@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6fbc7a91e2efd6548bc26e760191323e
+guid: c5b1a717664577947bd182d204fed887
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4148314258709098708
-    second: Bone Orchid UI-05_0
+      213: 1439747836585754327
+    second: BGSmall_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bone Orchid UI-05_0
+      name: BGSmall_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 151
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c2fc4f0192a3e66c0800000000000000
-      internalID: -4148314258709098708
+      spriteID: 7deb4dd77030bf310800000000000000
+      internalID: 1439747836585754327
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bone Orchid UI-05_0: -4148314258709098708
+      BGSmall_0: 1439747836585754327
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

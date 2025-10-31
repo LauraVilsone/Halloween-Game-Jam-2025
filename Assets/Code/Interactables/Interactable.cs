@@ -25,10 +25,12 @@ public class Interactable : MonoBehaviour
     
     private bool Active { get; set; }
 
+    private Vector3 m_original;
 
     private void Awake()
     {
         m_renderer = GetComponentInChildren<SpriteRenderer>();
+        m_original = m_renderer.transform.localScale;
     }
 
     private void OnMouseEnter()
@@ -92,7 +94,7 @@ public class Interactable : MonoBehaviour
 
         m_curveValue = m_hoverAnimationCurve.Evaluate(m_curveTime);
         float mod = m_sizeMod * m_curveValue;
-        m_renderer.transform.localScale = Vector3.one + new Vector3(mod, mod, 0);
+        m_renderer.transform.localScale = m_original + new Vector3(mod, mod, 0);
         m_renderer.transform.eulerAngles = new Vector3(0, 0, Mathf.Lerp(0, m_rotationMod, m_curveValue));
     }
 }
