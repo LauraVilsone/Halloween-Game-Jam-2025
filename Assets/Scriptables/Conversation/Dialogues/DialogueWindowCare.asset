@@ -19,11 +19,11 @@ MonoBehaviour:
   Line:
   - Dialogue: Elara smiles.
     Actor: 0
-    Emotion: 0
+    Emotion: 1
   - Dialogue: Definitely an upgrade from the home you once lived in.
     Actor: 2
     Emotion: 0
   - Dialogue: 'We lived.. But I am glad you like it. The work I do now pays well.
       And I needed that to afford all the ingredients for your spell. '
     Actor: 1
-    Emotion: 0
+    Emotion: 1

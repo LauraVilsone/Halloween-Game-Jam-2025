@@ -19,7 +19,7 @@ MonoBehaviour:
   Line:
   - Dialogue: I know how it sounds!
     Actor: 1
-    Emotion: 0
+    Emotion: 5
   - Dialogue: Elara speaks quickly.
     Actor: 0
     Emotion: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
   - Dialogue: I need to replenish that life force, bring you back again with your
       true memories, and the only way to do that is through a sacrifice.
     Actor: 1
-    Emotion: 0
+    Emotion: 3
   - Dialogue: She hesites, then adds.
     Actor: 0
     Emotion: 0

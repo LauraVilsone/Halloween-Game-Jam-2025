@@ -29,7 +29,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: I did it because I loved you.
     Actor: 1
-    Emotion: 0
+    Emotion: 4
   - Dialogue: Elara says quietly.
     Actor: 0
     Emotion: 0

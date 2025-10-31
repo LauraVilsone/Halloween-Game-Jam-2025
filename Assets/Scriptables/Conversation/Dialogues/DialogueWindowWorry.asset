@@ -33,5 +33,5 @@ MonoBehaviour:
     Actor: 0
     Emotion: 0
   - Dialogue: And you can return to it no longer. Others live there now.
-    Actor: 0
+    Actor: 1
     Emotion: 0

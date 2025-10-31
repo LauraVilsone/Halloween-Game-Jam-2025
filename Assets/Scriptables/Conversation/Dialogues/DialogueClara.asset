@@ -40,7 +40,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: Clara?
     Actor: 1
-    Emotion: 4
+    Emotion: 3
   - Dialogue: Elara repeats, her voice barely a whisper.
     Actor: 0
     Emotion: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
   - Dialogue: You trail off, gaze lost in a distant memory.
     Actor: 0
     Emotion: 0
-  - Dialogue: <link=ILovedClara><color=#ff9dff>I loved Clara.</color></link>
+  - Dialogue: <link=ILovedClara><color=#ff9dff>I LOVED CLARA.</color></link>
     Actor: 2
     Emotion: 0
   - Dialogue: No.

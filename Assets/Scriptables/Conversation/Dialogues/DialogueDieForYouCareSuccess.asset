@@ -23,7 +23,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: "...But I am not\u2026"
     Actor: 1
-    Emotion: 0
+    Emotion: 3
   - Dialogue: You watch her in confusion.
     Actor: 0
     Emotion: 0
@@ -31,14 +31,14 @@ MonoBehaviour:
       love. Not even for the hope of what we used to have. Who am I to decide what
       you can or cannot remember?"
     Actor: 1
-    Emotion: 0
+    Emotion: 3
   - Dialogue: "The tears in Elara\u2019s eyes began to well up."
     Actor: 0
     Emotion: 0
   - Dialogue: What kind of monster would ask someone to die simply because they do
       not reciprocate their love?!
     Actor: 1
-    Emotion: 0
+    Emotion: 4
   - Dialogue: You step closer to her, and take her warm arms in your cold hands.
     Actor: 0
     Emotion: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
   - Dialogue: "I did. I wanted it so badly I forgot who you are. Not who you were
       to me \u2014 but who you are now."
     Actor: 1
-    Emotion: 0
+    Emotion: 3
   - Dialogue: She drops the dagger. It clatters against the stone floor, the sound
       sharp, final. Elara hugs you and cries. For the first time since the resurrection
       she lets herself melt into your arms.

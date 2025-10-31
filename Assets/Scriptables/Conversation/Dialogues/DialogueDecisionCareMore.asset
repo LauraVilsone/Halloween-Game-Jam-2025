@@ -28,7 +28,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: "Liam\u2026"
     Actor: 1
-    Emotion: 0
+    Emotion: 4
   - Dialogue: Let me finish.
     Actor: 2
     Emotion: 0
@@ -42,4 +42,4 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: "Liam, no, I can\u2026"
     Actor: 2
-    Emotion: 0
+    Emotion: 3

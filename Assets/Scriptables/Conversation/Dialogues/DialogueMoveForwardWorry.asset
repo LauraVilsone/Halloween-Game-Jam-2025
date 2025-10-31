@@ -29,26 +29,26 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: "I\u2026"
     Actor: 1
-    Emotion: 0
+    Emotion: 3
   - Dialogue: What have you made me?
     Actor: 1
     Emotion: 0
   - Dialogue: "I\u2026"
     Actor: 1
-    Emotion: 0
+    Emotion: 4
   - Dialogue: Stop walking towards madness! And stop dragging me with you.
     Actor: 1
     Emotion: 0
   - Dialogue: "This is not madness\u2026 This is.."
     Actor: 1
-    Emotion: 0
+    Emotion: 3
   - Dialogue: Love?
-    Actor: 1
+    Actor: 2
     Emotion: 0
   - Dialogue: Yes.
     Actor: 1
-    Emotion: 0
+    Emotion: 1
   - Dialogue: You still believe that? Think what you had to do to collect the ingredients
-      for this ritual. Elara, you are a <link=Necromancer><color=green>necromancer</color></link>.
-    Actor: 1
-    Emotion: 0
+      for this ritual. Elara, you are a <link=Necromancer><color=#ff9dff>NECROMANCER</color></link>.
+    Actor: 2
+    Emotion: 3

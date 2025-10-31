@@ -33,4 +33,4 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: And?
     Actor: 1
-    Emotion: 0
+    Emotion: 5

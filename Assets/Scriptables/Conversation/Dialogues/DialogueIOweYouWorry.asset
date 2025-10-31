@@ -19,7 +19,7 @@ MonoBehaviour:
   Line:
   - Dialogue: "Yes\u2026"
     Actor: 1
-    Emotion: 0
+    Emotion: 4
   - Dialogue: Her words confirm what you say, but her face seems to disagree.
     Actor: 0
     Emotion: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
       If anything, I owe you. For taking so long to do the ritual, letting so much
       time pass. And for botching it\u2026 Liam, I\u2019m sorry!"
     Actor: 1
-    Emotion: 0
+    Emotion: 4
   - Dialogue: She is unable to look into your eyes.
     Actor: 0
     Emotion: 0
@@ -39,13 +39,13 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: I can repay my debt! I can fix this! All the wrongs done to you.
     Actor: 1
-    Emotion: 0
+    Emotion: 1
   - Dialogue: How?
     Actor: 2
     Emotion: 0
   - Dialogue: "I can redo the ritual! If you offer me back your life force willingly
       I can\u2026"
-    Actor: 2
+    Actor: 1
     Emotion: 0
   - Dialogue: You want me to die?! Again?!
     Actor: 2

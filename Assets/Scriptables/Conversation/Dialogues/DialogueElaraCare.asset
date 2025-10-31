@@ -32,6 +32,6 @@ MonoBehaviour:
     Actor: 0
     Emotion: 0
   - Dialogue: "Hush, it\u2019s all right, Liam. You are all right. You are back.
-      I <link=Resurrection><color=green>resurrected</color></link> you."
+      I <link=Resurrection><color=#ff9dff>RESURRECTED</color></link> you."
     Actor: 1
     Emotion: 0

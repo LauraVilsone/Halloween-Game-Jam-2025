@@ -22,7 +22,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: "Liam, please\u2026 Let me just fix all of this."
     Actor: 1
-    Emotion: 0
+    Emotion: 3
   - Dialogue: Elara looks absolutely crushed. You soften your voice.
     Actor: 0
     Emotion: 0

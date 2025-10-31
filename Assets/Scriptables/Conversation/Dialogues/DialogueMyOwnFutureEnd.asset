@@ -21,7 +21,7 @@ MonoBehaviour:
       serious.
     Actor: 0
     Emotion: 0
-  - Dialogue: I've been thinking. About what <link=IOweYou><color=green>I owe you</color></link>.
+  - Dialogue: I've been thinking. About what <link=IOweYou><color=#ff9dff>I OWE YOU</color></link>.
     Actor: 2
     Emotion: 0
   - Dialogue: Elara frowns.
@@ -29,4 +29,4 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: You don't owe me anything, Liam.
     Actor: 1
-    Emotion: 2
+    Emotion: 0

@@ -33,7 +33,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: Liam!
     Actor: 1
-    Emotion: 0
+    Emotion: 5
   - Dialogue: Elara rushes up to you, healing the cut. You can see that her hands
       are even more wizened after the act.
     Actor: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: "Liam\u2026 Stop."
     Actor: 1
-    Emotion: 0
+    Emotion: 4
   - Dialogue: "No, for your sake and for mine. I won\u2019t. We are monsters, but
       we don\u2019t have to be. We also have a choice. You have a choice."
     Actor: 1

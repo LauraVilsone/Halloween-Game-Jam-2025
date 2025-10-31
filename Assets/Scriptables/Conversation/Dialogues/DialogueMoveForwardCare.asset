@@ -29,7 +29,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: "Liam, I\u2019m sorry."
     Actor: 1
-    Emotion: 0
+    Emotion: 4
   - Dialogue: There is nothing to be sorry for. Just forgive. Forgive yourself. And
       let me go.
     Actor: 2

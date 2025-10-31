@@ -20,7 +20,7 @@ MonoBehaviour:
   - Dialogue: "This must be horrible for you, so confusing. I am sorry, but I couldn\u2019t
       save you, Liam. The fever\u2026 it finally took you. "
     Actor: 1
-    Emotion: 0
+    Emotion: 3
   - Dialogue: You rub your temples, as if trying to dislodge a persistent headache.
     Actor: 0
     Emotion: 0
@@ -34,7 +34,7 @@ MonoBehaviour:
   - Dialogue: And Elara right beside you, casting spells, reading, speaking.
     Actor: 0
     Emotion: 0
-  - Dialogue: And right besides her - <link=Clara><color=green>Clara</color></link>
+  - Dialogue: And right besides her - <link=Clara><color=#ff9dff>CLARA</color></link>
       - beautiful, loving, kind, caring Clara!
     Actor: 0
     Emotion: 0

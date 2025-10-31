@@ -22,7 +22,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: "Liam, that\u2019s nonsense. Of course you are a human."
     Actor: 1
-    Emotion: 0
+    Emotion: 3
   - Dialogue: Am I?! Look at me!
     Actor: 2
     Emotion: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: Liam!
     Actor: 1
-    Emotion: 0
+    Emotion: 5
   - Dialogue: Elara rushes up to you and casts a spell that quickly closes the wound,
       but you see her own hands seem to be even more wizened from the act.
     Actor: 1
@@ -50,34 +50,34 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: Liam, stop this madness.
     Actor: 1
-    Emotion: 0
+    Emotion: 5
   - Dialogue: "Elara\u2019s voice is strict, but she presses against you and holds
       your wounded hand with compassion and love."
     Actor: 0
     Emotion: 0
   - Dialogue: "Do not fight me. Please\u2026 not you."
     Actor: 1
-    Emotion: 0
+    Emotion: 3
   - Dialogue: I have never fought you. Maybe I should have. But I keep obeying. Like
       a thrall.
     Actor: 2
     Emotion: 0
   - Dialogue: "Oh, my beloved, Liam. What have I done to you\u2026"
     Actor: 1
-    Emotion: 0
+    Emotion: 3
   - Dialogue: If you truly love me then do this one thing for me.
     Actor: 2
     Emotion: 0
   - Dialogue: Anything.
     Actor: 1
-    Emotion: 0
+    Emotion: 1
   - Dialogue: Stop this charade.
     Actor: 2
     Emotion: 0
   - Dialogue: Elara blinks at you.
     Actor: 0
-    Emotion: 0
+    Emotion: 5
   - Dialogue: "There is no charade. I will undo all the wrong I have done. I promise.
       My next ritual. For you. I\u2019ll do it perfectly."
     Actor: 1
-    Emotion: 0
+    Emotion: 1

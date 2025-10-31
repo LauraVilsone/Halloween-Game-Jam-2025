@@ -17,8 +17,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
   - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
   Line:
-  - Dialogue: "I\u2019ll do it. <link=IllDieForYou><color=green>I\u2019ll die for
-      you</color></link>."
+  - Dialogue: "I\u2019ll do it. <link=IllDieForYou><color=ff9dffn>I\u2019LL DIE FOR
+      YOU</color></link>."
     Actor: 2
     Emotion: 0
   - Dialogue: "Relief washes over Elara\u2019s face, followed by a wave of guilt.
@@ -28,7 +28,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: Thank you, Liam.
     Actor: 1
-    Emotion: 0
+    Emotion: 2
   - Dialogue: Thank you for giving me this.
     Actor: 1
-    Emotion: 0
+    Emotion: 1

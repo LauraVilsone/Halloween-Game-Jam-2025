@@ -36,9 +36,9 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: "Like a bone orchid\u2026"
     Actor: 1
-    Emotion: 0
+    Emotion: 4
   - Dialogue: Elara turns away, unable to bear the sight of your confused, pitying
-      gaze.  She walks towards the <link=Window><color=green>window</color></link>,
+      gaze.  She walks towards the <link=Window><color=#ff9dff>WINDOW</color></link>,
       her back to you, staring out at the moonlit landscape.
     Actor: 0
     Emotion: 0
@@ -50,7 +50,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: "I\u2026 I need time to think."
     Actor: 1
-    Emotion: 0
+    Emotion: 4
   - Dialogue: Silence again.
     Actor: 0
     Emotion: 0

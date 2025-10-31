@@ -28,13 +28,13 @@ MonoBehaviour:
   - Dialogue: "I understand, the magic\u2026 Gods, this must be horrible for you.
       To be returned like this! Liam, I\u2019m sorry!"
     Actor: 1
-    Emotion: 0
+    Emotion: 3
   - Dialogue: "I\u2026"
     Actor: 2
     Emotion: 0
   - Dialogue: But worry not. I promise you I will fix you!
     Actor: 1
-    Emotion: 0
+    Emotion: 1
   - Dialogue: "I don\u2019t know\u2026"
     Actor: 2
     Emotion: 0

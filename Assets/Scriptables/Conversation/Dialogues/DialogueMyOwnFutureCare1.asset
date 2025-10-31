@@ -29,4 +29,4 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: Of course, Liam, of course! Take however much time you need.
     Actor: 1
-    Emotion: 0
+    Emotion: 1

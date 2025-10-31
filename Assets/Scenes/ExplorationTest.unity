@@ -1004,6 +1004,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2137971799162235954, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4906362165640480537, guid: 8e9e4965671f3a3458615ec33ec92575, type: 3}
     - target: {fileID: 2364692804527464662, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1051,6 +1055,14 @@ PrefabInstance:
     - target: {fileID: 5295764745600814869, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -255
+      objectReference: {fileID: 0}
+    - target: {fileID: 5578346662553633088, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5578346662553633088, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5907807361847298683, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_AnchorMax.y

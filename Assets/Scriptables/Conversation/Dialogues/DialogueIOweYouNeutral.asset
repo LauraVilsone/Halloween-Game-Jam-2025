@@ -22,7 +22,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: I did it because I loved you.
     Actor: 1
-    Emotion: 0
+    Emotion: 4
   - Dialogue: Elara says quietly.
     Actor: 0
     Emotion: 0
@@ -39,7 +39,7 @@ MonoBehaviour:
       Something that would mean more to me than anything else. And something that
       could fix all the wrong that has been done to you."
     Actor: 1
-    Emotion: 0
+    Emotion: 4
   - Dialogue: What is it?
     Actor: 2
     Emotion: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
     Emotion: 0
   - Dialogue: "I\u2026 take your life and bring you back. Correctly this time."
     Actor: 1
-    Emotion: 0
+    Emotion: 4
   - Dialogue: You stare at her, face pale in the firelight.
     Actor: 0
     Emotion: 0
