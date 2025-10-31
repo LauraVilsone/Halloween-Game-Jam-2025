@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
 
     private void ListenToRoom()
     {
-        foreach (var interactable in m_roomManager.CurrentRoom.GetComponentsInChildren<Interactable>())
+        foreach (var interactable in m_roomManager.CurrentRoom.GetComponentsInChildren<Interactable>(true))
         {
             interactable.OnHoverStart += OnHoverStart;
             interactable.OnHoverEnd += OnHoverEnd;
@@ -86,13 +86,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void OnKeywordDropped(KeywordData data)
+    private void OnKeywordDropped(Keyword keyword)
     {
         if (m_gameState is ConversationState)
         {
             if (m_HUDManager.ChoiceBox.HoveredOver)
             {
-                m_HUDManager.ChoiceBox.StartDecision(data);
+                m_HUDManager.ChoiceBox.StartDecision(keyword);
+                keyword.SetRandomPosition();
             }
             //else
             //    m_HUDManager.ChoiceBox.Empty();

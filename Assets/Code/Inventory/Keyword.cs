@@ -3,21 +3,32 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class Keyword : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public KeywordData Data;
 
+    [SerializeField] private Color m_lockedColor;
+    private Color m_originalColor;
+
     private TextMeshProUGUI m_text;
     private Image m_image;
 
-    public Action<KeywordData> OnGrab;
+    public Action<Keyword> OnGrab;
     public Action OnRelease;
+
+    public bool Lock { get; private set; }
+    private int m_setDecision;
+    public int SetDecision => m_setDecision;
 
     private void Awake()
     {
         m_text = GetComponentInChildren<TextMeshProUGUI>();
         m_image = GetComponent<Image>();
+        m_originalColor = m_image.color;
+
+        Lock = false;
     }
 
     public void AddData(KeywordData data)
@@ -54,7 +65,7 @@ public class Keyword : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
         else m_draggingPlane = canvas.transform as RectTransform;
 
         SetDraggedPosition(eventData);
-        OnGrab?.Invoke(Data);
+        OnGrab?.Invoke(this);
         SFXManager.PlayGrabbingSFX();
     }
 
@@ -100,5 +111,31 @@ public class Keyword : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
         rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, other.rect.height);
         //rectTransf.ForceUpdateRectTransforms(); - needed before we adjust pivot a second time?
         rt.pivot = myPrevPivot;
+    }
+
+    Vector3 m_bottomLeftCorner;
+    float m_rectX;
+    float m_rectY;
+
+    public void SetSpawnBoundaries(Vector3 bottomLeftCorner, float rectX, float rectY)
+    {
+        m_bottomLeftCorner = bottomLeftCorner;
+        m_rectX = rectX;
+        m_rectY = rectY;
+    }
+
+    public void SetRandomPosition()
+    {
+        Vector3 spawnPosition;
+        spawnPosition = m_bottomLeftCorner - new Vector3(Random.Range(0, m_rectX), Random.Range(0, m_rectY));
+        transform.position = spawnPosition;
+    }
+
+    public void OnDecisionSet(int decisionIndex)
+    {
+        Lock = true;
+        m_setDecision = decisionIndex;
+
+        m_image.color = m_lockedColor;
     }
 }

@@ -14,12 +14,12 @@ public class MindMap : UIGroup
     private List<Keyword> m_keywords;
     private RectTransform m_keywordsContainer;
 
-    public Action<KeywordData> OnKeywordDropped;
+    public Action<Keyword> OnKeywordDropped;
 
     public bool Active => Visible || HasKeyword;
     public bool Visible { get; set; }
     public bool HasKeyword { get; set; }
-    public KeywordData SelectedKeyword { get; private set; }
+    public Keyword SelectedKeyword { get; private set; }
 
     protected override void Awake()
     {
@@ -47,11 +47,17 @@ public class MindMap : UIGroup
         var newKeyword = newGameObject.GetComponent<Keyword>();
         m_keywords.Add(newKeyword);
 
-        Vector3 spawnPosition;
-        spawnPosition = GetBottomLeftCorner(m_keywordsContainer) - 
-            new Vector3(Random.Range(0, m_keywordsContainer.rect.x), Random.Range(0, m_keywordsContainer.rect.y));
+        var bottomLeftCorner = GetBottomLeftCorner(m_keywordsContainer);
+        var containerRectX = m_keywordsContainer.rect.x;
+        var containerRectY = m_keywordsContainer.rect.y;
+        newKeyword.SetSpawnBoundaries(bottomLeftCorner, containerRectX, containerRectY);
 
-        newKeyword.transform.position = spawnPosition;
+        /*
+        Vector3 spawnPosition;
+        spawnPosition = bottomLeftCorner - new Vector3(Random.Range(0, containerRectX), Random.Range(0, containerRectY));
+        newKeyword.transform.position = spawnPosition;*/
+        newKeyword.SetRandomPosition();
+
         newKeyword.AddData(keyword);
 
         newKeyword.OnGrab += OnKeywordGrabbed;
@@ -71,7 +77,7 @@ public class MindMap : UIGroup
         }
     }*/
 
-    private void OnKeywordGrabbed(KeywordData data)
+    private void OnKeywordGrabbed(Keyword data)
     {
         SelectedKeyword = data;
         HasKeyword = true;

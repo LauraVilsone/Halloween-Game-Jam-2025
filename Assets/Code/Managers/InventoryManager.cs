@@ -8,7 +8,7 @@ public class InventoryManager : MonoBehaviour
 
     public bool Active => Map.Active;
 
-    public KeywordData SelectedKeyword => Map.SelectedKeyword;
+    public KeywordData SelectedKeyword => Map.SelectedKeyword?.Data ?? null;
 
 
     public void AddKeyword(KeywordData keyword)

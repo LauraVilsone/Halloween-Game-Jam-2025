@@ -38,6 +38,12 @@ public class Interactable : MonoBehaviour
         m_original = m_renderer.transform.localScale;
     }
 
+    private void Start()
+    {
+        if (AnimateOnHover)
+            m_fade.SetOpacity(0);
+    }
+
     private void OnMouseEnter()
     {
         OnHoverStart?.Invoke(Data);

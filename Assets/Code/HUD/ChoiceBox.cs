@@ -13,7 +13,7 @@ public class ChoiceBox : UIGroup, IPointerEnterHandler, IPointerExitHandler
     private ChoiceState m_currentState;
 
     public bool HoveredOver;
-    private KeywordData m_draggedInKeyword;
+    private Keyword m_draggedInKeyword;
     public Action<Decision> OnDecisionMade;
 
 
@@ -32,8 +32,9 @@ public class ChoiceBox : UIGroup, IPointerEnterHandler, IPointerExitHandler
 
     private void OnEntryChosen(int index)
     {
-        OnDecisionMade?.Invoke(m_draggedInKeyword.m_decision[index]);
+        OnDecisionMade?.Invoke(m_draggedInKeyword.Data.m_decision[index]);
         Empty();
+        m_draggedInKeyword.OnDecisionSet(index);
     }
 
     public void EnterState(ChoiceState newState)
@@ -60,11 +61,18 @@ public class ChoiceBox : UIGroup, IPointerEnterHandler, IPointerExitHandler
         EnterState(ChoiceState.Standby);
     }
 
-    public void StartDecision(KeywordData data)
+    public void StartDecision(Keyword keyword)
     {
-        m_draggedInKeyword = data;
-        EnterState(ChoiceState.Decide);
-        SetUpDecisions();
+        if (keyword.Lock)
+        {
+            OnEntryChosen(keyword.SetDecision);
+        }
+        else
+        {
+            m_draggedInKeyword = keyword;
+            EnterState(ChoiceState.Decide);
+            SetUpDecisions();
+        }
     }
 
     private void SetUpDecisions()
@@ -74,10 +82,10 @@ public class ChoiceBox : UIGroup, IPointerEnterHandler, IPointerExitHandler
             List.transform.GetChild(i).gameObject.SetActive(false);
         }
 
-        for (int i = 0; i < m_draggedInKeyword.m_decision.Length; i++)
+        for (int i = 0; i < m_draggedInKeyword.Data.m_decision.Length; i++)
         {
             List.transform.GetChild(i).gameObject.SetActive(true);
-            m_choiceBoxEntries[i].Fill(m_draggedInKeyword.m_decision[i].m_name);
+            m_choiceBoxEntries[i].Fill(m_draggedInKeyword.Data.m_decision[i].m_name);
         }
     }
 

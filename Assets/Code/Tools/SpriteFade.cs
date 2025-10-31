@@ -54,6 +54,7 @@ namespace Tools.Fade
             _targetOpacity = opacity;
             //_renderer.color = new Color(_renderer.color.r, _renderer.color.g, _renderer.color.b, opacity);
             UpdateRenderers(_currentOpacity);
+            SetInteractability();
         }
         private void UpdateRenderers(float opacity) => UpdateRenderers(opacity, _renderers);
         private void UpdateRenderers(float opacity, SpriteRenderer[] renderers)
