@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1a281632cbaf246b74d9da4a6b0c2c, type: 3}
   m_Name: Keyword_MyOwnFuture
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  m_name: My Own Future
+  m_name: MY OWN FUTURE
   m_decision:
   - m_name: "Maybe\u2026 maybe that future is here, with you."
     m_conversation: {fileID: 11400000, guid: 5fea39049947f6b4f834619390e04b64, type: 2}

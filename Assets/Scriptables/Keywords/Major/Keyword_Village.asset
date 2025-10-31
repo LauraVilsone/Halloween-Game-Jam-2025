@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1a281632cbaf246b74d9da4a6b0c2c, type: 3}
   m_Name: Keyword_Village
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  m_name: Village
+  m_name: VILLAGE
   m_decision:
   - m_name: I need to go back to the village.
     m_conversation: {fileID: 11400000, guid: d984ffc76ebfbf14c9ac09efd955cd1e, type: 2}

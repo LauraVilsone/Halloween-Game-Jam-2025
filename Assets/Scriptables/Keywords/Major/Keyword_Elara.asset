@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1a281632cbaf246b74d9da4a6b0c2c, type: 3}
   m_Name: Keyword_Elara
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  m_name: Elara
+  m_name: ELARA
   m_decision:
   - m_name: Elara? What happened to you?
     m_conversation: {fileID: 11400000, guid: f23ade5e19f20f54782cc39fc9ff2e49, type: 2}

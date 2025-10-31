@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1a281632cbaf246b74d9da4a6b0c2c, type: 3}
   m_Name: Keyword_Necromancer
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  m_name: Necromancer
+  m_name: NECROMANCER
   m_decision:
   - m_name: Just let me go.
     m_conversation: {fileID: 11400000, guid: 99a703ea1c6ce394bbb36ebab12c533b, type: 2}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1a281632cbaf246b74d9da4a6b0c2c, type: 3}
   m_Name: Keyword_Window
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  m_name: Window
+  m_name: WINDOW
   m_decision:
   - m_name: What a view!
     m_conversation: {fileID: 11400000, guid: 1a252e7bddd31b947af3b976d690fefe, type: 2}
