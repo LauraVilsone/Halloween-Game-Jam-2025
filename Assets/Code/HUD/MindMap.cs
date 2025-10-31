@@ -92,6 +92,7 @@ public class MindMap : UIGroup
         Visible = true;
         //Shuffle();
         m_mindBackground.Show();
+        SFXManager.PlayOpenInventorySFX();
     }
 
     public override void Empty()
@@ -99,6 +100,7 @@ public class MindMap : UIGroup
         base.Empty();
         Visible = false;
         m_mindBackground.Hide();
+        SFXManager.PlayCloseInventorySFX();
     }
 
 

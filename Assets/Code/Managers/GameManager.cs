@@ -80,6 +80,7 @@ public class GameManager : MonoBehaviour
             else if (Bond.Level > prevLevel)
                 HUD.Hint.SendMessage(m_messageCare);
 
+            SFXManager.PlaySelectingChoiceSFX();
             m_conversationManager.ChangeConversation(data.m_conversation);
             ChangeState(0);
         }

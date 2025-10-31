@@ -78,6 +78,7 @@ public class DialogueManager : MonoBehaviour
             m_typingCoroutine = null;
         }
 
+        SFXManager.PlayNextDialogueSFX();
         HUD.Box.Name(m_currentDialogue.CurrentLine.Actor);
         m_typedText = m_currentDialogue.CurrentLine.Dialogue;
 
@@ -148,7 +149,10 @@ public class DialogueManager : MonoBehaviour
                     m_stringBuilder.Append(m_typedText[m_stringIndex]);
                 }
                 if (!SkipTyping)
+                {
+                    SFXManager.PlayTypingSFX();
                     yield return new WaitForSeconds(typingDelay);
+                }
             }
             else
             {

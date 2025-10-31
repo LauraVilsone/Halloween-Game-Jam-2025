@@ -55,6 +55,7 @@ public class Keyword : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
 
         SetDraggedPosition(eventData);
         OnGrab?.Invoke(Data);
+        SFXManager.PlayGrabbingSFX();
     }
 
     private void SetDraggedPosition(PointerEventData data)
@@ -82,6 +83,7 @@ public class Keyword : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
     {
         transform.position = m_draggingIcon.transform.position;
         OnRelease?.Invoke();
+        SFXManager.PlayDroppingSFX();
 
         if (m_draggingIcon != null)
             Destroy(m_draggingIcon);

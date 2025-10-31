@@ -54,5 +54,6 @@ public class ConversationState : ExplorationState
     {
         //m_dialogue.End();
         m_conversation.End();
+        SFXManager.PlayCloseConversationSFX();
     }
 }

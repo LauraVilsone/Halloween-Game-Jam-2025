@@ -30,9 +30,12 @@ public class Hint : MonoBehaviour
         m_text = GetComponentInChildren<TextMeshProUGUI>();
         m_fade = GetComponent<UIFade>();
 
-        m_fade.SetOpacity(0);
-
         m_sentMessages = new HashSet<HintMessage>();
+    }
+
+    private void Start()
+    {
+        m_fade.SetOpacity(0);
     }
 
     private void Update()

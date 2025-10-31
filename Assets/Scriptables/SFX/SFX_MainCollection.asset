@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec56c4369d166d4782ed330f40f3d90, type: 3}
+  m_Name: SFX_MainCollection
+  m_EditorClassIdentifier: Assembly-CSharp::SFXCollection
+  _collection:
+  - Clip: {fileID: 8300000, guid: b50c8d4bc3b82c64093a95cc837947d3, type: 3}
+    Volume: 1
+    RandomizePitch: 0
+  - Clip: {fileID: 8300000, guid: 32e3e743b6d5bf742b7e045b3e715b8a, type: 3}
+    Volume: 1
+    RandomizePitch: 0
+  - Clip: {fileID: 8300000, guid: 34d9050c0ac90014299d84e461e6a921, type: 3}
+    Volume: 1
+    RandomizePitch: 0
+  - Clip: {fileID: 8300000, guid: 545ccd730e498e24997e0cdb900d09e6, type: 3}
+    Volume: 1
+    RandomizePitch: 0
+  - Clip: {fileID: 8300000, guid: f738636bfd1292746a11e0c89b4d4585, type: 3}
+    Volume: 1
+    RandomizePitch: 0
+  - Clip: {fileID: 8300000, guid: f771c3c6303bf9e4fae82831100a9d0f, type: 3}
+    Volume: 1
+    RandomizePitch: 0
+  - Clip: {fileID: 8300000, guid: 7904f6baed5414844b4abd9181cccf98, type: 3}
+    Volume: 1
+    RandomizePitch: 0
+  - Clip: {fileID: 8300000, guid: cfa61b9a85997b84eae5ed91b687c9cb, type: 3}
+    Volume: 1
+    RandomizePitch: 0
