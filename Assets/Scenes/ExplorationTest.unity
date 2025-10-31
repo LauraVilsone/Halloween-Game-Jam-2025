@@ -918,6 +918,22 @@ PrefabInstance:
         without company, without comfort, without knowledge, without certainty, without
         bargaining.
       objectReference: {fileID: 0}
+    - target: {fileID: 133080066370462841, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8bb2e692493445f4a8b3266e34b36af7, type: 2}
+    - target: {fileID: 133080066370462841, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 133080066370462841, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 884760550064365300, guid: 8bb2e692493445f4a8b3266e34b36af7, type: 2}
+    - target: {fileID: 133080066370462841, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 349964990597063396, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_Name
       value: Game HUD
@@ -1114,6 +1130,10 @@ PrefabInstance:
       propertyPath: 'm_initialKeywords.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: 5dd1ac6c39e3d024fa6c667d78ae99b6, type: 2}
+    - target: {fileID: 3646081280698200426, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3687390169650240661, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_fontSizeBase
       value: 32
@@ -1326,6 +1346,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 16.803955
       objectReference: {fileID: 0}
+    - target: {fileID: 6532861131342045266, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 884760550064365300, guid: 8bb2e692493445f4a8b3266e34b36af7, type: 2}
     - target: {fileID: 6613805204186922564, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -1466,6 +1490,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -39.11499
       objectReference: {fileID: 0}
+    - target: {fileID: 7892040792031540734, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 884760550064365300, guid: 8bb2e692493445f4a8b3266e34b36af7, type: 2}
     - target: {fileID: 7969271752955074155, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
