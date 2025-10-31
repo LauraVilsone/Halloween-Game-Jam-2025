@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SFXCollection
   _collection:
   - Clip: {fileID: 8300000, guid: b50c8d4bc3b82c64093a95cc837947d3, type: 3}
-    Volume: 1
+    Volume: 0.1
     RandomizePitch: 0
   - Clip: {fileID: 8300000, guid: 32e3e743b6d5bf742b7e045b3e715b8a, type: 3}
     Volume: 1
