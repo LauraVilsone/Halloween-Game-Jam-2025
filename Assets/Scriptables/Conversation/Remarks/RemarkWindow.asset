@@ -17,7 +17,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
   - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
   Line:
-  - Dialogue: The <link="Village"><color=green>village</color></link> below twinkles
+  - Dialogue: The <link="Village"><color=#ff9dff>VILLAGE</color></link> below twinkles
       with lights, a vibrant tapestry of life. You remember Elara and how the bustle
       far below seems in staunch contrast with her unmoving figure.
     Actor: 0
