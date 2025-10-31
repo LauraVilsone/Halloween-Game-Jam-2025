@@ -1128,6 +1128,18 @@ PrefabInstance:
       propertyPath: m_BlocksRaycasts
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3266195666759839500, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7725491
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266195666759839500, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266195666759839500, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7843138
+      objectReference: {fileID: 0}
     - target: {fileID: 3271949617859564525, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_initialKeywords.Array.size
       value: 1

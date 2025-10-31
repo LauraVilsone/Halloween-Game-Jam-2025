@@ -17,6 +17,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
   - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
   Line:
+  - Dialogue: 'You open your eyes. '
+    Actor: 1
+    Emotion: 0
+  - Dialogue: 'Shadows dance maniacally around the room. '
+    Actor: 1
+    Emotion: 0
+  - Dialogue: 'And a tired woman in opulent, but disheveled robes holds her hands
+      above you, her bony fingers glowing from the power she is casting. '
+    Actor: 1
+    Emotion: 0
   - Dialogue: '- Liam!'
     Actor: 1
     Emotion: 1
@@ -30,8 +40,4 @@ MonoBehaviour:
   - Dialogue: 'Your voice is a low, gravelly whisper and your throat is so dry, it
       hurts to speak. '
     Actor: 0
-    Emotion: 0
-  - Dialogue: It's me, <link=Elara><color=green>Elara</color></link>. I brought you
-      back.
-    Actor: 1
     Emotion: 0

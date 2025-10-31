@@ -58,17 +58,3 @@ MonoBehaviour:
   - Dialogue: 'The air around you crackles with magic. '
     Actor: 0
     Emotion: 0
-  - Dialogue: 'You open your eyes. '
-    Actor: 0
-    Emotion: 0
-  - Dialogue: 'Shadows dance maniacally around the room. '
-    Actor: 0
-    Emotion: 0
-  - Dialogue: 'The symbols on the floor and the stone slab, where you lay, pulse
-      with life. '
-    Actor: 0
-    Emotion: 0
-  - Dialogue: 'And a tired woman in opulent, but disheveled robes holds her hands
-      above you, her bony fingers glowing from the power she is casting. '
-    Actor: 0
-    Emotion: 0
