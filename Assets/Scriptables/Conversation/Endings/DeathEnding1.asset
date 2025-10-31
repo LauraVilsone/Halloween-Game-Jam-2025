@@ -48,13 +48,13 @@ MonoBehaviour:
     Actor: 0
     Emotion: 0
   - Dialogue: Thank you, Liam.
-    Actor: 0
+    Actor: 1
     Emotion: 0
   - Dialogue: She whispers.
     Actor: 0
     Emotion: 0
   - Dialogue: Thank you for everything.
-    Actor: 0
+    Actor: 1
     Emotion: 0
   - Dialogue: She stays there for hours, mourning your loss, then prepares to resurrect
       you again.
