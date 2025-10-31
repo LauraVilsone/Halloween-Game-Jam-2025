@@ -16,8 +16,8 @@ public class ConversationState : ExplorationState
 
     public override void Enter()
     {
-        //m_dialogue.Begin();
         m_conversation.Begin();
+        m_interactable.ToggleInteractableVisibility(false);
     }
 
     public override void Tick()
@@ -32,12 +32,13 @@ public class ConversationState : ExplorationState
         }
         if (m_player.MouseLeftDown)
         {
-            if (m_conversation.ConversationFinished)
+            /*if (m_conversation.ConversationFinished)
             {
                 m_game.ChangeState(1);
             }
-            else
-                m_conversation.Proceed();
+            else*/
+            if (m_conversation.Proceed())
+                m_game.ChangeState(1);
         }
         else if (m_player.MouseRightDown && (m_conversation.OnFinalEvent && !m_conversation.SkipChoices && m_dialogue.ConversationFinished))
         {

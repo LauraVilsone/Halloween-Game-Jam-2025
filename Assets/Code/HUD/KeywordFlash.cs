@@ -18,7 +18,7 @@ public class KeywordFlash : MonoBehaviour
     public void Flash(Vector3 position, string keyword)
     {
         m_animator.SetTrigger(FLASH_ID);
-        m_text.text = "<color=green>" + keyword + "</color>";
+        m_text.text = "<color=#ff9dff>" + keyword + "</color>";
         m_text.transform.position = position;
     }
 }

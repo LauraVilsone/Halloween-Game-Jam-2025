@@ -13,6 +13,7 @@ public class ConversationManager : MonoBehaviour
 
     private ConversationEvent CurrentEvent => m_currentConversation.Events[m_eventIndex];
 
+    private GameManager m_gameManager;
     private HUDManager m_hudManager;
     private DialogueManager m_dialogueManager;
     private BondManager m_bondManager;
@@ -22,6 +23,7 @@ public class ConversationManager : MonoBehaviour
 
     private void Awake()
     {
+        m_gameManager = FindFirstObjectByType<GameManager>();
         m_dialogueManager = GetComponent<DialogueManager>();
         
         m_bondManager = GetComponent<BondManager>();
@@ -44,7 +46,7 @@ public class ConversationManager : MonoBehaviour
         m_eventIndex = 0;
     }
 
-    public void Proceed()
+    public bool Proceed()
     {
         if (!CurrentEvent.EventFinished)
         {
@@ -76,6 +78,8 @@ public class ConversationManager : MonoBehaviour
                     m_dialogueManager.Proceed();
             }
         }
+
+        return CurrentEvent.EventFinished;
     }
 
     public void ManualConversationFinish()
@@ -86,6 +90,7 @@ public class ConversationManager : MonoBehaviour
             EventFinished();
 
             m_hudManager.HideChoiceBox();
+            m_gameManager.ChangeState(1);
         }
     }
 

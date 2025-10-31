@@ -1,4 +1,5 @@
 using System;
+using Tools.Fade;
 using UnityEngine;
 
 public class Interactable : MonoBehaviour
@@ -26,9 +27,13 @@ public class Interactable : MonoBehaviour
     private bool Active { get; set; }
 
     private Vector3 m_original;
+    private SpriteFade m_fade;
+
+    public SpriteFade Fade => m_fade;
 
     private void Awake()
     {
+        m_fade = GetComponentInChildren<SpriteFade>();
         m_renderer = GetComponentInChildren<SpriteRenderer>();
         m_original = m_renderer.transform.localScale;
     }
