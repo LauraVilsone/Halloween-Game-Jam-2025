@@ -10,25 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9995dcdf354a8fa46b685a4efd049bc7, type: 3}
-  m_Name: kiLLEDmE1
+  m_Name: kiLLEDmE2
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   Actors:
   - {fileID: 11400000, guid: 9ec7950417c78344d94f4af9e809d284, type: 2}
   - {fileID: 11400000, guid: d034340b6c42b074d9147b719f4904cf, type: 2}
   - {fileID: 11400000, guid: acaa6605e26679847a24927bfd456cbb, type: 2}
   Line:
-  - Dialogue: A day later, when the moon has returned once more, Elara finds the
-      strength to look for you.
+  - Dialogue: Clara and her husband laying together in a pool of their own blood,
+      and a few steps further - you, with the same dagger plunged into your heart
+      again, your own hands still gripping it.
     Actor: 0
     Emotion: 0
-  - Dialogue: Her tower is empty, so is her garden. As she searches, she feels a
-      surge of magical strength coming back into her veins.
+  - Dialogue: Elara carefully moves your body to her garden. Underneath the most
+      exquisite bone orchid, she digs a deep grave, and in it, she lays you to rest.
     Actor: 0
     Emotion: 0
-  - Dialogue: "Cold dread settles on her and she knew she had to run to the village,
-      to Clara\u2019s home."
-    Actor: 0
-    Emotion: 0
-  - Dialogue: There a morbid sight greets her.
+  - Dialogue: 'As she covers the grave with earth, she notices something. '
     Actor: 0
     Emotion: 0

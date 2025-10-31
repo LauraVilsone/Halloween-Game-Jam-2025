@@ -137,9 +137,14 @@ public class ConversationManager : MonoBehaviour
             if (illustration.Fade)
                 m_illustrationManager.Fade();
             else if (illustration.Show)
-                m_illustrationManager.ShowIllustration(illustration.Illustration, illustration.Quick);
+                m_illustrationManager.ShowIllustration(illustration.Illustration, illustration.Quick, illustration.Intro);
             else
                 m_illustrationManager.HideIllustration();
+        }
+        else if (CurrentEvent is GameOver gameOver)
+        {
+            m_illustrationManager.ShowEnding(gameOver.EndingIllustration);
+            //gameOver;
         }
 
         CurrentEvent.EventFinished = false;

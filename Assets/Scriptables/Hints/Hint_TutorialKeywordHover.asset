@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 174ecf003f8b34d40960f64eddcb349c, type: 3}
   m_Name: Hint_TutorialKeywordHover
   m_EditorClassIdentifier: Assembly-CSharp::HintMessage
-  m_message: Collect a <color>#ff9dff>KEYWORD</color> by hovering over it.
+  m_message: Collect a <color=#ff9dff>KEYWORD</color> by hovering over it.
   m_icon: {fileID: -4906362165640480537, guid: 8e9e4965671f3a3458615ec33ec92575, type: 3}
   m_tutorial: 1

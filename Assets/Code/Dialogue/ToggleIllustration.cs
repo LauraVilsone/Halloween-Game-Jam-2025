@@ -4,7 +4,10 @@ using UnityEngine;
 public class ToggleIllustration : ConversationEvent
 {
     public bool Show;
-    public bool Quick;
     public bool Fade;
+    [Space]
+    public bool Quick;
+    public bool Intro;
+    [Space] 
     public Sprite Illustration;
 }

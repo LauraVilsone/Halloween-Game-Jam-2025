@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1afc2272df914c40aab4b1ca6dbc69d, type: 3}
-  m_Name: IllustrationShowRelease
+  m_Name: IllustrationIntroFade
   m_EditorClassIdentifier: Assembly-CSharp::ToggleIllustration
   Show: 1
   Fade: 0
   Quick: 0
-  Intro: 0
-  Illustration: {fileID: -3483798440519957697, guid: fdb97b7f80794f14cbd101733212c781, type: 3}
+  Intro: 1
+  Illustration: {fileID: -7696908484637272185, guid: 87381a4677d423a4ab621e7c8c1a414d, type: 3}

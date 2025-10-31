@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cutscene
   SkipChoices: 0
   Events:
-  - {fileID: 11400000, guid: 5eec5b83b1586d4479f769ee3cd825c3, type: 2}
+  - {fileID: 11400000, guid: caa4279b596ecce4386cf0e6b184fe2b, type: 2}
   - {fileID: 11400000, guid: 80672d2c2be74074eb0e04808db14514, type: 2}
   - {fileID: 11400000, guid: f4460acc127dde547959e979e5ed9be6, type: 2}
   - {fileID: 11400000, guid: 080d479507ecb904ba4a2725d112125c, type: 2}
