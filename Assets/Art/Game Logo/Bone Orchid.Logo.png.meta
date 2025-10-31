@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: ba1c2bf5fdd30764e90d327fe680d5fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5580859727914942005
+    second: Bone Orchid.Logo_0
+  - first:
+      213: 832151212950261839
+    second: Bone Orchid.Logo_1
+  - first:
+      213: -3326761631914995755
+    second: Bone Orchid.Logo_2
+  - first:
+      213: -5250879720453892017
+    second: Bone Orchid.Logo_3
+  - first:
+      213: 8410438802130857919
+    second: Bone Orchid.Logo_4
+  - first:
+      213: -5816088340995057120
+    second: Bone Orchid.Logo_5
+  - first:
+      213: 6171536467978290929
+    second: Bone Orchid.Logo_6
+  - first:
+      213: 3567108779907126494
+    second: Bone Orchid.Logo_7
+  - first:
+      213: -8703012110056238632
+    second: Bone Orchid.Logo_8
+  - first:
+      213: 6526542302437467721
+    second: Bone Orchid.Logo_9
+  - first:
+      213: -9063516927029779539
+    second: Bone Orchid.Logo_10
+  - first:
+      213: 1273353100094320415
+    second: Bone Orchid.Logo_11
+  - first:
+      213: -1100697163000551903
+    second: Bone Orchid.Logo_12
+  - first:
+      213: 8460618053257787031
+    second: Bone Orchid.Logo_13
+  - first:
+      213: 350386937902236371
+    second: Bone Orchid.Logo_14
+  - first:
+      213: -7458043531807402739
+    second: Bone Orchid.Logo_15
+  - first:
+      213: 3272539469407235161
+    second: Bone Orchid.Logo_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_0
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1070
+        width: 353
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e37a79a52337d40800000000000000
+      internalID: 5580859727914942005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_1
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 947
+        width: 791
+        height: 947
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f409f478e156c8b00800000000000000
+      internalID: 832151212950261839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_2
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 1379
+        width: 650
+        height: 965
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfce45fbe7f4d1d0800000000000000
+      internalID: -3326761631914995755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_3
+      rect:
+        serializedVersion: 2
+        x: 2804
+        y: 926
+        width: 688
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f481b00f6b02127b0800000000000000
+      internalID: -5250879720453892017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_4
+      rect:
+        serializedVersion: 2
+        x: 4172
+        y: 652
+        width: 402
+        height: 1143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbfeb26b781e7b470800000000000000
+      internalID: 8410438802130857919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_5
+      rect:
+        serializedVersion: 2
+        x: 4593
+        y: 1572
+        width: 164
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ad2b4087a194fa0800000000000000
+      internalID: -5816088340995057120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_6
+      rect:
+        serializedVersion: 2
+        x: 4792
+        y: 940
+        width: 363
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6073c28b3b5a550800000000000000
+      internalID: 6171536467978290929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_7
+      rect:
+        serializedVersion: 2
+        x: 5137
+        y: 1076
+        width: 253
+        height: 621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed49a85398ae08130800000000000000
+      internalID: 3567108779907126494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_8
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 934
+        width: 349
+        height: 602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1dc20b890b83780800000000000000
+      internalID: -8703012110056238632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_9
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 934
+        width: 382
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946685c15afe29a50800000000000000
+      internalID: 6526542302437467721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_10
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 1506
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da366ac106be73280800000000000000
+      internalID: -9063516927029779539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_11
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 941
+        width: 314
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fa3c4e5ebdba110800000000000000
+      internalID: 1273353100094320415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_12
+      rect:
+        serializedVersion: 2
+        x: 3546
+        y: 936
+        width: 336
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126621213c989b0f0800000000000000
+      internalID: -1100697163000551903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_13
+      rect:
+        serializedVersion: 2
+        x: 3868
+        y: 938
+        width: 299
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796ffac0b472a6570800000000000000
+      internalID: 8460618053257787031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_14
+      rect:
+        serializedVersion: 2
+        x: 4585
+        y: 934
+        width: 178
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d289974013dcd400800000000000000
+      internalID: 350386937902236371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_15
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1087
+        width: 352
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0558371ce4bf7890800000000000000
+      internalID: -7458043531807402739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone Orchid.Logo_16
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 922
+        width: 122
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ca67b0f456a6d20800000000000000
+      internalID: 3272539469407235161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bone Orchid.Logo_0: 5580859727914942005
+      Bone Orchid.Logo_1: 832151212950261839
+      Bone Orchid.Logo_10: -9063516927029779539
+      Bone Orchid.Logo_11: 1273353100094320415
+      Bone Orchid.Logo_12: -1100697163000551903
+      Bone Orchid.Logo_13: 8460618053257787031
+      Bone Orchid.Logo_14: 350386937902236371
+      Bone Orchid.Logo_15: -7458043531807402739
+      Bone Orchid.Logo_16: 3272539469407235161
+      Bone Orchid.Logo_2: -3326761631914995755
+      Bone Orchid.Logo_3: -5250879720453892017
+      Bone Orchid.Logo_4: 8410438802130857919
+      Bone Orchid.Logo_5: -5816088340995057120
+      Bone Orchid.Logo_6: 6171536467978290929
+      Bone Orchid.Logo_7: 3567108779907126494
+      Bone Orchid.Logo_8: -8703012110056238632
+      Bone Orchid.Logo_9: 6526542302437467721
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
