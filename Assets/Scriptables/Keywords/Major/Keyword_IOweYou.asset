@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1a281632cbaf246b74d9da4a6b0c2c, type: 3}
   m_Name: Keyword_IOweYou
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  m_name: I Owe You
+  m_name: I OWE YOU
   m_decision:
   - m_name: I owe you.
     m_conversation: {fileID: 11400000, guid: c9e2055af15e7da4e8a88267a8a55e0d, type: 2}

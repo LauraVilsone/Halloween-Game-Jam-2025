@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1a281632cbaf246b74d9da4a6b0c2c, type: 3}
   m_Name: Keyword_ILovedClara
   m_EditorClassIdentifier: Assembly-CSharp::KeywordData
-  m_name: I Loved Clara
+  m_name: I LOVED CLARA
   m_decision:
   - m_name: I'm sorry. All I remember is Clara.
     m_conversation: {fileID: 11400000, guid: 2b41fd8c722d41942a1ff31f1813bb03, type: 2}
