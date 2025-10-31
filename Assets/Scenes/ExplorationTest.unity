@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AmbianceManager
   m_startWithAmbiance: 1
-  m_maxVolume: 1
+  m_maxVolume: 0.5
   m_fadeSpeed: 0.3
 --- !u!1 &621079298
 GameObject:
@@ -1190,10 +1190,6 @@ PrefabInstance:
     - target: {fileID: 3001105494177222039, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
       propertyPath: m_Name
       value: Laboratory
-      objectReference: {fileID: 0}
-    - target: {fileID: 3001105494177222039, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

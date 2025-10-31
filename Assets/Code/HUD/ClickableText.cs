@@ -100,6 +100,7 @@ public class ClickableText : MonoBehaviour, IPointerClickHandler, IPointerMoveHa
 
                 m_HUDManager.OnKeywordGain(position, linkText);
                 m_dialogueManager.RewriteWithoutTags();
+                SFXManager.PlayCollectSFX();
             }
         }
     }
