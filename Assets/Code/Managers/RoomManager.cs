@@ -6,8 +6,12 @@ public class RoomManager : MonoBehaviour
 
     public Room CurrentRoom => m_currentRoom;
 
-    public void Tick()
+
+    public void OnStateChange(bool inConversation)
     {
-        
+        if (inConversation)
+            CurrentRoom.OnTalk();
+        else
+            CurrentRoom.OnExit();
     }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 public class ConversationManager : MonoBehaviour
 {
     [SerializeField] private Conversation m_currentConversation;
+    [Space]
+    [SerializeField] private HintMessage m_resumeConversationHint;
 
     private int m_eventIndex;
 
@@ -90,6 +92,7 @@ public class ConversationManager : MonoBehaviour
             EventFinished();
 
             m_hudManager.HideChoiceBox();
+            m_hudManager.Hint.SendMessage(m_resumeConversationHint);
             m_gameManager.ChangeState(1);
         }
     }

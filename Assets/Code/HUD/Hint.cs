@@ -18,6 +18,8 @@ public class Hint : MonoBehaviour
     private UIFade m_fade;
     private TextMeshProUGUI m_text;
     private Image m_icon;
+    private Animator m_animator;
+    private readonly int NOTICE_ID = Animator.StringToHash("Notice");
 
     private float m_curveTime = 0;
     private float m_messageTime = 0;
@@ -29,6 +31,7 @@ public class Hint : MonoBehaviour
         m_icon = GetComponentInChildren<Image>();
         m_text = GetComponentInChildren<TextMeshProUGUI>();
         m_fade = GetComponent<UIFade>();
+        m_animator = GetComponentInChildren<Animator>();
 
         m_sentMessages = new HashSet<HintMessage>();
     }
@@ -74,5 +77,8 @@ public class Hint : MonoBehaviour
         }
 
         m_messageTime = m_messageDuration;
+
+        if (message.m_tutorial)
+            m_animator.SetTrigger(NOTICE_ID);
     }
 }

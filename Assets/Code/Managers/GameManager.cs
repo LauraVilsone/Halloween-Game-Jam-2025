@@ -137,6 +137,8 @@ public class GameManager : MonoBehaviour
         if (m_gameState is ConversationState) return;
 
         if (m_inventory.SelectedKeyword == null) {
+            if (data.Focus)
+                Rooms.OnStateChange(true);
             m_conversationManager.ChangeConversation(data.Remark);
             ChangeState(0);
         }
@@ -154,7 +156,6 @@ public class GameManager : MonoBehaviour
         m_gameState.Tick();
 
         m_player.Tick();
-        m_roomManager.Tick();
         //Debug.Log(m_player.MouseDelta);
     }
 

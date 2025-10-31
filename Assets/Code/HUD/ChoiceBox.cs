@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -6,6 +7,8 @@ public class ChoiceBox : UIGroup, IPointerEnterHandler, IPointerExitHandler
 {
     public GameObject List;
     public GameObject Prompt;
+    public GameObject KeywordHeader;
+    [Space]
 
     private ChoiceBoxEntry[] m_choiceBoxEntries;
 
@@ -15,6 +18,14 @@ public class ChoiceBox : UIGroup, IPointerEnterHandler, IPointerExitHandler
     public bool HoveredOver;
     private Keyword m_draggedInKeyword;
     public Action<Decision> OnDecisionMade;
+
+    private TextMeshProUGUI m_keywordText;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        m_keywordText = KeywordHeader.GetComponentInChildren<TextMeshProUGUI>();
+    }
 
 
     public override void Start()
@@ -35,6 +46,7 @@ public class ChoiceBox : UIGroup, IPointerEnterHandler, IPointerExitHandler
         OnDecisionMade?.Invoke(m_draggedInKeyword.Data.m_decision[index]);
         Empty();
         m_draggedInKeyword.OnDecisionSet(index);
+        KeywordHeader.SetActive(false);
     }
 
     public void EnterState(ChoiceState newState)
@@ -72,6 +84,9 @@ public class ChoiceBox : UIGroup, IPointerEnterHandler, IPointerExitHandler
             m_draggedInKeyword = keyword;
             EnterState(ChoiceState.Decide);
             SetUpDecisions();
+
+            KeywordHeader.SetActive(true);
+            m_keywordText.text = keyword.Data.m_name;
         }
     }
 

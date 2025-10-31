@@ -36,8 +36,8 @@ MonoBehaviour:
     Actor: 0
     Emotion: 0
   - Dialogue: There is nothing to fix. All we need is to move on. I am missing years
-      from my life. But so are you. Enough dwelling on the past. Let us <link=MoveForward><color=green>move
-      forward</color></link>.
+      from my life. But so are you. Enough dwelling on the past. Let us <link=MoveForward><color=#ff9dff>MOVE
+      FORWARD</color></link>.
     Actor: 2
     Emotion: 0
   - Dialogue: "Liam, no, I can\u2026"
