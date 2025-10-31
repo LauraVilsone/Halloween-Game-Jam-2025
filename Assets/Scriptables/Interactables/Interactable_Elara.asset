@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Interactable_Elara
   m_EditorClassIdentifier: Assembly-CSharp::InteractableData
   Remark: {fileID: 11400000, guid: c678270817bd7804591e8208eb644071, type: 2}
+  Focus: 1

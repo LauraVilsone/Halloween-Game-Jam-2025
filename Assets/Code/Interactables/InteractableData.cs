@@ -4,4 +4,5 @@
 public class InteractableData : ScriptableObject
 {
     public Conversation Remark;
+    public bool Focus;
 }

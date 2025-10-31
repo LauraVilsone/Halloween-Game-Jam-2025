@@ -13,6 +13,7 @@ public class ExplorationState : GameState
     public override void Enter()
     {
         m_interactable.ToggleInteractableVisibility(true);
+        m_rooms.OnStateChange(false);
     }
 
     public override void Tick()
