@@ -40,3 +40,6 @@ MonoBehaviour:
   - Clip: {fileID: 8300000, guid: 0f2f9a5e17321714cbb619bdb4ceed00, type: 3}
     Volume: 0.75
     RandomizePitch: 0
+  - Clip: {fileID: 8300000, guid: de3157c3834540449a72b24a9a93d224, type: 3}
+    Volume: 0.75
+    RandomizePitch: 0

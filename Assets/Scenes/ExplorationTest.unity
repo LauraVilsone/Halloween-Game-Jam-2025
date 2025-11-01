@@ -1244,9 +1244,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2090177519659289946, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.4847832
+      objectReference: {fileID: 0}
     - target: {fileID: 3001105494177222039, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
       propertyPath: m_Name
       value: Laboratory
+      objectReference: {fileID: 0}
+    - target: {fileID: 3337510337251904371, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.07043475
       objectReference: {fileID: 0}
     - target: {fileID: 4652775933863925556, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
       propertyPath: m_LocalScale.x
@@ -1267,6 +1275,14 @@ PrefabInstance:
     - target: {fileID: 4652775933863925556, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
       propertyPath: m_LocalPosition.y
       value: -4.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672793720174981993, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325435768828867904, guid: 4ed91190a1dcfbb4e8501ef486d7643c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1372,7 +1388,7 @@ PrefabInstance:
     - target: {fileID: 3271949617859564525, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: 'm_initialKeywords.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: bed4804b44e330c4da8c6288b4db8c4d, type: 2}
+      objectReference: {fileID: 11400000, guid: 5dd1ac6c39e3d024fa6c667d78ae99b6, type: 2}
     - target: {fileID: 5295764745600814869, guid: 624c194b723e37a4081c874f5c27f038, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

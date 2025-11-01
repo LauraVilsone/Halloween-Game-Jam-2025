@@ -40,6 +40,8 @@ public class SFXManager : MonoBehaviour
     private void PlaySelectingChoiceSFX_Internal() => PlaySFX_Internal(m_sfxCollection[7].Clip, m_sfxCollection[7].Volume);
     static public void PlayCollectSFX() => Instance.PlayCollectSFX_Internal();
     private void PlayCollectSFX_Internal() => PlaySFX_Internal(m_sfxCollection[8].Clip, m_sfxCollection[8].Volume);
+    static public void PlayTutorialSFX() => Instance.PlayTutorialSFX_Internal();
+    private void PlayTutorialSFX_Internal() => PlaySFX_Internal(m_sfxCollection[9].Clip, m_sfxCollection[9].Volume);
 
     static public void PlaySFX(AudioClip p_clip, float p_volume = 1, bool p_randomizePitch = false)
     {

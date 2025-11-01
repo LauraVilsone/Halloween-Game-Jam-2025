@@ -79,6 +79,9 @@ public class Hint : MonoBehaviour
         m_messageTime = m_messageDuration;
 
         if (message.m_tutorial)
+        {
             m_animator.SetTrigger(NOTICE_ID);
+            SFXManager.PlayTutorialSFX();
+        }
     }
 }
