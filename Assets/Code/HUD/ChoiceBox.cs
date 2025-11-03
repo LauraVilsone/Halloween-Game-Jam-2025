@@ -78,6 +78,7 @@ public class ChoiceBox : UIGroup, IPointerEnterHandler, IPointerExitHandler
     {
         if (keyword.Lock)
         {
+            m_draggedInKeyword = keyword;
             OnEntryChosen(keyword.SetDecision);
         }
         else
