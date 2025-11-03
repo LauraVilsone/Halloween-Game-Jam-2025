@@ -22,6 +22,7 @@ public class Portrait : MonoBehaviour
     {
         if (m_fadeRenderer.sprite == sprite)
             return;
+
         m_fadeRenderer.sprite = sprite;
         m_animator.SetTrigger(FADE_ID);
     }
@@ -29,6 +30,5 @@ public class Portrait : MonoBehaviour
     public void OnFadeEnd()
     {
         m_renderer.sprite = m_fadeRenderer.sprite;
-        m_fadeRenderer.sprite = null;
     }
 }
