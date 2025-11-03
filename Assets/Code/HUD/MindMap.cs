@@ -83,6 +83,9 @@ public class MindMap : UIGroup
         //Shuffle();
         m_mindBackground.Show();
         SFXManager.PlayOpenInventorySFX();
+
+        foreach (var keyword in m_keywords)
+            keyword.SetInteractability(true);
     }
 
     public override void Empty()
@@ -91,6 +94,9 @@ public class MindMap : UIGroup
         Visible = false;
         m_mindBackground.Hide();
         SFXManager.PlayCloseInventorySFX();
+
+        foreach (var keyword in m_keywords)
+            keyword.SetInteractability(false);
     }
 
 

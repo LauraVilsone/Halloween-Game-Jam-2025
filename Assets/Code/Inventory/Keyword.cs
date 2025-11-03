@@ -37,6 +37,11 @@ public class Keyword : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
         m_text.text = data.m_name;
     }
 
+    public void SetInteractability(bool interactable)
+    {
+        m_image.raycastTarget = interactable;
+    }
+
     private bool m_dragOnSurface = true;
 
     private GameObject m_draggingIcon;
@@ -47,6 +52,9 @@ public class Keyword : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
         var canvas = GetComponentInParent<Canvas>();
         if (canvas == null)
             return;
+
+        if (m_draggingIcon != null)
+            Destroy(m_draggingIcon);
 
         m_draggingIcon = new GameObject("icon");
 
@@ -92,7 +100,8 @@ public class Keyword : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        transform.position = m_draggingIcon.transform.position;
+        if (m_draggingIcon != null)
+            transform.position = m_draggingIcon.transform.position;
         OnRelease?.Invoke();
         SFXManager.PlayDroppingSFX();
 
