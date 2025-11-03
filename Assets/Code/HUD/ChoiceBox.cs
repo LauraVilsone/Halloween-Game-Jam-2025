@@ -58,6 +58,7 @@ public class ChoiceBox : UIGroup, IPointerEnterHandler, IPointerExitHandler
             case ChoiceState.Standby:
                 List.SetActive(false);
                 Prompt.SetActive(true);
+                KeywordHeader.SetActive(false);
                 break;
             case ChoiceState.Decide:
                 List.SetActive(true);

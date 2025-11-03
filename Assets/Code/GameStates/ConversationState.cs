@@ -30,7 +30,7 @@ public class ConversationState : ExplorationState
             }
             return;
         }
-        if (m_player.MouseLeftDown)
+        if (m_player.MouseLeftDown || m_player.SpacebarDown)
         {
             /*if (m_conversation.ConversationFinished)
             {

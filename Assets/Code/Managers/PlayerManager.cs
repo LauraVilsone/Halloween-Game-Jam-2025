@@ -17,6 +17,8 @@ public class PlayerManager
     public bool MouseRightHeld { get; set; }
     public bool MouseRightUp { get; set; }
 
+    public bool SpacebarDown { get; set; }
+
     public float MouseDelta { get; set; }
 
     private bool m_lock;
@@ -44,6 +46,8 @@ public class PlayerManager
         MouseRightUp = Input.GetMouseButtonUp(1);
 
         MouseDelta = Input.GetAxis("Mouse X");
+
+        SpacebarDown = Input.GetKeyDown(KeyCode.Space);
     }
 
     private void ResetInput()
