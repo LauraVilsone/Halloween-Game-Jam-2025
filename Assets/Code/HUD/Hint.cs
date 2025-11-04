@@ -60,10 +60,13 @@ public class Hint : MonoBehaviour
 
     public void SendMessage(HintMessage message)
     {
-        if (m_sentMessages.Contains(message))
-            return;
-        else
-            m_sentMessages.Add(message);
+        if (message.m_tutorial)
+        {
+            if (m_sentMessages.Contains(message))
+                return;
+            else
+                m_sentMessages.Add(message);
+        }
 
         m_text.text = message.m_message;
         m_icon.sprite = message.m_icon;
