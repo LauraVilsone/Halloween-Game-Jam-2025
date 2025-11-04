@@ -8,8 +8,11 @@ public class HUDManager : MonoBehaviour
     public ChoiceBox ChoiceBox;
     public KeywordFlash Flash;
     public Hint Hint;
+    public Log Log;
     [Space]
     [SerializeField] private HintMessage HintInventoryTutorial;
+
+    public bool ViewingLog => Log.Active;
 
     private void Awake()
     {
@@ -36,6 +39,11 @@ public class HUDManager : MonoBehaviour
         if (Hint == null)
         {
             Hint = GetComponentInChildren<Hint>();
+        }
+
+        if (Log == null)
+        {
+            Log = GetComponentInChildren<Log>();
         }
 
         m_firstTimeCollecting = true;
@@ -69,4 +77,8 @@ public class HUDManager : MonoBehaviour
         }
         Flash.Flash(position, keyword);
     }
+
+    public void ShowLog() => Log.Show();
+
+    public void HideLog() => Log.Hide();
 }

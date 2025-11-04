@@ -17,7 +17,7 @@ public class ChoiceBox : UIGroup, IPointerEnterHandler, IPointerExitHandler
 
     public bool HoveredOver;
     private Keyword m_draggedInKeyword;
-    public Action<Decision> OnDecisionMade;
+    public Action<Decision, bool> OnDecisionMade;
 
     private TextMeshProUGUI m_keywordText;
 
@@ -43,7 +43,7 @@ public class ChoiceBox : UIGroup, IPointerEnterHandler, IPointerExitHandler
 
     private void OnEntryChosen(int index)
     {
-        OnDecisionMade?.Invoke(m_draggedInKeyword.Data.m_decision[index]);
+        OnDecisionMade?.Invoke(m_draggedInKeyword.Data.m_decision[index], !m_draggedInKeyword.Lock);
         Empty();
         m_draggedInKeyword.OnDecisionSet(index);
         KeywordHeader.SetActive(false);

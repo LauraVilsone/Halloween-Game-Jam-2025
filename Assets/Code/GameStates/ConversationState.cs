@@ -26,10 +26,17 @@ public class ConversationState : ExplorationState
         {
             if (m_player.MouseRightDown)
             {
-                m_inventory.Toggle(true);
+                m_inventory.Toggle();
             }
             return;
         }
+        else if (m_game.HUD.ViewingLog)
+        {
+            if (m_player.ScrollWheelUp)
+                m_game.HUD.HideLog();
+            return;
+        }
+
         if (m_player.MouseLeftDown || m_player.SpacebarDown)
         {
             /*if (m_conversation.ConversationFinished)
@@ -42,7 +49,11 @@ public class ConversationState : ExplorationState
         }
         else if (m_player.MouseRightDown && (m_conversation.OnFinalEvent && !m_conversation.SkipChoices && m_dialogue.ConversationFinished))
         {
-            m_inventory.Toggle(true);
+            m_inventory.Toggle();
+        }
+        else if (m_player.ScrollWheelUp || m_player.ScrollWheelDelta != Vector2.zero)
+        {
+            m_game.HUD.ShowLog();
         }
 
         /*if (Input.GetKeyDown(KeyCode.LeftControl))

@@ -116,7 +116,7 @@ public class ConversationManager : MonoBehaviour
     {
         if (CurrentEvent is Dialogue dialogue)
         {
-            m_dialogueManager.Begin(dialogue);
+            m_dialogueManager.Begin(dialogue, m_currentConversation.DontRecord);
             //CurrentEvent.Execute(this, CurrentEvent);
         }
         else if (CurrentEvent is BondCheck bondCheck)

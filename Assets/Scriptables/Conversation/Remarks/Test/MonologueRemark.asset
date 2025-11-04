@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: MonologueRemark
   m_EditorClassIdentifier: Assembly-CSharp::Conversation
   SkipChoices: 1
+  DontRecord: 1
   Events:
   - {fileID: 11400000, guid: 37eb4520b68653c48b66ffd747a56e51, type: 2}
+  HintAtEnd: {fileID: 0}

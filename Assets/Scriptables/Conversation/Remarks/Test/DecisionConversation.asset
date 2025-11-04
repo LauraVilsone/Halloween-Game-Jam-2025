@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: DecisionConversation
   m_EditorClassIdentifier: Assembly-CSharp::Conversation
   SkipChoices: 1
+  DontRecord: 1
   Events:
   - {fileID: 11400000, guid: bd9b2c09a8d393442802b804a41fac6e, type: 2}
+  HintAtEnd: {fileID: 0}

@@ -17,6 +17,10 @@ public class PlayerManager
     public bool MouseRightHeld { get; set; }
     public bool MouseRightUp { get; set; }
 
+    public bool ScrollWheelDown { get; set; }
+    public Vector2 ScrollWheelDelta { get; set; }
+    public bool ScrollWheelUp { get; set; }
+
     public bool SpacebarDown { get; set; }
 
     public float MouseDelta { get; set; }
@@ -38,14 +42,18 @@ public class PlayerManager
 
         MouseLeftDown = Input.GetMouseButtonDown(0);
         MouseRightDown = Input.GetMouseButtonDown(1);
+        ScrollWheelDown = Input.GetMouseButtonUp(2);
 
         MouseLeftHeld = Input.GetMouseButton(0);
         MouseRightHeld = Input.GetMouseButton(1);
 
         MouseLeftUp = Input.GetMouseButtonUp(0);
         MouseRightUp = Input.GetMouseButtonUp(1);
+        ScrollWheelUp = Input.GetMouseButtonUp(2);
 
         MouseDelta = Input.GetAxis("Mouse X");
+
+        ScrollWheelDelta = Input.mouseScrollDelta;
 
         SpacebarDown = Input.GetKeyDown(KeyCode.Space);
     }

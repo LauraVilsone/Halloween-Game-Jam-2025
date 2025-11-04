@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
         Inventory.Choice.OnDecisionMade += OnDecisionMade;
     }
 
-    private void OnDecisionMade(Decision data)
+    private void OnDecisionMade(Decision data, bool modifyBond)
     {
         if (m_gameState is ConversationState)
         {
@@ -72,13 +72,16 @@ public class GameManager : MonoBehaviour
                 return;
             }
 
-            var prevLevel = Bond.Level;
-            Bond.Level += data.m_bond;
-            
-            if (Bond.Level < prevLevel)
-                HUD.Hint.SendMessage(m_messageWorry);
-            else if (Bond.Level > prevLevel)
-                HUD.Hint.SendMessage(m_messageCare);
+            if (modifyBond)
+            {
+                var prevLevel = Bond.Level;
+                Bond.Level += data.m_bond;
+
+                if (Bond.Level < prevLevel)
+                    HUD.Hint.SendMessage(m_messageWorry);
+                else if (Bond.Level > prevLevel)
+                    HUD.Hint.SendMessage(m_messageCare);
+            }
 
             SFXManager.PlaySelectingChoiceSFX();
             m_conversationManager.ChangeConversation(data.m_conversation);

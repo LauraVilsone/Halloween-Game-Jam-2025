@@ -23,21 +23,8 @@ public class InventoryManager : MonoBehaviour
         Map.Fill(keyword);
     }
 
-    public void Toggle(bool decisionAvailable)
+    public void Toggle()
     {
         Map.Toggle();
-        /*return;
-        if (decisionAvailable)
-        {
-            if (Map.Visible)
-            {
-                Choice.Show();
-                Choice.SetStandby();
-            }
-            else
-            {
-                Choice.Empty();
-            }
-        }*/
     }
 }

@@ -24,11 +24,13 @@ public class DialogueManager : MonoBehaviour
         m_portrait = FindFirstObjectByType<Portrait>();
     }
 
-    public void Begin(Dialogue dialogue)
+    private bool m_skipRecording;
+    public void Begin(Dialogue dialogue, bool skipRecording)
     {
         HUD.Box.Show();
         LinesFinished = false;
 
+        m_skipRecording = skipRecording;
         m_currentDialogue = dialogue;
 
         m_currentDialogue.BeginRead();
@@ -54,6 +56,9 @@ public class DialogueManager : MonoBehaviour
 
     private void OnFinishedTyping()
     {
+        if (!m_skipRecording)
+            HUD.Log.Add(m_currentDialogue.CurrentLine);
+
         IsTyping = false;
         if (m_currentDialogue.FinishedReading)
             LinesFinished = true;

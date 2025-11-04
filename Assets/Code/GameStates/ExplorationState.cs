@@ -22,17 +22,28 @@ public class ExplorationState : GameState
         {
             if (m_player.MouseRightDown)
             {
-                m_inventory.Toggle(false);
+                m_inventory.Toggle();
             }
             return;
         }
+        else if (m_game.HUD.ViewingLog)
+        {
+            if (m_player.ScrollWheelUp)
+                m_game.HUD.HideLog();
+            return;
+        }
+
         if (m_player.MouseLeftHeld)
         {
             m_rooms.CurrentRoom.MouseMove(m_player.MouseDelta);
         }
         else if (m_player.MouseRightDown)
         {
-            m_inventory.Toggle(false);
+            m_inventory.Toggle();
+        }
+        else if (m_player.ScrollWheelUp || m_player.ScrollWheelDelta != Vector2.zero)
+        {
+            m_game.HUD.ShowLog();
         }
     }
 

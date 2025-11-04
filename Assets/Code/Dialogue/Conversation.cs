@@ -4,6 +4,7 @@ using UnityEngine;
 public class Conversation : ScriptableObject
 {
     public bool SkipChoices;
+    public bool DontRecord;
     [Space]
     public ConversationEvent[] Events;
     [Space]

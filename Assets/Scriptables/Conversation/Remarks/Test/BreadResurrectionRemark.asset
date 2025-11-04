@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: BreadResurrectionRemark
   m_EditorClassIdentifier: Assembly-CSharp::Conversation
   SkipChoices: 1
+  DontRecord: 1
   Events:
   - {fileID: 11400000, guid: 69eabb11f1bbb184499ea1d225df1bca, type: 2}
+  HintAtEnd: {fileID: 0}
