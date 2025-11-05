@@ -51,7 +51,7 @@ public class ConversationState : ExplorationState
         {
             m_inventory.Toggle();
         }
-        else if (m_player.ScrollWheelUp || m_player.ScrollWheelDelta != Vector2.zero)
+        else if (m_player.ScrollWheelDown || m_player.ScrollWheelDelta != Vector2.zero)
         {
             m_game.HUD.ShowLog();
         }
