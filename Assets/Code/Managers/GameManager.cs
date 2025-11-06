@@ -166,7 +166,6 @@ public class GameManager : MonoBehaviour
         m_gameState.Tick();
 
         m_player.Tick();
-        //Debug.Log(m_player.MouseDelta);
 
         if (m_endTime > 0)
         {

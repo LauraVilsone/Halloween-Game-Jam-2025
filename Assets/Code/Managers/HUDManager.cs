@@ -1,5 +1,8 @@
+using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class HUDManager : MonoBehaviour
 {
@@ -12,7 +15,11 @@ public class HUDManager : MonoBehaviour
     [Space]
     [SerializeField] private HintMessage HintInventoryTutorial;
 
+    private EventSystem m_system;
+    private UIButton[] m_buttons;
+
     public bool ViewingLog => Log.Active;
+    public bool ViewingButtons => m_hoveredButtons > 0;
 
     private void Awake()
     {
@@ -47,8 +54,36 @@ public class HUDManager : MonoBehaviour
         }
 
         m_firstTimeCollecting = true;
+        m_system = GetComponentInChildren<EventSystem>();
+        m_buttons = GetComponentsInChildren<UIButton>();
     }
 
+    private void Start()
+    {
+        ListenToButtons();
+    }
+
+    private void ListenToButtons()
+    {
+        foreach (var button in m_buttons)
+        {
+            button.OnHoverEnter += OnButtonEnter;
+            button.OnHoverExit += OnButtonExit;
+            //interactable.OnRelease += OnRelease;
+        }
+    }
+
+    private int m_hoveredButtons;
+    private void OnButtonEnter()
+    {
+        m_hoveredButtons++;
+    }
+    private void OnButtonExit()
+    {
+        m_hoveredButtons--;
+        if (m_hoveredButtons < 0)
+            m_hoveredButtons = 0;
+    }
 
     private enum HUDState { TextBox, MindMap, ChoiceBox }
     private HUDState m_state;
@@ -81,4 +116,11 @@ public class HUDManager : MonoBehaviour
     public void ShowLog() => Log.Show();
 
     public void HideLog() => Log.Hide();
+    public void ToggleLog()
+    {
+        if (Log.Active)
+            Log.Hide();
+        else
+            Log.Show();
+    }
 }

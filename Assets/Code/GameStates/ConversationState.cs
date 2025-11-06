@@ -39,11 +39,9 @@ public class ConversationState : ExplorationState
 
         if (m_player.MouseLeftDown || m_player.SpacebarDown)
         {
-            /*if (m_conversation.ConversationFinished)
-            {
-                m_game.ChangeState(1);
-            }
-            else*/
+            if (m_game.HUD.ViewingButtons)
+                return;
+
             if (m_conversation.Proceed())
                 m_game.ChangeState(1);
         }
@@ -51,15 +49,12 @@ public class ConversationState : ExplorationState
         {
             m_inventory.Toggle();
         }
+#if UNITY_STANDALONE
         else if (m_player.ScrollWheelDown || m_player.ScrollWheelDelta != Vector2.zero)
         {
             m_game.HUD.ShowLog();
         }
-
-        /*if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            m_game.ChangeState(1);
-        }*/
+#endif
     }
 
     public override void Exit()

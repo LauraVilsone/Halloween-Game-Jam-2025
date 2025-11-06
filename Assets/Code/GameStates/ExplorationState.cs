@@ -41,10 +41,12 @@ public class ExplorationState : GameState
         {
             m_inventory.Toggle();
         }
+#if UNITY_STANDALONE
         else if (m_player.ScrollWheelDown || m_player.ScrollWheelDelta != Vector2.zero)
         {
             m_game.HUD.ShowLog();
         }
+#endif
     }
 
     public override void Exit()
