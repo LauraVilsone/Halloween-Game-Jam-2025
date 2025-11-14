@@ -175,13 +175,6 @@ public class GameManager : MonoBehaviour
                 SceneDirector.LoadSceneAsync(0);
             }
         }
-        else
-        {
-            if (Input.GetKey(KeyCode.Backspace))
-            {
-                SceneDirector.LoadSceneAsync(0);
-            }
-        }
     }
 
     public void ChangeState(int i)
